@@ -8,6 +8,7 @@ out/
 .playwright-cli/
 _reference/
 output/playwright/
+output/provider-review-v3/
 playwright-report/
 test-results/
 blob-report/

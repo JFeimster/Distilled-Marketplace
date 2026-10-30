@@ -22,4 +22,4 @@ Marketplace owns service discovery and comparisons. Funding owns financing produ
 
 ## Boundaries and gaps
 
-The provided Wix baseline proves menu and category labels only. It does not establish commercial relationships, provider features, live terms or offers. The live catalog therefore has zero provider records. The production profile renderer exists but has no generated profile routes. `/deals` and `/compare` are substantive empty and method states; the comparison demo is synthetic and cannot be mistaken for a provider page.
+The v3 inventory supplies 154 owner-approved listings in the existing catalog: 52 saved-referral primary destinations and 102 company websites. Owner approval permits directory publication; it does not certify product claims or current commercial attribution. Link health and optional evidence dates remain separate metadata. `/deals` remains empty; `/compare` compares available listing fields and keeps fictional fixtures isolated.

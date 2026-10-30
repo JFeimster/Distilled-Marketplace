@@ -7,7 +7,7 @@ import { validateCatalog } from "../lib/validate";
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const { catalog, errors } = validateCatalog(raw);
 if (errors.length) throw new Error(errors.join("\n"));
-const routes = ["/", "/directory", "/categories", "/compare", "/collections", "/deals", "/about", "/disclosures", "/submit", ...catalog.categories.map(x => `/categories/${x.id}`), ...catalog.collections.map(x => `/collections/${x.id}`), ...catalog.providers.map(x => `/providers/${x.slug}`), ...catalog.comparisons.map(x => `/compare/${x.id}`)];
+const routes = ["/", "/directory", "/categories", "/compare", "/collections", "/deals", "/about", "/disclosures", "/submit", ...catalog.categories.map(x => `/categories/${x.id}`), ...catalog.collections.map(x => `/collections/${x.id}`), ...catalog.providers.filter(x => x.status === "published").map(x => `/providers/${x.slug}`), ...catalog.comparisons.map(x => `/compare/${x.id}`)];
 const derived = path.join(root, "data", "marketplace", "generated");
 fs.mkdirSync(derived, { recursive: true });
 fs.writeFileSync(path.join(derived, "routes.json"), `${JSON.stringify(routes, null, 2)}\n`);

@@ -1,6 +1,6 @@
 # Distilled Marketplace
 
-A local, noindex Next.js Marketplace and Directory for business service discovery. The directory at `/directory` is a view of the same catalog. It currently publishes 16 editorial service areas and four practical collections. There are **zero verified provider profiles, affiliate links, offers or production comparisons**. An optional, visibly fictional comparison fixture demonstrates the interface without being presented as production data.
+A local, noindex Next.js Marketplace and Directory for business service discovery. The directory at `/directory` is a view of the same catalog. It publishes 16 service areas, four collections and 154 owner-approved provider listings. Listings are not independent certification or endorsement. Fifty-two records retain saved referral URLs as their exact primary destination; the other 102 use company websites. Offers remain empty, and fictional comparison fixtures remain separate from provider records.
 
 ## Run locally
 
@@ -23,6 +23,8 @@ Open `http://127.0.0.1:3000`. For production server checks after `npm run build`
 - Demo comparison data lives in [`data/fixtures/demo-providers.json`](data/fixtures/demo-providers.json). It is fictional and has no external destinations or profile routes.
 
 Architecture and operational details: [Architecture](docs/ARCHITECTURE.md), [Content model](docs/CONTENT-MODEL.md), [Route map](docs/ROUTE-MAP.md), [Editorial and affiliate policy](docs/EDITORIAL-AND-AFFILIATE-POLICY.md), [Provider import contract](docs/PROVIDER-IMPORT-CONTRACT.md), [Provider integration plan](docs/PROVIDER-INTEGRATION-PLAN.md), [Deployment](docs/DEPLOYMENT.md), [Wix migration](docs/WIX-SERVICES-MIGRATION.md), [Build report](BUILD-REPORT.md).
+
+The v3 importer projects the owner-approved `_reference/provider-intake-v3/` inventory into the single canonical catalog. Run `npm run providers:import` after changing the source, then `npm run generate`. Optional link and evidence checks do not gate basic listings. See [Provider intake v3](docs/PROVIDER-INTAKE-V3.md), [Publication workflow](docs/PROVIDER-PUBLICATION-WORKFLOW.md), and [Affiliate link priority](docs/AFFILIATE-LINK-PRIORITY.md).
 
 ## Boundaries
 

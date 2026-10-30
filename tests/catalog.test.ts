@@ -4,11 +4,15 @@ import raw from "../data/marketplace/catalog.json";
 import { validateCatalog } from "../lib/validate";
 import { filterCategories, findStack, emptyFilters } from "../lib/discovery";
 
-test("catalog has valid relations and no production providers or offers", () => {
+test("catalog publishes the owner-approved provider inventory", () => {
   const { catalog, errors } = validateCatalog(raw);
   assert.deepEqual(errors, []);
   assert.equal(catalog.categories.length, 16);
-  assert.equal(catalog.providers.length, 0);
+  assert.equal(catalog.providers.length, 154);
+  assert.equal(catalog.providers.filter(provider => provider.linkType === "saved_tracking_referral").length, 52);
+  assert.equal(catalog.providers.filter(provider => provider.linkType === "official_website").length, 102);
+  assert.ok(catalog.providers.every(provider => provider.approvalStatus === "owner_approved" && provider.status === "published"));
+  assert.ok(catalog.providers.every(provider => provider.links.filter(link => link.isPrimary).length === 1));
   assert.equal(catalog.offers.length, 0);
 });
 test("duplicate IDs and broken relations fail validation", () => {
