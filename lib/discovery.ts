@@ -1,4 +1,4 @@
-import type { Category } from "@/schemas/catalog";
+import type { Category, Provider } from "@/schemas/catalog";
 
 export type DirectoryFilters = { q: string; group: string; audience: string; stage: string; capability: string; sort: "name" | "group" };
 export const emptyFilters: DirectoryFilters = { q: "", group: "all", audience: "all", stage: "all", capability: "all", sort: "name" };
@@ -11,6 +11,27 @@ export function filterCategories(categories: Category[], filters: DirectoryFilte
     (filters.capability === "all" || item.capabilities.includes(filters.capability)) &&
     words.every(word => `${item.name} ${item.summary} ${item.question} ${item.capabilities.join(" ")}`.toLowerCase().includes(word))
   ).sort((a, b) => filters.sort === "group" ? a.group.localeCompare(b.group) || a.name.localeCompare(b.name) : a.name.localeCompare(b.name));
+}
+export type ProviderFilters = DirectoryFilters & { category: string; serviceType: string; pricing: string };
+export const emptyProviderFilters: ProviderFilters = { ...emptyFilters, category: "all", serviceType: "all", pricing: "all" };
+export function providerRoles(provider: Provider, category: Category) { return provider.roles.length ? provider.roles : provider.audiences.length ? provider.audiences : category.audiences; }
+export function providerStages(provider: Provider, category: Category) { return provider.businessStages.length ? provider.businessStages : provider.stages.length ? provider.stages : category.stages; }
+export function filterProviders(providers: Provider[], categories: Category[], filters: ProviderFilters) {
+  const byId = new Map(categories.map(category => [category.id, category]));
+  const terms = filters.q.toLowerCase().trim().split(/\s+/).filter(Boolean);
+  return providers.filter(provider => {
+    const category = byId.get(provider.primaryCategoryId);
+    if (!category) return false;
+    const text = [provider.name, provider.summary, ...provider.capabilities, ...provider.capabilityLabels, ...provider.searchKeywords, ...provider.useCases, ...provider.features.map(feature => `${feature.name} ${feature.description ?? ""}`)].join(" ").toLowerCase();
+    return terms.every(term => text.includes(term)) &&
+      (filters.group === "all" || category.group === filters.group) &&
+      (filters.category === "all" || provider.categoryIds.includes(filters.category)) &&
+      (filters.audience === "all" || providerRoles(provider, category).includes(filters.audience)) &&
+      (filters.stage === "all" || providerStages(provider, category).includes(filters.stage)) &&
+      (filters.capability === "all" || provider.capabilities.includes(filters.capability)) &&
+      (filters.serviceType === "all" || provider.serviceTypes.includes(filters.serviceType)) &&
+      (filters.pricing === "all" || (provider.pricing?.model ?? provider.pricingModel) === filters.pricing);
+  }).sort((a, b) => filters.sort === "group" ? (byId.get(a.primaryCategoryId)?.group ?? "").localeCompare(byId.get(b.primaryCategoryId)?.group ?? "") || a.name.localeCompare(b.name) : a.name.localeCompare(b.name));
 }
 export type StackInput = { goal: "get-organized" | "grow-sales" | "manage-cash" | "hire-safely"; stage: "starting" | "growing" | "established"; needs: string[] };
 const goals: Record<StackInput["goal"], { ids: string[]; reason: string }> = {

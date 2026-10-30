@@ -596,14 +596,29 @@
       },
       "metadataTitle": "QuickBooks | Distilled Marketplace",
       "metadataDescription": "QuickBooks offers small-business accounting software covering income and expenses, invoicing, financial reports and cash-flow tools.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Invoice creation and payment tracking",
+        "Automated bookkeeping and bank feeds",
+        "Expense organization",
+        "Financial reports and cash-flow planning"
+      ]
     },
     {
       "id": "xendooonlineaccounting",
       "name": "Xendoo Online Accounting",
       "slug": "xendooonlineaccounting",
       "h1": "Xendoo Online Accounting",
-      "summary": "Explore Xendoo Online Accounting’s website for current information. Listed in Accounting & Bookkeeping: Keep transactions, reconciliations and reporting usable for decisions and tax preparation.",
+      "summary": "Xendoo Online Accounting: Compare accounting support around reconciliations, reporting, and tax handoffs.",
       "primaryCategoryId": "accounting-bookkeeping",
       "categoryIds": [
         "accounting-bookkeeping"
@@ -641,7 +656,17 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "Xendoo Online Accounting | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "browseai",
@@ -834,14 +859,31 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Browse AI | Distilled Marketplace",
       "metadataDescription": "Browse AI lets users create robots to extract structured data and monitor websites for changes.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "No-code data extraction",
+        "Data extraction",
+        "Train robots to extract structured web data",
+        "Monitor website changes",
+        "Use prebuilt robots",
+        "Export extracted data"
+      ]
     },
     {
       "id": "mindstudio",
       "name": "MindStudio",
       "slug": "mindstudio",
       "h1": "MindStudio",
-      "summary": "Explore MindStudio’s website for current information. Listed in AI & Automation: Reduce repetitive work while keeping a human accountable for exceptions and data quality.",
+      "summary": "MindStudio: Evaluate automation around repeatable tasks, data quality, and human review.",
       "primaryCategoryId": "ai-automation",
       "categoryIds": [
         "ai-automation"
@@ -880,7 +922,17 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "MindStudio | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "n8n",
@@ -1049,7 +1101,24 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "n8n | Distilled Marketplace",
       "metadataDescription": "n8n is a visual workflow-automation platform that connects applications and APIs, with AI actions, human review, and hosting options.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Workflow automation",
+        "Visual workflow editor",
+        "Native integrations and HTTP API connections",
+        "AI actions with human-in-the-loop controls",
+        "Self-hosted and cloud deployment",
+        "Workflow execution inspection and error recovery"
+      ]
     },
     {
       "id": "sintra",
@@ -1106,7 +1175,17 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Sintra | Distilled Marketplace",
       "metadataDescription": "Sintra offers AI employees tailored for small business owners, featuring 12 specialized assistants in areas like social media, business, and sales.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "softr",
@@ -1174,7 +1253,19 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Softr | Distilled Marketplace",
       "metadataDescription": "Softr is a platform that enables users to build custom applications and websites without needing to write code.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "App creation"
+      ]
     },
     {
       "id": "synthflow",
@@ -1255,14 +1346,28 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Synthflow AI | Distilled Marketplace",
       "metadataDescription": "Synthflow AI offers an effortless way to automate phone calls using AI voice agents, allowing businesses to avoid missed calls and enhance lead conversion.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Automated phone calls",
+        "AI voice agents",
+        "Lead-conversion workflows"
+      ]
     },
     {
       "id": "airwallex",
       "name": "Airwallex",
       "slug": "airwallex",
       "h1": "Airwallex",
-      "summary": "Explore Airwallex’s website for current information. Listed in Banking & Neobanking: Evaluate accounts and cash movement around operational access and controls.",
+      "summary": "Airwallex: Compare business accounts around access, cash movement, and controls.",
       "primaryCategoryId": "banking-neobanking",
       "categoryIds": [
         "banking-neobanking"
@@ -1310,7 +1415,17 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "Airwallex | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "found",
@@ -1496,14 +1611,30 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Found | Distilled Marketplace",
       "metadataDescription": "Found combines business checking with expense tracking, invoicing, tax estimates and contractor-payment tools.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Business checking and debit card",
+        "Expense categorization and reports",
+        "Tax savings and estimates",
+        "Contractor payments and 1099 tools",
+        "Invoicing"
+      ]
     },
     {
       "id": "lili",
       "name": "Lili",
       "slug": "lili",
       "h1": "Lili",
-      "summary": "Explore Lili’s website for current information. Listed in Banking & Neobanking: Evaluate accounts and cash movement around operational access and controls.",
+      "summary": "Lili: Compare business accounts around access, cash movement, and controls.",
       "primaryCategoryId": "banking-neobanking",
       "categoryIds": [
         "banking-neobanking"
@@ -1562,14 +1693,24 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Lili | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "novo",
       "name": "Novo",
       "slug": "novo",
       "h1": "Novo",
-      "summary": "Explore Novo’s website for current information. Listed in Banking & Neobanking: Evaluate accounts and cash movement around operational access and controls.",
+      "summary": "Novo: Compare business accounts around access, cash movement, and controls.",
       "primaryCategoryId": "banking-neobanking",
       "categoryIds": [
         "banking-neobanking"
@@ -1639,14 +1780,24 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Novo | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "ramp",
       "name": "Ramp",
       "slug": "ramp",
       "h1": "Ramp",
-      "summary": "Explore Ramp’s website for current information. Listed in Budgeting & FinanceOps: Make spending, cash visibility and planning routines consistent.",
+      "summary": "Ramp: Evaluate spending visibility, planning routines, and reporting needs.",
       "primaryCategoryId": "budgeting-finops",
       "categoryIds": [
         "budgeting-finops"
@@ -1695,14 +1846,24 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Ramp | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "creditrepaircloud",
       "name": "Credit Repair Cloud",
       "slug": "creditrepaircloud",
       "h1": "Credit Repair Cloud",
-      "summary": "Explore Credit Repair Cloud’s website for current information. Listed in Business Credit: Organize business credit records and education before evaluating any product or service.",
+      "summary": "Credit Repair Cloud: Review business credit education, records, and product fit before applying.",
       "primaryCategoryId": "business-credit",
       "categoryIds": [
         "business-credit"
@@ -1741,14 +1902,23 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "Credit Repair Cloud | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "creditsuite",
       "name": "Credit Suite",
       "slug": "creditsuite",
       "h1": "Credit Suite",
-      "summary": "Explore Credit Suite’s website for current information. Listed in Business Credit: Organize business credit records and education before evaluating any product or service.",
+      "summary": "Credit Suite: Review business credit education, records, and product fit before applying.",
       "primaryCategoryId": "business-credit",
       "categoryIds": [
         "business-credit"
@@ -1787,7 +1957,16 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Credit Suite | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "dunbradstreet",
@@ -1864,14 +2043,23 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Dun & Bradstreet | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "fairfigure",
       "name": "FairFigure",
       "slug": "fairfigure",
       "h1": "FairFigure",
-      "summary": "Explore FairFigure’s website for current information. Listed in Business Credit: Organize business credit records and education before evaluating any product or service.",
+      "summary": "FairFigure: Review business credit education, records, and product fit before applying.",
       "primaryCategoryId": "business-credit",
       "categoryIds": [
         "business-credit"
@@ -1909,14 +2097,23 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "FairFigure | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "nav",
       "name": "Nav",
       "slug": "nav",
       "h1": "Nav",
-      "summary": "Explore Nav’s website for current information. Listed in Business Credit: Organize business credit records and education before evaluating any product or service.",
+      "summary": "Nav: Review business credit education, records, and product fit before applying.",
       "primaryCategoryId": "business-credit",
       "categoryIds": [
         "business-credit"
@@ -1965,7 +2162,16 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Nav | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "close",
@@ -2028,7 +2234,20 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Close | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Sales CRM",
+        "Built-in communication and automation"
+      ]
     },
     {
       "id": "pipedrive",
@@ -2219,7 +2438,23 @@
       },
       "metadataTitle": "Pipedrive | Distilled Marketplace",
       "metadataDescription": "Pipedrive is a sales CRM for tracking leads, managing pipelines, automating follow-ups and analyzing sales activity.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Customizable deal pipelines",
+        "Lead and contact management",
+        "Sales automations",
+        "Reports and dashboards",
+        "App integrations"
+      ]
     },
     {
       "id": "gorgias",
@@ -2385,7 +2620,23 @@
       },
       "metadataTitle": "Gorgias | Distilled Marketplace",
       "metadataDescription": "Gorgias centralizes e-commerce customer conversations, order context and support workflows across multiple channels.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Unified customer service inbox",
+        "E-commerce order context and actions",
+        "Ticket management and routing",
+        "Customer support automation",
+        "Helpdesk reporting"
+      ]
     },
     {
       "id": "printify",
@@ -2440,7 +2691,19 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Printify | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Print-on-demand order production"
+      ]
     },
     {
       "id": "shipbob",
@@ -2495,7 +2758,19 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "ShipBob | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "E-commerce fulfillment"
+      ]
     },
     {
       "id": "spocket",
@@ -2561,14 +2836,26 @@
         "classification": "historical_source_description"
       },
       "metadataTitle": "Spocket | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Invoice creation"
+      ]
     },
     {
       "id": "thimble",
       "name": "Thimble",
       "slug": "thimble",
       "h1": "Thimble",
-      "summary": "Explore Thimble’s website for current information. Listed in Insurance & Benefits: Map protection and benefits needs before reviewing policy or plan terms.",
+      "summary": "Thimble: Compare coverage and benefits against your business risks and workforce.",
       "primaryCategoryId": "insurance-benefits",
       "categoryIds": [
         "insurance-benefits"
@@ -2606,7 +2893,17 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "Thimble | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "People & risk",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "businessanywhere",
@@ -2701,14 +2998,31 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Business Anywhere | Distilled Marketplace",
       "metadataDescription": "Business Anywhere: This platform provides a user-friendly dashboard for essential business services, including company formation, registered agent service,",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "People & risk",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Company formation",
+        "Registered agent service",
+        "Virtual mailbox",
+        "Online notary",
+        "Business formation services"
+      ]
     },
     {
       "id": "northwestregisteredagent",
       "name": "Northwest Registered Agent LLC",
       "slug": "northwestregisteredagent",
       "h1": "Northwest Registered Agent LLC",
-      "summary": "Explore Northwest Registered Agent LLC’s website for current information. Listed in Legal & Compliance: Find the right professional and operational process for obligations and records.",
+      "summary": "Northwest Registered Agent LLC: Evaluate legal and compliance support for your obligations and recordkeeping.",
       "primaryCategoryId": "legal-compliance",
       "categoryIds": [
         "legal-compliance"
@@ -2747,14 +3061,25 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "Northwest Registered Agent LLC | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "People & risk",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "uslegalforms",
       "name": "USLegalForms",
       "slug": "uslegalforms",
       "h1": "USLegalForms",
-      "summary": "Explore USLegalForms’s website for current information. Listed in Legal & Compliance: Find the right professional and operational process for obligations and records.",
+      "summary": "USLegalForms: Evaluate legal and compliance support for your obligations and recordkeeping.",
       "primaryCategoryId": "legal-compliance",
       "categoryIds": [
         "legal-compliance"
@@ -2792,7 +3117,18 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "USLegalForms | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "People & risk",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "brightlocal",
@@ -2848,7 +3184,19 @@
         "classification": "historical_source_description"
       },
       "metadataTitle": "BrightLocal | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Analytics reporting"
+      ]
     },
     {
       "id": "landingi",
@@ -2906,14 +3254,24 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Landingi | Distilled Marketplace",
       "metadataDescription": "Landingi is a user-friendly platform designed for marketing professionals to create effective landing pages.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "semrush",
       "name": "Semrush",
       "slug": "semrush",
       "h1": "Semrush",
-      "summary": "Explore Semrush’s website for current information. Listed in Marketing & SEO: Evaluate channels and measurement before buying campaigns or software.",
+      "summary": "Semrush: Compare marketing tools around channels, measurement, and campaign workflow.",
       "primaryCategoryId": "marketing-seo",
       "categoryIds": [
         "marketing-seo"
@@ -2972,14 +3330,24 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Semrush | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "tailwind",
       "name": "Tailwind",
       "slug": "tailwind",
       "h1": "Tailwind",
-      "summary": "Explore Tailwind’s website for current information. Listed in Marketing & SEO: Evaluate channels and measurement before buying campaigns or software.",
+      "summary": "Tailwind: Compare marketing tools around channels, measurement, and campaign workflow.",
       "primaryCategoryId": "marketing-seo",
       "categoryIds": [
         "marketing-seo"
@@ -3039,14 +3407,24 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Tailwind | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "ubersuggest",
       "name": "Ubersuggest",
       "slug": "ubersuggest",
       "h1": "Ubersuggest",
-      "summary": "Explore Ubersuggest’s website for current information. Listed in Marketing & SEO: Evaluate channels and measurement before buying campaigns or software.",
+      "summary": "Ubersuggest: Compare marketing tools around channels, measurement, and campaign workflow.",
       "primaryCategoryId": "marketing-seo",
       "categoryIds": [
         "marketing-seo"
@@ -3094,7 +3472,17 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "Ubersuggest | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "melio",
@@ -3159,14 +3547,26 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Melio | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Small-business bill payment"
+      ]
     },
     {
       "id": "clickup",
       "name": "ClickUp",
       "slug": "clickup",
       "h1": "ClickUp",
-      "summary": "Explore ClickUp’s website for current information. Listed in Productivity: Organize work, handoffs and knowledge without adding unnecessary tool sprawl.",
+      "summary": "ClickUp: Compare ways to coordinate work, handoffs, and shared knowledge.",
       "primaryCategoryId": "productivity",
       "categoryIds": [
         "productivity"
@@ -3216,14 +3616,25 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "ClickUp | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "rentredi",
       "name": "RentRedi",
       "slug": "rentredi",
       "h1": "RentRedi",
-      "summary": "Explore RentRedi’s website for current information. Listed in Real Estate Services: Coordinate property-related specialists, records and transactions by use case.",
+      "summary": "RentRedi: Evaluate property workflows, records, and transaction support.",
       "primaryCategoryId": "real-estate-services",
       "categoryIds": [
         "real-estate-services"
@@ -3273,14 +3684,24 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "RentRedi | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "People & risk",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "stessa",
       "name": "Stessa",
       "slug": "stessa",
       "h1": "Stessa",
-      "summary": "Explore Stessa’s website for current information. Listed in Real Estate Services: Coordinate property-related specialists, records and transactions by use case.",
+      "summary": "Stessa: Evaluate property workflows, records, and transaction support.",
       "primaryCategoryId": "real-estate-services",
       "categoryIds": [
         "real-estate-services"
@@ -3318,7 +3739,17 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "Stessa | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "People & risk",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "fliki",
@@ -3392,14 +3823,27 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Fliki | Distilled Marketplace",
       "metadataDescription": "Fliki is an innovative platform that uses artificial intelligence to transform text into engaging videos with AI-generated voices.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Text-to-video",
+        "AI-generated voices"
+      ]
     },
     {
       "id": "invideo",
       "name": "InVideo",
       "slug": "invideo",
       "h1": "InVideo",
-      "summary": "Explore InVideo’s website for current information. Listed in Social Media & Content: Plan publishing and community work around a defined audience and evidence of response.",
+      "summary": "InVideo: Compare content planning, publishing, and audience workflow.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -3458,14 +3902,24 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "InVideo | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "renderforest",
       "name": "Renderforest",
       "slug": "renderforest",
       "h1": "Renderforest",
-      "summary": "Explore Renderforest’s website for current information. Listed in Social Media & Content: Plan publishing and community work around a defined audience and evidence of response.",
+      "summary": "Renderforest: Compare content planning, publishing, and audience workflow.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -3503,14 +3957,24 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "Renderforest | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "veed",
       "name": "VEED",
       "slug": "veed",
       "h1": "VEED",
-      "summary": "Explore VEED’s website for current information. Listed in Social Media & Content: Plan publishing and community work around a defined audience and evidence of response.",
+      "summary": "VEED: Compare content planning, publishing, and audience workflow.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -3569,14 +4033,24 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "VEED | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "10web",
       "name": "10Web",
       "slug": "10web",
       "h1": "10Web",
-      "summary": "Explore 10Web’s website for current information. Listed in AI & Automation: Reduce repetitive work while keeping a human accountable for exceptions and data quality.",
+      "summary": "10Web: Evaluate automation around repeatable tasks, data quality, and human review.",
       "primaryCategoryId": "ai-automation",
       "categoryIds": [
         "ai-automation"
@@ -3614,14 +4088,24 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "10Web | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "aicascadesolutions",
       "name": "AI Cascade Solutions Corp.",
       "slug": "aicascadesolutions",
       "h1": "AI Cascade Solutions Corp.",
-      "summary": "Explore AI Cascade Solutions Corp.’s website for current information. Listed in AI & Automation: Reduce repetitive work while keeping a human accountable for exceptions and data quality.",
+      "summary": "AI Cascade Solutions Corp.: Evaluate automation around repeatable tasks, data quality, and human review.",
       "primaryCategoryId": "ai-automation",
       "categoryIds": [
         "ai-automation"
@@ -3660,14 +4144,24 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "AI Cascade Solutions Corp. | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "aisdr",
       "name": "AiSDR, Inc.",
       "slug": "aisdr",
       "h1": "AiSDR, Inc.",
-      "summary": "Explore AiSDR, Inc.’s website for current information. Listed in AI & Automation: Reduce repetitive work while keeping a human accountable for exceptions and data quality.",
+      "summary": "AiSDR, Inc.: Evaluate automation around repeatable tasks, data quality, and human review.",
       "primaryCategoryId": "ai-automation",
       "categoryIds": [
         "ai-automation"
@@ -3706,14 +4200,24 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "AiSDR, Inc. | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "appypie",
       "name": "AppyPie.com",
       "slug": "appypie",
       "h1": "AppyPie.com",
-      "summary": "Explore AppyPie.com’s website for current information. Listed in AI & Automation: Reduce repetitive work while keeping a human accountable for exceptions and data quality.",
+      "summary": "AppyPie.com: Evaluate automation around repeatable tasks, data quality, and human review.",
       "primaryCategoryId": "ai-automation",
       "categoryIds": [
         "ai-automation"
@@ -3751,14 +4255,24 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "AppyPie.com | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "base44",
       "name": "Base44",
       "slug": "base44",
       "h1": "Base44",
-      "summary": "Explore Base44’s website for current information. Listed in AI & Automation: Reduce repetitive work while keeping a human accountable for exceptions and data quality.",
+      "summary": "Base44: Evaluate automation around repeatable tasks, data quality, and human review.",
       "primaryCategoryId": "ai-automation",
       "categoryIds": [
         "ai-automation"
@@ -3796,7 +4310,17 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "Base44 | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "botsify",
@@ -3853,7 +4377,19 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Botsify | Distilled Marketplace",
       "metadataDescription": "Botsify is an affiliate program that allows users to earn commissions by promoting their chatbot solutions.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Chatbot functionality"
+      ]
     },
     {
       "id": "chatbase",
@@ -3920,7 +4456,19 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Chatbase | Distilled Marketplace",
       "metadataDescription": "Chatbase is a platform that allows users to create custom ChatGPT models tailored to their specific data, enhancing conversational AI capabilities.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Customer support chatbots"
+      ]
     },
     {
       "id": "cheatlayer",
@@ -3977,7 +4525,17 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Cheat Layer | Distilled Marketplace",
       "metadataDescription": "Cheat Layer is an innovative platform that enables no-code business automation using ChatGPT, allowing users to streamline their processes without needing ",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "emergent",
@@ -4044,7 +4602,19 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Emergent | Distilled Marketplace",
       "metadataDescription": "Emergent is an AI-powered app development platform that allows users to create applications without any coding required.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "App creation"
+      ]
     },
     {
       "id": "glide",
@@ -4107,7 +4677,20 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Glide | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "No-code application development",
+        "Internal and external business apps"
+      ]
     },
     {
       "id": "pickaxe",
@@ -4154,7 +4737,17 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Pickaxe | Distilled Marketplace",
       "metadataDescription": "Pickaxe is an affiliate program that allows participants to earn commissions by promoting their AI app services.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "sitegptsaffiliateprogram",
@@ -4211,7 +4804,17 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "SiteGPT's Affiliate Program | Distilled Marketplace",
       "metadataDescription": "By signing up through your unique affiliate link, you can offer businesses an advanced tool to enhance their customer service experience.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "stammerai",
@@ -4268,7 +4871,17 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Stammer.ai | Distilled Marketplace",
       "metadataDescription": "http://stammer.ai/ is a white-label AI SaaS platform that offers businesses the ability to integrate advanced speech recognition and processing technologie",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "tars",
@@ -4342,14 +4955,27 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Tars | Distilled Marketplace",
       "metadataDescription": "Tars is a platform that enhances customer experience and employee productivity through Conversational AI.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Chatbot functionality",
+        "Customer support chatbots"
+      ]
     },
     {
       "id": "fintaio",
       "name": "Finta.io",
       "slug": "fintaio",
       "h1": "Finta.io",
-      "summary": "Explore Finta.io’s website for current information. Listed in Budgeting & FinanceOps: Make spending, cash visibility and planning routines consistent.",
+      "summary": "Finta.io: Evaluate spending visibility, planning routines, and reporting needs.",
       "primaryCategoryId": "budgeting-finops",
       "categoryIds": [
         "budgeting-finops"
@@ -4398,7 +5024,17 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Finta.io | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "projectionlab",
@@ -4455,14 +5091,24 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "ProjectionLab | Distilled Marketplace",
       "metadataDescription": "ProjectionLab is a platform designed to empower individuals and financial professionals in creating intuitive financial plans.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "tillermoney",
       "name": "Tiller Money (US)",
       "slug": "tillermoney",
       "h1": "Tiller Money (US)",
-      "summary": "Explore Tiller Money (US)’s website for current information. Listed in Budgeting & FinanceOps: Make spending, cash visibility and planning routines consistent.",
+      "summary": "Tiller Money (US): Evaluate spending visibility, planning routines, and reporting needs.",
       "primaryCategoryId": "budgeting-finops",
       "categoryIds": [
         "budgeting-finops"
@@ -4500,14 +5146,24 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "Tiller Money (US) | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "viably",
       "name": "Viably",
       "slug": "viably",
       "h1": "Viably",
-      "summary": "Explore Viably’s website for current information. Listed in Budgeting & FinanceOps: Make spending, cash visibility and planning routines consistent.",
+      "summary": "Viably: Evaluate spending visibility, planning routines, and reporting needs.",
       "primaryCategoryId": "budgeting-finops",
       "categoryIds": [
         "budgeting-finops"
@@ -4546,14 +5202,24 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "Viably | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "creditfirmnet",
       "name": "CreditFirm.net",
       "slug": "creditfirmnet",
       "h1": "CreditFirm.net",
-      "summary": "Explore CreditFirm.net’s website for current information. Listed in Business Credit: Organize business credit records and education before evaluating any product or service.",
+      "summary": "CreditFirm.net: Review business credit education, records, and product fit before applying.",
       "primaryCategoryId": "business-credit",
       "categoryIds": [
         "business-credit"
@@ -4592,14 +5258,23 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "CreditFirm.net | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "fundandgrow",
       "name": "Fund&Grow",
       "slug": "fundandgrow",
       "h1": "Fund&Grow",
-      "summary": "Explore Fund&Grow’s website for current information. Listed in Business Credit: Organize business credit records and education before evaluating any product or service.",
+      "summary": "Fund&Grow: Review business credit education, records, and product fit before applying.",
       "primaryCategoryId": "business-credit",
       "categoryIds": [
         "business-credit"
@@ -4648,14 +5323,23 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Fund&Grow | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "growcredit",
       "name": "GrowCredit",
       "slug": "growcredit",
       "h1": "GrowCredit",
-      "summary": "Explore GrowCredit’s website for current information. Listed in Business Credit: Organize business credit records and education before evaluating any product or service.",
+      "summary": "GrowCredit: Review business credit education, records, and product fit before applying.",
       "primaryCategoryId": "business-credit",
       "categoryIds": [
         "business-credit"
@@ -4704,14 +5388,23 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "GrowCredit | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "kikoff",
       "name": "Kikoff",
       "slug": "kikoff",
       "h1": "Kikoff",
-      "summary": "Explore Kikoff’s website for current information. Listed in Business Credit: Organize business credit records and education before evaluating any product or service.",
+      "summary": "Kikoff: Review business credit education, records, and product fit before applying.",
       "primaryCategoryId": "business-credit",
       "categoryIds": [
         "business-credit"
@@ -4760,7 +5453,16 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Kikoff | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "apolloio",
@@ -4822,7 +5524,20 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Apollo.io | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Contact data for sales outreach",
+        "Sales engagement workflows"
+      ]
     },
     {
       "id": "capsule",
@@ -4877,7 +5592,19 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Capsule | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Small-business sales CRM"
+      ]
     },
     {
       "id": "closely",
@@ -4932,7 +5659,19 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Closely | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Email and LinkedIn outreach"
+      ]
     },
     {
       "id": "gong",
@@ -4994,7 +5733,20 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Gong | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Sales conversation intelligence",
+        "Forecasting insights"
+      ]
     },
     {
       "id": "insightly",
@@ -5049,7 +5801,19 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Insightly | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "CRM management"
+      ]
     },
     {
       "id": "kaspr",
@@ -5112,7 +5876,20 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Kaspr | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Business contact data",
+        "Browser-based prospecting"
+      ]
     },
     {
       "id": "keap",
@@ -5174,7 +5951,20 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Keap | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "CRM and sales automation",
+        "Marketing automation"
+      ]
     },
     {
       "id": "landbot",
@@ -5229,7 +6019,19 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Landbot | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Website and WhatsApp chatbots"
+      ]
     },
     {
       "id": "lusha",
@@ -5285,7 +6087,19 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Lusha | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "B2B contact discovery"
+      ]
     },
     {
       "id": "monday",
@@ -5347,7 +6161,20 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "monday.com | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Work and task management",
+        "Team roadmap planning"
+      ]
     },
     {
       "id": "replyio",
@@ -5416,14 +6243,28 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Reply.io | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Multichannel sales engagement",
+        "Email validation and warm-up",
+        "Lead-generation workflows"
+      ]
     },
     {
       "id": "rocketreach",
       "name": "RocketReach LLC",
       "slug": "rocketreach",
       "h1": "RocketReach LLC",
-      "summary": "Explore RocketReach LLC’s website for current information. Listed in CRM & Sales: Track customer conversations, ownership and follow-up in one working process.",
+      "summary": "RocketReach LLC: Compare customer records, follow-up processes, and sales handoffs.",
       "primaryCategoryId": "crm-sales",
       "categoryIds": [
         "crm-sales"
@@ -5461,7 +6302,17 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "RocketReach LLC | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "salesflare",
@@ -5523,14 +6374,27 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Salesflare | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "B2B sales CRM",
+        "Email and LinkedIn integration"
+      ]
     },
     {
       "id": "salesrabbit",
       "name": "SalesRabbit",
       "slug": "salesrabbit",
       "h1": "SalesRabbit",
-      "summary": "Explore SalesRabbit’s website for current information. Listed in CRM & Sales: Track customer conversations, ownership and follow-up in one working process.",
+      "summary": "SalesRabbit: Compare customer records, follow-up processes, and sales handoffs.",
       "primaryCategoryId": "crm-sales",
       "categoryIds": [
         "crm-sales"
@@ -5568,7 +6432,17 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "SalesRabbit | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "seamlessai",
@@ -5623,7 +6497,19 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Seamless.AI | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "AI-supported sales prospecting"
+      ]
     },
     {
       "id": "streakcrmforgmail",
@@ -5678,7 +6564,19 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Streak - CRM for Gmail | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Gmail-embedded CRM"
+      ]
     },
     {
       "id": "thryv",
@@ -5740,14 +6638,27 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Thryv | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Business task automation",
+        "Customer management"
+      ]
     },
     {
       "id": "tidio",
       "name": "Tidio LLC",
       "slug": "tidio",
       "h1": "Tidio LLC",
-      "summary": "Explore Tidio LLC’s website for current information. Listed in CRM & Sales: Track customer conversations, ownership and follow-up in one working process.",
+      "summary": "Tidio LLC: Compare customer records, follow-up processes, and sales handoffs.",
       "primaryCategoryId": "crm-sales",
       "categoryIds": [
         "crm-sales"
@@ -5795,7 +6706,17 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "Tidio LLC | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "zoominfo",
@@ -5850,7 +6771,19 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "ZoomInfo | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Sales intelligence"
+      ]
     },
     {
       "id": "carbon6",
@@ -5912,7 +6845,20 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Carbon6 | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Amazon listing optimization",
+        "Amazon inventory management"
+      ]
     },
     {
       "id": "finaleinventory",
@@ -5974,7 +6920,20 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Finale Inventory | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Multichannel inventory management",
+        "Warehouse management"
+      ]
     },
     {
       "id": "getida",
@@ -6029,7 +6988,19 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Getida | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Amazon FBA reimbursement auditing"
+      ]
     },
     {
       "id": "increff",
@@ -6092,7 +7063,20 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Increff | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Retail inventory planning",
+        "Stock replenishment"
+      ]
     },
     {
       "id": "inflowinventory",
@@ -6147,7 +7131,19 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "inFlow Inventory | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Inventory management for wholesale and ecommerce"
+      ]
     },
     {
       "id": "justuno",
@@ -6209,7 +7205,20 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Justuno | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "On-site lead capture",
+        "Personalized product recommendations"
+      ]
     },
     {
       "id": "katanacloudinventory",
@@ -6271,7 +7280,20 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Katana Cloud Inventory | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Inventory management",
+        "Accounting and e-commerce connections"
+      ]
     },
     {
       "id": "maxretail",
@@ -6326,7 +7348,19 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Max Retail | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Excess inventory resale"
+      ]
     },
     {
       "id": "postscript",
@@ -6381,7 +7415,19 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Postscript | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "SMS marketing for Shopify"
+      ]
     },
     {
       "id": "sellfy",
@@ -6436,7 +7482,19 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Sellfy | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Online store creation"
+      ]
     },
     {
       "id": "sendcloud",
@@ -6491,7 +7549,19 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Sendcloud | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "E-commerce shipping management"
+      ]
     },
     {
       "id": "sharetribe",
@@ -6546,7 +7616,19 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Sharetribe | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Two-sided marketplace creation"
+      ]
     },
     {
       "id": "stamped",
@@ -6608,7 +7690,20 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Stamped | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Product reviews and ratings",
+        "Customer loyalty programs"
+      ]
     },
     {
       "id": "subbly",
@@ -6663,7 +7758,19 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Subbly | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Subscription commerce management"
+      ]
     },
     {
       "id": "trendsi",
@@ -6718,7 +7825,19 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Trendsi | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Fashion dropshipping for Shopify"
+      ]
     },
     {
       "id": "vwo",
@@ -6780,7 +7899,20 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "VWO | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "A/B testing",
+        "Conversion optimization"
+      ]
     },
     {
       "id": "gusto",
@@ -6826,7 +7958,17 @@
         "classification": "historical_source_description"
       },
       "metadataTitle": "Gusto | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "People & risk",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "recruitee",
@@ -6888,14 +8030,27 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Recruitee | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "People & risk",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Collaborative recruiting",
+        "Interview coordination"
+      ]
     },
     {
       "id": "crowdhealth",
       "name": "CrowdHealth",
       "slug": "crowdhealth",
       "h1": "CrowdHealth",
-      "summary": "Explore CrowdHealth’s website for current information. Listed in Insurance & Benefits: Map protection and benefits needs before reviewing policy or plan terms.",
+      "summary": "CrowdHealth: Compare coverage and benefits against your business risks and workforce.",
       "primaryCategoryId": "insurance-benefits",
       "categoryIds": [
         "insurance-benefits"
@@ -6944,14 +8099,24 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "CrowdHealth | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "People & risk",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "insurify",
       "name": "Insurify",
       "slug": "insurify",
       "h1": "Insurify",
-      "summary": "Explore Insurify’s website for current information. Listed in Insurance & Benefits: Map protection and benefits needs before reviewing policy or plan terms.",
+      "summary": "Insurify: Compare coverage and benefits against your business risks and workforce.",
       "primaryCategoryId": "insurance-benefits",
       "categoryIds": [
         "insurance-benefits"
@@ -6989,14 +8154,24 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "Insurify | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "People & risk",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "betterlegal",
       "name": "BetterLegal Inc",
       "slug": "betterlegal",
       "h1": "BetterLegal Inc",
-      "summary": "Explore BetterLegal Inc’s website for current information. Listed in Legal & Compliance: Find the right professional and operational process for obligations and records.",
+      "summary": "BetterLegal Inc: Evaluate legal and compliance support for your obligations and recordkeeping.",
       "primaryCategoryId": "legal-compliance",
       "categoryIds": [
         "legal-compliance"
@@ -7035,14 +8210,25 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "BetterLegal Inc | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "People & risk",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "efilecom",
       "name": "E-File.com (US)",
       "slug": "efilecom",
       "h1": "E-File.com (US)",
-      "summary": "Explore E-File.com (US)’s website for current information. Listed in Legal & Compliance: Find the right professional and operational process for obligations and records.",
+      "summary": "E-File.com (US): Evaluate legal and compliance support for your obligations and recordkeeping.",
       "primaryCategoryId": "legal-compliance",
       "categoryIds": [
         "legal-compliance"
@@ -7080,7 +8266,18 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "E-File.com (US) | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "People & risk",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "authority",
@@ -7136,14 +8333,25 @@
         "classification": "historical_source_description"
       },
       "metadataTitle": "Inc Authority | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "People & risk",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "mycompanyworks",
       "name": "MyCompanyWorks, Inc.",
       "slug": "mycompanyworks",
       "h1": "MyCompanyWorks, Inc.",
-      "summary": "Explore MyCompanyWorks, Inc.’s website for current information. Listed in Legal & Compliance: Find the right professional and operational process for obligations and records.",
+      "summary": "MyCompanyWorks, Inc.: Evaluate legal and compliance support for your obligations and recordkeeping.",
       "primaryCategoryId": "legal-compliance",
       "categoryIds": [
         "legal-compliance"
@@ -7182,14 +8390,25 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "MyCompanyWorks, Inc. | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "People & risk",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "mycorporation",
       "name": "MyCorporation",
       "slug": "mycorporation",
       "h1": "MyCorporation",
-      "summary": "Explore MyCorporation’s website for current information. Listed in Legal & Compliance: Find the right professional and operational process for obligations and records.",
+      "summary": "MyCorporation: Evaluate legal and compliance support for your obligations and recordkeeping.",
       "primaryCategoryId": "legal-compliance",
       "categoryIds": [
         "legal-compliance"
@@ -7228,7 +8447,18 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "MyCorporation | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "People & risk",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "namecheap",
@@ -7274,7 +8504,18 @@
         "classification": "historical_source_description"
       },
       "metadataTitle": "Namecheap | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "People & risk",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "ownr",
@@ -7336,14 +8577,28 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Ownr | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "People & risk",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Business registration and incorporation",
+        "Compliance management"
+      ]
     },
     {
       "id": "zenbusinesspbc",
       "name": "ZenBusiness, PBC",
       "slug": "zenbusinesspbc",
       "h1": "ZenBusiness, PBC",
-      "summary": "Explore ZenBusiness, PBC’s website for current information. Listed in Legal & Compliance: Find the right professional and operational process for obligations and records.",
+      "summary": "ZenBusiness, PBC: Evaluate legal and compliance support for your obligations and recordkeeping.",
       "primaryCategoryId": "legal-compliance",
       "categoryIds": [
         "legal-compliance"
@@ -7392,7 +8647,20 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "ZenBusiness, PBC | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "People & risk",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Business formation services"
+      ]
     },
     {
       "id": "adcreativeai",
@@ -7448,7 +8716,19 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "AdCreative.ai | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "AI-generated advertising creatives"
+      ]
     },
     {
       "id": "affonso",
@@ -7536,7 +8816,22 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Affonso | Distilled Marketplace",
       "metadataDescription": "Affonso is an innovative affiliate marketing platform specifically designed for SaaS businesses.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Affiliate program management",
+        "Fraud protection",
+        "Custom commission structures",
+        "Branded partner portals"
+      ]
     },
     {
       "id": "aweber",
@@ -7592,7 +8887,19 @@
         "classification": "historical_source_description"
       },
       "metadataTitle": "AWeber | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Email marketing automation"
+      ]
     },
     {
       "id": "callrail",
@@ -7654,7 +8961,20 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "CallRail | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Lead attribution",
+        "Call tracking and lead intelligence"
+      ]
     },
     {
       "id": "getresponse",
@@ -7710,7 +9030,19 @@
         "classification": "historical_source_description"
       },
       "metadataTitle": "GetResponse | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Email marketing automation"
+      ]
     },
     {
       "id": "instapage",
@@ -7772,7 +9104,20 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Instapage | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Landing page optimization",
+        "Advertising landing pages"
+      ]
     },
     {
       "id": "leadpages",
@@ -7834,14 +9179,27 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Leadpages | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Landing-page builder",
+        "Website creation"
+      ]
     },
     {
       "id": "mailchimp",
       "name": "Mailchimp",
       "slug": "mailchimp",
       "h1": "Mailchimp",
-      "summary": "Explore Mailchimp’s website for current information. Listed in Marketing & SEO: Evaluate channels and measurement before buying campaigns or software.",
+      "summary": "Mailchimp: Compare marketing tools around channels, measurement, and campaign workflow.",
       "primaryCategoryId": "marketing-seo",
       "categoryIds": [
         "marketing-seo"
@@ -7879,7 +9237,17 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "Mailchimp | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "manychat",
@@ -7925,14 +9293,24 @@
         "classification": "historical_source_description"
       },
       "metadataTitle": "Manychat | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "moosend",
       "name": "Moosend",
       "slug": "moosend",
       "h1": "Moosend",
-      "summary": "Explore Moosend’s website for current information. Listed in Marketing & SEO: Evaluate channels and measurement before buying campaigns or software.",
+      "summary": "Moosend: Compare marketing tools around channels, measurement, and campaign workflow.",
       "primaryCategoryId": "marketing-seo",
       "categoryIds": [
         "marketing-seo"
@@ -7970,14 +9348,24 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "Moosend | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "promotekit",
       "name": "PromoteKit",
       "slug": "promotekit",
       "h1": "PromoteKit",
-      "summary": "Explore PromoteKit’s website for current information. Listed in Marketing & SEO: Evaluate channels and measurement before buying campaigns or software.",
+      "summary": "PromoteKit: Compare marketing tools around channels, measurement, and campaign workflow.",
       "primaryCategoryId": "marketing-seo",
       "categoryIds": [
         "marketing-seo"
@@ -8027,7 +9415,17 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "PromoteKit | Distilled Marketplace",
       "metadataDescription": "PromoteKit is an affiliate program that offers a generous commission rate of 25% on referred payments without any commission limit.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "socialbee",
@@ -8082,14 +9480,26 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "SocialBee | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Social media management"
+      ]
     },
     {
       "id": "sproutsocial",
       "name": "Sprout Social",
       "slug": "sproutsocial",
       "h1": "Sprout Social",
-      "summary": "Explore Sprout Social’s website for current information. Listed in Marketing & SEO: Evaluate channels and measurement before buying campaigns or software.",
+      "summary": "Sprout Social: Compare marketing tools around channels, measurement, and campaign workflow.",
       "primaryCategoryId": "marketing-seo",
       "categoryIds": [
         "marketing-seo"
@@ -8127,7 +9537,17 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "Sprout Social | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "surfer",
@@ -8189,7 +9609,20 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Surfer | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "SEO keyword research",
+        "Content optimization"
+      ]
     },
     {
       "id": "unbounce",
@@ -8251,14 +9684,27 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Unbounce | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Landing-page creation",
+        "AI-assisted optimization"
+      ]
     },
     {
       "id": "vendasta",
       "name": "Vendasta",
       "slug": "vendasta",
       "h1": "Vendasta",
-      "summary": "Explore Vendasta’s website for current information. Listed in Marketing & SEO: Evaluate channels and measurement before buying campaigns or software.",
+      "summary": "Vendasta: Compare marketing tools around channels, measurement, and campaign workflow.",
       "primaryCategoryId": "marketing-seo",
       "categoryIds": [
         "marketing-seo"
@@ -8296,14 +9742,24 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "Vendasta | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "zerobounce",
       "name": "ZeroBounce",
       "slug": "zerobounce",
       "h1": "ZeroBounce",
-      "summary": "Explore ZeroBounce’s website for current information. Listed in Marketing & SEO: Evaluate channels and measurement before buying campaigns or software.",
+      "summary": "ZeroBounce: Compare marketing tools around channels, measurement, and campaign workflow.",
       "primaryCategoryId": "marketing-seo",
       "categoryIds": [
         "marketing-seo"
@@ -8341,7 +9797,17 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "ZeroBounce | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "paysend",
@@ -8397,14 +9863,24 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Paysend | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Money",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "box",
       "name": "Box Inc.",
       "slug": "box",
       "h1": "Box Inc.",
-      "summary": "Explore Box Inc.’s website for current information. Listed in Productivity: Organize work, handoffs and knowledge without adding unnecessary tool sprawl.",
+      "summary": "Box Inc.: Compare ways to coordinate work, handoffs, and shared knowledge.",
       "primaryCategoryId": "productivity",
       "categoryIds": [
         "productivity"
@@ -8453,7 +9929,18 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Box Inc. | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "claap",
@@ -8520,14 +10007,27 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Claap | Distilled Marketplace",
       "metadataDescription": "Claap is an AI-powered sales assistant that streamlines tedious sales tasks and ensures the application of sales frameworks such as MEDDIC, SPICED, and BAN",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "CRM capabilities"
+      ]
     },
     {
       "id": "krisp",
       "name": "Krisp",
       "slug": "krisp",
       "h1": "Krisp",
-      "summary": "Explore Krisp’s website for current information. Listed in Productivity: Organize work, handoffs and knowledge without adding unnecessary tool sprawl.",
+      "summary": "Krisp: Compare ways to coordinate work, handoffs, and shared knowledge.",
       "primaryCategoryId": "productivity",
       "categoryIds": [
         "productivity"
@@ -8565,14 +10065,25 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "Krisp | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "mindmanager",
       "name": "MindManager",
       "slug": "mindmanager",
       "h1": "MindManager",
-      "summary": "Explore MindManager’s website for current information. Listed in Productivity: Organize work, handoffs and knowledge without adding unnecessary tool sprawl.",
+      "summary": "MindManager: Compare ways to coordinate work, handoffs, and shared knowledge.",
       "primaryCategoryId": "productivity",
       "categoryIds": [
         "productivity"
@@ -8610,14 +10121,25 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "MindManager | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "motion",
       "name": "Motion",
       "slug": "motion",
       "h1": "Motion",
-      "summary": "Explore Motion’s website for current information. Listed in Productivity: Organize work, handoffs and knowledge without adding unnecessary tool sprawl.",
+      "summary": "Motion: Compare ways to coordinate work, handoffs, and shared knowledge.",
       "primaryCategoryId": "productivity",
       "categoryIds": [
         "productivity"
@@ -8666,14 +10188,25 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Motion | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "nordlayer",
       "name": "NordLayer",
       "slug": "nordlayer",
       "h1": "NordLayer",
-      "summary": "Explore NordLayer’s website for current information. Listed in Productivity: Organize work, handoffs and knowledge without adding unnecessary tool sprawl.",
+      "summary": "NordLayer: Compare ways to coordinate work, handoffs, and shared knowledge.",
       "primaryCategoryId": "productivity",
       "categoryIds": [
         "productivity"
@@ -8711,14 +10244,25 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "NordLayer | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "otterai",
       "name": "Otter.ai",
       "slug": "otterai",
       "h1": "Otter.ai",
-      "summary": "Explore Otter.ai’s website for current information. Listed in Productivity: Organize work, handoffs and knowledge without adding unnecessary tool sprawl.",
+      "summary": "Otter.ai: Compare ways to coordinate work, handoffs, and shared knowledge.",
       "primaryCategoryId": "productivity",
       "categoryIds": [
         "productivity"
@@ -8767,7 +10311,18 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Otter.ai | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "pandadoc",
@@ -8829,7 +10384,21 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "PandaDoc | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Proposal creation and tracking",
+        "Electronic signatures"
+      ]
     },
     {
       "id": "taskade",
@@ -8917,7 +10486,23 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Taskade | Distilled Marketplace",
       "metadataDescription": "Taskade is a versatile productivity tool designed for collaborative project management, task tracking, and team communication.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Systems",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing",
+        "established"
+      ],
+      "searchKeywords": [
+        "Project management",
+        "Task tracking",
+        "Team communication",
+        "Team collaboration"
+      ]
     },
     {
       "id": "dealcheckio",
@@ -8963,7 +10548,17 @@
       },
       "metadataTitle": "DealCheck.io | Distilled Marketplace",
       "metadataDescription": "http://dealcheck.io/ is an affiliate platform designed for real estate investors, providing tools for analyzing and managing investment properties.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "People & risk",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "growing",
+        "established"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "autoshortsai",
@@ -9020,14 +10615,24 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "AutoShorts.ai | Distilled Marketplace",
       "metadataDescription": "http://autoshorts.ai/ is an AI-driven platform designed for creating faceless videos tailored for TikTok and YouTube.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "billoapp",
       "name": "Billo.app",
       "slug": "billoapp",
       "h1": "Billo.app",
-      "summary": "Explore Billo.app’s website for current information. Listed in Social Media & Content: Plan publishing and community work around a defined audience and evidence of response.",
+      "summary": "Billo.app: Compare content planning, publishing, and audience workflow.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -9076,14 +10681,24 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Billo.app | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "capcutaffiliateprogram",
       "name": "CapCut Affiliate Program",
       "slug": "capcutaffiliateprogram",
       "h1": "CapCut Affiliate Program",
-      "summary": "Explore CapCut Affiliate Program’s website for current information. Listed in Social Media & Content: Plan publishing and community work around a defined audience and evidence of response.",
+      "summary": "CapCut Affiliate Program: Compare content planning, publishing, and audience workflow.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -9121,7 +10736,17 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "CapCut Affiliate Program | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "deepbrainai",
@@ -9188,7 +10813,19 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "DeepBrain AI | Distilled Marketplace",
       "metadataDescription": "DeepBrain AI offers an innovative affiliate program through AI STUDIO, which is recognized as one of the best AI video generators available.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Video creation"
+      ]
     },
     {
       "id": "elevenlabs",
@@ -9251,7 +10888,20 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Eleven Labs Inc. | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "AI speech generation",
+        "Multilingual voice audio"
+      ]
     },
     {
       "id": "fastshortsai",
@@ -9308,7 +10958,17 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "FastShorts.ai | Distilled Marketplace",
       "metadataDescription": "http://fastshorts.ai/ offers a solution for creating unique, AI-generated short videos that can be automatically uploaded to platforms like TikTok, Shorts,",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "firework",
@@ -9370,14 +11030,27 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Firework | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "Shoppable video",
+        "Digital retail showrooms"
+      ]
     },
     {
       "id": "later",
       "name": "Later",
       "slug": "later",
       "h1": "Later",
-      "summary": "Explore Later’s website for current information. Listed in Social Media & Content: Plan publishing and community work around a defined audience and evidence of response.",
+      "summary": "Later: Compare content planning, publishing, and audience workflow.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -9415,14 +11088,24 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "Later | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "livereactinglivereacting",
       "name": "Live Reacting - livereacting",
       "slug": "livereactinglivereacting",
       "h1": "Live Reacting - livereacting",
-      "summary": "Explore Live Reacting - livereacting’s website for current information. Listed in Social Media & Content: Plan publishing and community work around a defined audience and evidence of response.",
+      "summary": "Live Reacting - livereacting: Compare content planning, publishing, and audience workflow.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -9471,7 +11154,17 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Live Reacting - livereacting | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "murfai",
@@ -9526,7 +11219,19 @@
         "classification": "historical_notion_partnerstack_directory_description"
       },
       "metadataTitle": "Murf AI | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": [
+        "AI voiceover generation"
+      ]
     },
     {
       "id": "pixlr",
@@ -9572,7 +11277,17 @@
         "classification": "historical_source_description"
       },
       "metadataTitle": "Pixlr (US) | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "syllabyio",
@@ -9629,7 +11344,17 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Syllaby.io | Distilled Marketplace",
       "metadataDescription": "http://syllaby.io/ is an innovative platform that allows users to turn any idea into engaging faceless videos and AI avatars.",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "testmythumbnails",
@@ -9686,7 +11411,17 @@
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Testmythumbnails | Distilled Marketplace",
       "metadataDescription": "Preview your Thumbnails live on YouTube",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "videoscribe",
@@ -9742,14 +11477,24 @@
         "classification": "historical_source_description"
       },
       "metadataTitle": "VideoScribe (US) | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "wevideo",
       "name": "WeVideo",
       "slug": "wevideo",
       "h1": "WeVideo",
-      "summary": "Explore WeVideo’s website for current information. Listed in Social Media & Content: Plan publishing and community work around a defined audience and evidence of response.",
+      "summary": "WeVideo: Compare content planning, publishing, and audience workflow.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -9798,14 +11543,24 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "WeVideo | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     },
     {
       "id": "wistia",
       "name": "Wistia",
       "slug": "wistia",
       "h1": "Wistia",
-      "summary": "Explore Wistia’s website for current information. Listed in Social Media & Content: Plan publishing and community work around a defined audience and evidence of response.",
+      "summary": "Wistia: Compare content planning, publishing, and audience workflow.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -9843,7 +11598,17 @@
         "classification": "not_sourced"
       },
       "metadataTitle": "Wistia | Distilled Marketplace",
-      "relatedProviderIds": []
+      "relatedProviderIds": [],
+      "serviceGroup": "Growth",
+      "roles": [
+        "owner",
+        "operator"
+      ],
+      "businessStages": [
+        "starting",
+        "growing"
+      ],
+      "searchKeywords": []
     }
   ],
   "offers": [],
