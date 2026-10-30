@@ -1,0 +1,7 @@
+import Link from "next/link";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { ComparisonWorkspace } from "@/components/ComparisonWorkspace";
+import { Disclosure } from "@/components/Disclosure";
+import { pageMetadata } from "@/lib/seo";
+export const metadata = pageMetadata("Compare business services", "Use a consistent comparison frame. Production provider comparisons require current, sourced records; the optional example is fictional.", "/compare");
+export default function Compare() { return <><Breadcrumbs items={[{ label: "Compare" }]}/><section className="wrap page-lead"><span className="eyebrow">DECISION WORKSPACE / COMPARISON</span><h1>Compare what<br/><em>can be verified.</em></h1><p>Selection, unknowns and source dates matter more than an invented score. The example below is fictional and clearly separated from the live catalog.</p></section><section className="wrap compare-section"><ComparisonWorkspace/><div className="comparison-method"><h2>The production comparison standard</h2><ol><li>Same service category and use case</li><li>Current primary sources for each stated feature and term</li><li>Unknowns shown as unknown, never inferred</li><li>Relationship status and source dates visible</li><li>No paid placement disguised as a ranking</li></ol><Link href="/about" className="text-link">Read the full editorial method →</Link></div><Disclosure compact/></section></>; }

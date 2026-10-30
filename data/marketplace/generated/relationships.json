@@ -1,0 +1,158 @@
+{
+  "categories": [
+    {
+      "id": "accounting-bookkeeping",
+      "related": [
+        "budgeting-finops",
+        "hr-payroll"
+      ]
+    },
+    {
+      "id": "ai-automation",
+      "related": [
+        "productivity",
+        "crm-sales"
+      ]
+    },
+    {
+      "id": "banking-neobanking",
+      "related": [
+        "payments-pos",
+        "budgeting-finops"
+      ]
+    },
+    {
+      "id": "budgeting-finops",
+      "related": [
+        "accounting-bookkeeping",
+        "banking-neobanking"
+      ]
+    },
+    {
+      "id": "business-credit",
+      "related": [
+        "financing",
+        "legal-compliance"
+      ]
+    },
+    {
+      "id": "crm-sales",
+      "related": [
+        "marketing-seo",
+        "ai-automation"
+      ]
+    },
+    {
+      "id": "ecommerce",
+      "related": [
+        "payments-pos",
+        "marketing-seo"
+      ]
+    },
+    {
+      "id": "financing",
+      "related": [
+        "business-credit",
+        "accounting-bookkeeping"
+      ]
+    },
+    {
+      "id": "hr-payroll",
+      "related": [
+        "legal-compliance",
+        "insurance-benefits"
+      ]
+    },
+    {
+      "id": "insurance-benefits",
+      "related": [
+        "legal-compliance",
+        "hr-payroll"
+      ]
+    },
+    {
+      "id": "legal-compliance",
+      "related": [
+        "hr-payroll",
+        "insurance-benefits"
+      ]
+    },
+    {
+      "id": "marketing-seo",
+      "related": [
+        "crm-sales",
+        "social-media-content"
+      ]
+    },
+    {
+      "id": "payments-pos",
+      "related": [
+        "banking-neobanking",
+        "ecommerce"
+      ]
+    },
+    {
+      "id": "productivity",
+      "related": [
+        "ai-automation",
+        "crm-sales"
+      ]
+    },
+    {
+      "id": "real-estate-services",
+      "related": [
+        "legal-compliance",
+        "financing"
+      ]
+    },
+    {
+      "id": "social-media-content",
+      "related": [
+        "marketing-seo",
+        "crm-sales"
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "id": "first-operating-stack",
+      "categories": [
+        "banking-neobanking",
+        "accounting-bookkeeping",
+        "payments-pos",
+        "legal-compliance",
+        "productivity"
+      ]
+    },
+    {
+      "id": "revenue-operations",
+      "categories": [
+        "marketing-seo",
+        "social-media-content",
+        "crm-sales",
+        "ecommerce",
+        "payments-pos"
+      ]
+    },
+    {
+      "id": "cash-visibility",
+      "categories": [
+        "banking-neobanking",
+        "accounting-bookkeeping",
+        "budgeting-finops",
+        "business-credit",
+        "financing"
+      ]
+    },
+    {
+      "id": "team-and-controls",
+      "categories": [
+        "hr-payroll",
+        "insurance-benefits",
+        "legal-compliance",
+        "productivity",
+        "ai-automation"
+      ]
+    }
+  ]
+}

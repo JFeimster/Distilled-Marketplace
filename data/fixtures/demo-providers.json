@@ -1,0 +1,5 @@
+[
+  {"id":"demo-crm-a","name":"Demo CRM A","categoryId":"crm-sales","summary":"Synthetic example focused on a simple contact and follow-up workflow.","pricingModel":"Example: per seat","features":{"contact records":"Illustrative yes","task reminders":"Illustrative yes","workflow automation":"Unknown","data export":"Illustrative yes"},"audience":"Solo operator"},
+  {"id":"demo-crm-b","name":"Demo CRM B","categoryId":"crm-sales","summary":"Synthetic example focused on a shared sales process and handoffs.","pricingModel":"Example: tiered subscription","features":{"contact records":"Illustrative yes","task reminders":"Illustrative yes","workflow automation":"Illustrative yes","data export":"Unknown"},"audience":"Growing team"},
+  {"id":"demo-crm-c","name":"Demo CRM C","categoryId":"crm-sales","summary":"Synthetic example with a smaller feature set for comparison testing.","pricingModel":"Example: usage based","features":{"contact records":"Illustrative yes","task reminders":"Unknown","workflow automation":"Unknown","data export":"Illustrative yes"},"audience":"Owner-led team"}
+]

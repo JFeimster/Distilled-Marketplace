@@ -1,0 +1,10 @@
+Use the current VS Code workspace `distilled-marketplace`.
+
+Read and execute `./_reference/MASTER-MARKETPLACE-PROMPT.md` in full.
+Read `./_reference/SOURCE-AND-OWNERSHIP.md`, `./_reference/MARKETPLACE-CATEGORIES.json`, `./_reference/LEGACY-WIX-SERVICES.md`, and inspect the three shallow-cloned sibling repos if present.
+
+Build the complete Marketplace + Directory Next.js site locally. Reuse the sibling Distilled visual and engineering patterns without blindly copying any site. Build meaningful categories, functional discovery/filtering, comparison, explainable stack finder, disclosures and quality-controlled content architecture. No fabricated providers, affiliate links, discounts or rankings. Clearly distinguish any demo fixtures from verified production data.
+
+Run generation, validation, lint, typecheck, tests, build and HTTP/browser checks available. Produce README, AGENTS, architecture, source policies, deployment and Wix migration notes, and BUILD-REPORT.
+
+Do not create repositories, commit, push, deploy, change DNS, configure Wix, or modify other projects. Report actual test results and unresolved source-data gaps.

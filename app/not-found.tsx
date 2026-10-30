@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function NotFound() { return <section className="wrap simple-page not-found"><span className="eyebrow">404 / NOT IN THE CATALOG</span><h1>This path has no record.</h1><p>We publish a page only when the content or provider evidence supports it.</p><Link href="/directory" className="button button-orange">Open the directory <span aria-hidden="true">↗</span></Link></section>; }

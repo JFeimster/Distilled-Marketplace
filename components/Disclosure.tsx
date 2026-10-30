@@ -1,0 +1,2 @@
+import Link from "next/link";
+export function Disclosure({ compact = false }: { compact?: boolean }) { return <aside className={`disclosure ${compact ? "disclosure-compact" : ""}`} aria-label="Marketplace disclosure"><span className="eyebrow">EDITORIAL / RELATIONSHIP NOTICE</span><p>This staging catalog has no verified provider entries or active offers. Future affiliate relationships will be labeled at the point of decision and will not determine an undisclosed ranking. <Link href="/disclosures">Read the full disclosure.</Link></p></aside>; }

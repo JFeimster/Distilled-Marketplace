@@ -1,0 +1,21 @@
+{
+  "status": "proposed_taxonomy_not_provider_inventory",
+  "categories": [
+    {"slug":"accounting-bookkeeping","name":"Accounting & Bookkeeping"},
+    {"slug":"ai-automation","name":"AI & Automation"},
+    {"slug":"banking-neobanking","name":"Banking & Neobanking"},
+    {"slug":"budgeting-finops","name":"Budgeting & FinanceOps"},
+    {"slug":"business-credit","name":"Business Credit"},
+    {"slug":"crm-sales","name":"CRM & Sales"},
+    {"slug":"ecommerce","name":"E-commerce"},
+    {"slug":"financing","name":"Financing"},
+    {"slug":"hr-payroll","name":"HR & Payroll"},
+    {"slug":"insurance-benefits","name":"Insurance & Benefits"},
+    {"slug":"legal-compliance","name":"Legal & Compliance"},
+    {"slug":"marketing-seo","name":"Marketing & SEO"},
+    {"slug":"payments-pos","name":"Payments & POS"},
+    {"slug":"productivity","name":"Productivity"},
+    {"slug":"real-estate-services","name":"Real Estate Services"},
+    {"slug":"social-media-content","name":"Social Media & Content"}
+  ]
+}
