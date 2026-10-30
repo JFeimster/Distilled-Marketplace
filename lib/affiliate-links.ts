@@ -9,8 +9,19 @@ export function getPrimaryLink(provider: Provider) {
   if (link) return link;
   return {
     id: "primary", url: provider.primaryUrl, purpose: provider.linkType === "saved_tracking_referral" ? "saved_tracking_referral" as const : "homepage" as const,
-    linkType: provider.linkType, isPrimary: true, isAffiliate: provider.linkType === "saved_tracking_referral", verificationStatus: provider.linkHealthStatus === "working" ? "verified" as const : "not_tested" as const, sourceReferences: []
+    linkType: provider.linkType, isPrimary: true, isAffiliate: provider.linkType === "saved_tracking_referral", verificationStatus: provider.linkHealthStatus === "working" ? "verified" as const : "not_tested" as const, sourceReferences: [], ctaLabel: undefined
   };
+}
+export function primaryCtaLabel(provider: Provider) {
+  return provider.ctas.find(cta => cta.placement === "primary" && (cta.linkRef === "primary" || cta.linkRef === getPrimaryLink(provider).id))?.label ?? getPrimaryLink(provider).ctaLabel ?? `Explore ${provider.name}`;
+}
+const informationalPurposes = new Set(["documentation", "help_center", "blog", "resource"]);
+export function visibleSecondaryLinks(provider: Provider) {
+  const hasAffiliatePrimary = getPrimaryLink(provider).isAffiliate;
+  return provider.links.filter(link => !link.isPrimary && link.verificationStatus !== "invalid" && link.verificationStatus !== "withdrawn" && (!hasAffiliatePrimary || link.isAffiliate || informationalPurposes.has(link.purpose)));
+}
+export function linkForRef(provider: Provider, ref: string) {
+  return ref === "primary" ? getPrimaryLink(provider) : provider.links.find(link => link.id === ref);
 }
 
 export function affiliateLinkErrors(provider: Provider): string[] {

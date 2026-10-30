@@ -19,6 +19,16 @@ if (intake.publicationAuthorized !== true) throw new Error("Provider intake root
 const categories = new Map<string, RecordValue>((JSON.parse(fs.readFileSync(catalogPath, "utf8")) as RecordValue).categories.map((item: RecordValue) => [item.id, item]));
 const purposeValues = new Set<string>(["homepage", "landing_page", "product_page", "pricing_page", "documentation", "help_center", "blog", "resource", "partner_program", "partner_portal", "app_portal", "demo", "registration", "other", "saved_tracking_referral"]);
 const slugify = (value: string) => value.toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 70) || "capability";
+const fallbackCopy: Record<string, string> = {
+  "accounting-bookkeeping": "Compare accounting support around reconciliations, reporting, and tax handoffs.", "ai-automation": "Evaluate automation around repeatable tasks, data quality, and human review.",
+  "banking-neobanking": "Compare business accounts around access, cash movement, and controls.", "budgeting-finops": "Evaluate spending visibility, planning routines, and reporting needs.",
+  "business-credit": "Review business credit education, records, and product fit before applying.", "crm-sales": "Compare customer records, follow-up processes, and sales handoffs.",
+  ecommerce: "Evaluate storefront operations, order flow, and customer experience.", financing: "Compare financing approaches against your timing, documentation, and repayment needs.",
+  "hr-payroll": "Review hiring, payroll, and people operations against your team needs.", "insurance-benefits": "Compare coverage and benefits against your business risks and workforce.",
+  "legal-compliance": "Evaluate legal and compliance support for your obligations and recordkeeping.", "marketing-seo": "Compare marketing tools around channels, measurement, and campaign workflow.",
+  "payments-pos": "Review payment acceptance, checkout, and reconciliation needs.", productivity: "Compare ways to coordinate work, handoffs, and shared knowledge.",
+  "real-estate-services": "Evaluate property workflows, records, and transaction support.", "social-media-content": "Compare content planning, publishing, and audience workflow."
+};
 function isPublicHttps(value: unknown): value is string {
   if (typeof value !== "string") return false;
   try { const url = new URL(value); return url.protocol === "https:" && !url.username && !url.password && !url.hostname.endsWith(".notion.so") && url.hostname !== "notion.so" && !url.hostname.endsWith(".notion.com"); } catch { return false; }
@@ -58,7 +68,7 @@ for (const candidate of intake.candidates as RecordValue[]) {
   const primaryLinks = candidateLinks.filter(link => link.isPrimary === true);
   if (primaryLinks.length !== 1) { exceptions.push({ id, reason: "expected exactly one primary destination" }); continue; }
   const primaryCandidateLink = primaryLinks[0];
-  const linkType = candidate.linkType === "saved_tracking_referral" ? "saved_tracking_referral" : candidate.linkType === "inferred_homepage" ? "official_website" : null;
+  const linkType = candidate.linkType === "saved_tracking_referral" ? "saved_tracking_referral" : ["inferred_homepage", "official_website"].includes(String(candidate.linkType)) ? "official_website" : null;
   if (!linkType) { exceptions.push({ id, reason: "unknown primary link classification" }); continue; }
   const primaryUrl = String(candidate.primaryUrl ?? "");
   if (!isPublicHttps(primaryUrl)) { exceptions.push({ id, reason: "primary destination is malformed, unsafe or not HTTPS" }); continue; }
@@ -74,14 +84,17 @@ for (const candidate of intake.candidates as RecordValue[]) {
     const isPrimary = link.isPrimary === true;
     const isAffiliate = link.isAffiliate === true;
     const sourceReferences = (Array.isArray(link.sourceReferences) ? link.sourceReferences : []).flatMap((reference: RecordValue) => {
-      if (!["official_webpage", "official_documentation", "official_pricing_page"].includes(String(reference.sourceType))) return [];
-      const source = sourceRecord(reference.reference, String(reference.sourceType).replaceAll("_", " "));
+      const direct = isPublicHttps(reference.url) && typeof reference.label === "string";
+      if (!direct && !["official_webpage", "official_documentation", "official_pricing_page"].includes(String(reference.sourceType))) return [];
+      const source = direct ? sourceRecord(reference.url, reference.label, Array.isArray(reference.supports) ? reference.supports : [], reference.checkedAt) : sourceRecord(reference.reference, String(reference.sourceType).replaceAll("_", " "));
       return source ? [source] : [];
     });
     return {
-      id: slugify(String(link.id ?? `link-${index + 1}`)), url: String(link.url), purpose: linkPurpose(String(link.linkType ?? "other")),
+      id: slugify(String(link.id ?? `link-${index + 1}`)), url: String(link.url), purpose: linkPurpose(String(link.purpose ?? link.linkType ?? "other")),
       linkType: isAffiliate ? "saved_tracking_referral" as const : "official_website" as const,
       isPrimary, isAffiliate,
+      ...(typeof link.ctaLabel === "string" ? { ctaLabel: link.ctaLabel } : {}), deepLinkSupported: link.deepLinkSupported === true,
+      ...(typeof link.trackingProvider === "string" ? { trackingProvider: link.trackingProvider } : {}),
       verificationStatus: ["verified", "invalid", "withdrawn"].includes(String(link.verificationStatus)) ? link.verificationStatus : "not_tested",
       sourceReferences
     };
@@ -92,14 +105,15 @@ for (const candidate of intake.candidates as RecordValue[]) {
   const sourceMap = new Map<string, ReturnType<typeof sourceRecord>>();
   for (const link of links) for (const source of link.sourceReferences) sourceMap.set(source!.url, source);
   if (summaryEvidenceSource) sourceMap.set(summaryEvidenceSource.url, summaryEvidenceSource);
-  const features = (Array.isArray(content.features) ? content.features : []).filter((feature: RecordValue) => typeof feature.title === "string" && feature.title.trim()).map((feature: RecordValue) => {
-    const featureSource = sourceRecord(feature.sourceReference, "Feature source", [String(feature.title)]);
+  const features = (Array.isArray(content.features) ? content.features : []).filter((feature: RecordValue) => typeof (feature.title ?? feature.name) === "string" && String(feature.title ?? feature.name).trim()).map((feature: RecordValue) => {
+    const featureSource = sourceRecord(feature.sourceReference, "Feature source", [String(feature.title ?? feature.name)]);
     return {
-      name: String(feature.title).trim(), ...(typeof feature.description === "string" && feature.description.trim() ? { description: feature.description.trim() } : {}),
+      name: String(feature.title ?? feature.name).trim(), ...(typeof feature.description === "string" && feature.description.trim() ? { description: feature.description.trim() } : {}),
+      ...(typeof feature.icon === "string" ? { icon: feature.icon } : {}), ...(feature.media ? { media: feature.media } : {}),
       sources: featureSource ? [featureSource] : [], evidenceStatus: String(feature.status ?? "candidate_record")
     };
   });
-  const capabilityLabels = [...new Set<string>(features.map((feature: RecordValue) => String(feature.name)))];
+  const capabilityLabels = [...new Set<string>([...features.map((feature: RecordValue) => String(feature.name)), ...(Array.isArray(content.capabilityLabels) ? content.capabilityLabels.filter((value: unknown) => typeof value === "string") : [])])];
   const officialPricingLink = links.find(link => link.purpose === "pricing_page");
   const pricingEvidence = sourceRecord(content.pricing?.sourceReference, "Provider pricing", ["pricing model"], content.pricing?.lastVerifiedAt);
   const publicFaqs = (Array.isArray(content.faq) ? content.faq : []).filter((faq: RecordValue) => typeof faq.question === "string" && faq.question.trim() && typeof faq.answer === "string" && faq.answer.trim()).map((faq: RecordValue) => {
@@ -108,15 +122,23 @@ for (const candidate of intake.candidates as RecordValue[]) {
   });
   const shortExplanation = typeof content.shortExplanation === "string" ? content.shortExplanation.trim() : "";
   const containsCommissionAmount = /(?:commission|payout)(?:\s+(?:rate|of|at|up\s+to)){0,3}\s*\d+(?:\.\d+)?%|\d+(?:\.\d+)?%\s*(?:commission|payout)/i.test(shortExplanation);
-  const summary = shortExplanation && !containsCommissionAmount ? shortExplanation : `Explore ${String(candidate.name)}’s website for current information. Listed in ${String(category.name)}: ${String(category.summary)}`;
+  const summary = shortExplanation && !containsCommissionAmount ? shortExplanation : `${String(candidate.name)}: ${fallbackCopy[String(candidate.categoryId)]}`;
+  const approvedCategories = Array.isArray(candidate.review?.approvedCategoryIds) ? candidate.review.approvedCategoryIds.filter((value: unknown) => typeof value === "string" && categories.has(value)) : [];
+  const categoryIds = [...new Set([String(candidate.categoryId), ...approvedCategories])];
+  const optionalFields = ["hero", "media", "featuredMedia", "serviceTypes", "useCases", "industries", "workflowTemplates", "promptTemplates", "inputs", "outputs", "audienceFit", "relatedProviderIds", "relatedResources", "ctas", "seo"];
+  const optionalContent = Object.fromEntries(optionalFields.filter(field => content[field] !== undefined || candidate[field] !== undefined).map(field => [field, content[field] ?? candidate[field]]));
   const record = {
     id, name: String(candidate.name), slug: String(candidate.slug), ...(typeof content.h1 === "string" && content.h1.trim() ? { h1: content.h1.trim() } : {}), summary,
-    primaryCategoryId: String(candidate.categoryId), categoryIds: [String(candidate.categoryId)],
+    primaryCategoryId: String(candidate.categoryId), categoryIds, serviceGroup: category.group,
     primaryUrl, affiliateUrl, linkType, approvalStatus: "owner_approved" as const, status: "published" as const,
     relationshipStatus: String(candidate.ownership?.commercialRelationshipStatus ?? "not_recorded"),
     linkHealthStatus: candidate.enrichment?.linkDestinationTested === true ? "working" as const : "not_tested" as const,
     links, ...(isPublicHttps(candidate.media?.logoUrl) ? { logoUrl: candidate.media.logoUrl } : {}),
-    capabilities: capabilityLabels.map((value: string) => slugify(value)), capabilityLabels, audiences: [], stages: [], suitableFor: [], features,
+    capabilities: Array.isArray(content.capabilities) ? content.capabilities : capabilityLabels.map((value: string) => slugify(value)), capabilityLabels,
+    audiences: Array.isArray(content.audiences) ? content.audiences : [], stages: Array.isArray(content.stages) ? content.stages : [],
+    roles: Array.isArray(content.roles) ? content.roles : Array.isArray(content.audiences) ? content.audiences : category.audiences,
+    businessStages: Array.isArray(content.businessStages) ? content.businessStages : Array.isArray(content.stages) ? content.stages : category.stages,
+    searchKeywords: Array.isArray(content.searchKeywords) ? content.searchKeywords : capabilityLabels, suitableFor: [], features, ...optionalContent,
     limitations: Array.isArray(content.limitations) ? content.limitations.filter((value: unknown) => typeof value === "string" && value.trim()) : [],
     integrations: Array.isArray(content.integrations) ? content.integrations.filter((value: unknown) => typeof value === "string" && value.trim()) : [],
     ...(content.howItWorks && (content.howItWorks.summary || content.howItWorks.steps?.length) ? {
@@ -131,9 +153,9 @@ for (const candidate of intake.candidates as RecordValue[]) {
     ...(candidate.review?.relationshipCheckedAt ? { relationshipLastCheckedAt: candidate.review.relationshipCheckedAt } : {}),
     ...(candidate.review?.productClaimsCheckedAt ? { productInfoUpdatedAt: candidate.review.productClaimsCheckedAt } : {}),
     ...(candidate.review?.pricingCheckedAt ? { pricingLastCheckedAt: candidate.review.pricingCheckedAt } : {}),
-    ...(linkType === "saved_tracking_referral" ? { disclaimer: "Saved referral link. Current attribution and commercial terms have not been independently confirmed." } : {}),
+    ...(linkType === "saved_tracking_referral" ? { disclaimer: "Affiliate relationship details are managed privately." } : {}),
     ...(content.metaTitleDraft ? { metadataTitle: String(content.metaTitleDraft) } : {}), ...(content.metaDescriptionDraft ? { metadataDescription: String(content.metaDescriptionDraft) } : {}),
-    relatedProviderIds: []
+    ...(content.pricing && pricingEvidence && officialPricingLink ? { pricing: { ...content.pricing, source: pricingEvidence } } : {})
   };
   const parsed = providerSchema.safeParse(record);
   if (!parsed.success) {
