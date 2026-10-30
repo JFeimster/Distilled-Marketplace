@@ -22,7 +22,7 @@ Open `http://127.0.0.1:3000`. For production server checks after `npm run build`
 - Run `npm run validate` to check schema, references, dates, provenance rules and noindex guard.
 - Demo comparison data lives in [`data/fixtures/demo-providers.json`](data/fixtures/demo-providers.json). It is fictional and has no external destinations or profile routes.
 
-Architecture and operational details: [Architecture](docs/ARCHITECTURE.md), [Content model](docs/CONTENT-MODEL.md), [Route map](docs/ROUTE-MAP.md), [Editorial and affiliate policy](docs/EDITORIAL-AND-AFFILIATE-POLICY.md), [Deployment](docs/DEPLOYMENT.md), [Wix migration](docs/WIX-SERVICES-MIGRATION.md), [Build report](BUILD-REPORT.md).
+Architecture and operational details: [Architecture](docs/ARCHITECTURE.md), [Content model](docs/CONTENT-MODEL.md), [Route map](docs/ROUTE-MAP.md), [Editorial and affiliate policy](docs/EDITORIAL-AND-AFFILIATE-POLICY.md), [Provider import contract](docs/PROVIDER-IMPORT-CONTRACT.md), [Provider integration plan](docs/PROVIDER-INTEGRATION-PLAN.md), [Deployment](docs/DEPLOYMENT.md), [Wix migration](docs/WIX-SERVICES-MIGRATION.md), [Build report](BUILD-REPORT.md).
 
 ## Boundaries
 

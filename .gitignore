@@ -7,3 +7,8 @@ out/
 *.tsbuildinfo
 .playwright-cli/
 _reference/
+output/playwright/
+playwright-report/
+test-results/
+blob-report/
+coverage/

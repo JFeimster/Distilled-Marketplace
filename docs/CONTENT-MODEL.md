@@ -15,7 +15,7 @@ Categories and collections are editorial guidance, not verified vendor claims. `
 
 ## Adding a provider
 
-Use [the sample record](PROVIDER-RECORD-TEMPLATE.json) as a field checklist. Confirm legal identity, homepage, exact public sources, supported facts, capabilities, limitations, coverage, pricing model, destination, relationship status and review date. The catalog validator rejects missing required fields, unknown category relations and unsupported documented-affiliate status. The editorial reviewer must still check source accuracy: a schema cannot establish truth.
+Use [the blank sample record](PROVIDER-RECORD-TEMPLATE.json) as a shape checklist, and follow the [provider import contract](PROVIDER-IMPORT-CONTRACT.md). Confirm legal identity, homepage, exact public sources, supported facts, capabilities, limitations, coverage, pricing model, destination, relationship status and review date. The catalog validator rejects missing required fields, unknown category relations and unsupported documented-affiliate status. The editorial reviewer must still check source accuracy: a schema cannot establish truth. The plan for reconciling existing sources is in [Provider integration plan](PROVIDER-INTEGRATION-PLAN.md).
 
 ## Generated artifacts
 
