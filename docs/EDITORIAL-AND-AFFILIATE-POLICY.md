@@ -1,24 +1,19 @@
-# Editorial and affiliate policy
+# Editorial and referral-link policy
 
-## Claim classes
+## Provider listings
 
-1. **Editorial guidance:** category questions and stack sequencing based on operator workflow reasoning. It is labeled as guidance, not a provider fact.
-2. **Provider fact:** a specific statement supported by a dated public source or documented owner-supplied record. State unknowns as unknown.
-3. **Commercial relationship:** a documented affiliate or referral arrangement. Never infer one from a Wix menu label or a provider name.
-4. **Unresolved research:** unpublished until identity, destination and claim sources are checked.
+The owner has approved the 154 v3 candidates for ordinary directory publication. A published listing establishes that the provider name, category and destination were accepted for inclusion. It does not mean Marketplace independently tested or certified product details, pricing, eligibility, legal identity or current partner attribution.
 
-## Publication gate
+Use supplied descriptions and feature names without inventing missing facts. If a description is absent, use neutral category-based text. Omit empty feature, pricing, coverage, integration and FAQ sections. Do not create offers, testimonials, rankings, discounts, ratings, review counts or approval claims from candidate records.
 
-A provider profile needs identity, source-backed capabilities and limitations, current coverage, pricing model, verified HTTPS destination, review date and relationship status. Pricing figures require a specific current pricing source; set the model to `unknown` when no published model can be confirmed. Comparisons require at least two comparable sourced profiles. Offer pages need current source-backed terms, start and expiry dates, a checked destination and a directly supported provider relationship where applicable. Expired or stale records must be removed from the public catalog until rechecked. The catalog validator's current freshness limits are 180 days for a provider record and 30 days for an offer.
+## Saved referral links
 
-The `sources[].supports` labels must identify which fields or claims each source supports. A source must not be described as proving more than it says. A schema pass is not an editorial approval: a human reviewer must check the source, claim, date, destination and category fit together before setting `editorialStatus` to `verified`.
+For each of the 52 saved referral destinations, preserve the exact URL as `primaryUrl`, `affiliateUrl` and the primary typed link. Keep company and product pages secondary. Do not add or alter query parameters. The other 102 listings use their recorded company website and keep `affiliateUrl: null`.
 
-Paid links use `rel="sponsored noopener noreferrer"` and a nearby, plain-language disclosure. Affiliate status requires documentary evidence from the current partner agreement or approved affiliate platform, including an exact approved destination and any applicable term, product, territory or claim restrictions. A public article, provider name, menu category or vendor's general affiliate-program page is not proof that Moonshine Capital has an active relationship. Do not store contract documents, payout details, partner credentials or private contact data in the public catalog. Keep those in their existing access-controlled system and reference the authorized source of truth during human review. Paid status does not determine an undisclosed ranking. The current catalog contains no paid links.
+Saved referral status describes the supplied link classification. It does not establish that attribution currently works or that a partner account is active. Use neutral “Saved referral link” disclosure and `rel="sponsored noopener noreferrer"`. Ordinary company links use `rel="noopener noreferrer"`.
 
-## Import suitability
+## Maintenance metadata
 
-The Zod provider schema is a **publication-record validator**, not a complete provider-import workflow. The sample JSON file is a blank shape and intentionally fails validation until all fields are populated and reviewed. Before automating imports, add a candidate/review state outside the public `providers` array, explicit field-to-source mapping, an internal relationship evidence reference, named reviewer and approval timestamp, approved destination/territory restrictions, and a deactivation/expiry path. Preserve private agreement evidence outside the public catalog. See [Provider import contract](PROVIDER-IMPORT-CONTRACT.md) and [inventory integration plan](PROVIDER-INTEGRATION-PLAN.md).
+Link health, relationship check dates, product-information dates, source status, missing optional content and historical program details describe evidence and maintenance state. These fields do not block a basic listing. `published` and `linkHealthStatus: "not_tested"` is a valid combination. Do not fabricate verification timestamps or convert historical relationship evidence into a current claim.
 
-## Review and privacy
-
-Recheck source and destination before publication and when terms change. Revalidate affiliate links against the approved source, not by guessing or editing a tracking URL. Expired offers fail validation. The stack finder is a deterministic local category router and collects no personal or financial records. `lib/events.ts` defines a proposed aggregate event shape only: `directory_search`, `filter_change`, `provider_view`, `compare_select`, `affiliate_outbound`, `collection_open`, `stack_finder_complete`. It is not sent to any analytics service. Future outbound tracking must never accept arbitrary URLs or leak query parameters.
+Keep private partner account data, campaign identifiers and historical payout amounts in the source record; do not copy them into the public catalog. No commission amounts or customer-facing prices are created by the importer.

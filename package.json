@@ -8,6 +8,7 @@
     "dev": "next dev --hostname 127.0.0.1",
     "start": "next start --hostname 127.0.0.1",
     "generate": "tsx scripts/generate.ts",
+    "providers:import": "tsx scripts/import-provider-candidates.ts",
     "validate": "tsx scripts/validate.ts",
     "lint": "eslint app components lib schemas scripts tests --max-warnings 0",
     "typecheck": "next typegen && tsc --noEmit",
