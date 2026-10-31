@@ -42,21 +42,14 @@ try {
   $alreadyStaged = @(& git diff --cached --name-only)
   if ($alreadyStaged.Count) { throw "Pre-existing staged changes found: $($alreadyStaged -join ', '). Review them before release." }
 
-  # Stage only the V4.2 implementation. BUILD-REPORT.md and other local work remain unstaged.
+  # Stage only the V4.3 implementation. BUILD-REPORT.md and other local work remain unstaged.
   $allow = @(
-    'CANONICAL-SITEMAP.txt',
-    'app/layout.tsx', 'app/providers/[slug]/page.tsx', 'app/workflow-lab.css',
-    'app/workflows/page.tsx', 'app/workflows/[slug]/page.tsx',
-    'app/integrations/page.tsx', 'app/compatibility/page.tsx',
-    'app/playbooks/page.tsx', 'app/playbooks/[slug]/page.tsx',
-    'components/SiteFooter.tsx', 'components/SiteHeader.tsx',
+    'app/compatibility/page.tsx', 'app/workflow-lab.css', 'app/workflows/[slug]/page.tsx',
+    'components/ActionPackBuilder.tsx', 'components/CompatibilityWorkspace.tsx',
     'components/WorkflowCard.tsx', 'components/WorkflowExplorer.tsx',
-    'components/CompatibilityWorkspace.tsx',
-    'data/marketplace/catalog.json', 'data/marketplace/generated/routes.json',
-    'lib/routes.ts', 'lib/validate.ts', 'lib/workflow-discovery.ts', 'lib/workflows.ts',
-    'schemas/catalog.ts',
-    'scripts/generate.ts', 'scripts/validate.ts', 'scripts/release-marketplace.ps1',
-    'tests/workflow-lab.test.ts'
+    'lib/workflow-action-pack.ts', 'lib/workflow-discovery.ts', 'lib/workflows.ts',
+    'scripts/release-marketplace.ps1',
+    'tests/workflow-action-pack.test.ts', 'tests/workflow-lab.test.ts'
   )
   $existing = @($allow | Where-Object { Test-Path -LiteralPath $_ })
   if ($existing.Count -eq 0) { throw 'No recognized project paths available to stage.' }
@@ -93,21 +86,21 @@ try {
 
   $releaseBranch = 'release/marketplace-' + (Get-Date -Format 'yyyyMMdd-HHmmss')
   Invoke-Checked 'git' @('switch', '-c', $releaseBranch)
-  Invoke-Checked 'git' @('commit', '-m', 'feat: add Marketplace Workflow Lab blueprints and discovery')
+  Invoke-Checked 'git' @('commit', '-m', 'feat: add Workflow Lab action packs and guided discovery')
   Invoke-Checked 'git' @('push', '-u', 'origin', $releaseBranch)
 
   $body = @'
-## Marketplace Workflow Lab V4.2
-- Publish 20 editorial workflow blueprints, a searchable finder, provider connections, deterministic stack coverage, and three industry playbooks.
-- Link provider profiles to relevant blueprints. No importable workflow files, runtime, or new backend.
-- Preserve 154 provider records and all 52 saved affiliate-primary destinations.
+## Marketplace Workflow Lab V4.3
+- Add a client-side action pack builder with live preview, copy, Markdown download, and reset to every existing blueprint.
+- Improve stack coverage with catalog-derived presets, provider groups, and linked gaps; add outcome-based finder filters and related-blueprint relevance.
+- Preserve the 20 editorial blueprints, 154 provider records, and all 52 saved affiliate-primary destinations.
 - Preserve noindex, X-Robots-Tag, and empty staging sitemap.
 - Validation: npm run check passed locally.
 
 CI must pass before the existing workflow squash-merges this PR. Vercel deploys from main.
 '@
   Invoke-Checked 'gh' @('pr', 'create', '--base', 'main', '--head', $releaseBranch,
-    '--title', 'feat: add V4.2 Workflow Lab to Distilled Marketplace', '--body', $body)
+    '--title', 'feat: add V4.3 Workflow Lab action packs', '--body', $body)
 
   if (-not $NoAutoSquash) {
     # The workflow only performs the squash after its own check job is green.

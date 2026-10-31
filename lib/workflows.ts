@@ -6,7 +6,7 @@ export const publishedWorkflows = catalog.workflowBlueprints.filter(item => item
 export const workflowBySlug = (slug:string) => publishedWorkflows.find(item => item.slug === slug);
 export const workflowListing = (item:WorkflowBlueprint):WorkflowListing => ({
   id:item.id,slug:item.slug,title:item.title,summary:item.summary,useCase:item.useCase,outcome:item.outcome,
-  trigger:item.trigger,humanReview:item.humanReview,industryTags:item.industryTags,categoryIds:item.categoryIds,providerIds:item.providerIds
+  trigger:item.trigger,humanReview:item.humanReview,industryTags:item.industryTags,categoryIds:item.categoryIds,providerIds:item.providerIds,requiredServices:item.requiredServices
 });
 export const workflowsForProvider = (providerId:string) => publishedWorkflows.filter(item => item.providerIds.includes(providerId));
 export const industryTags = [...new Set(publishedWorkflows.flatMap(item => item.industryTags))].sort();
