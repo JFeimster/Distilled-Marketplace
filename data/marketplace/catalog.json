@@ -452,7 +452,7 @@
       "name": "QuickBooks",
       "slug": "quickbooks",
       "h1": "QuickBooks — Accounting, Invoicing & Business Finance",
-      "summary": "QuickBooks offers small-business accounting software covering income and expenses, invoicing, financial reports and cash-flow tools.",
+      "summary": "QuickBooks Online helps small businesses track income and expenses, send invoices, organize bookkeeping and review financial reports. Check which features are included in the plan you choose.",
       "primaryCategoryId": "accounting-bookkeeping",
       "categoryIds": [
         "accounting-bookkeeping"
@@ -490,6 +490,27 @@
               "supports": []
             }
           ]
+        },
+        {
+          "id": "pricing-details",
+          "url": "https://quickbooks.intuit.com/pricing/",
+          "purpose": "pricing_page",
+          "linkType": "official_website",
+          "isPrimary": false,
+          "isAffiliate": false,
+          "verificationStatus": "not_tested",
+          "sourceReferences": [
+            {
+              "label": "Pricing information",
+              "url": "https://quickbooks.intuit.com/pricing/",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "Official pricing information"
+              ]
+            }
+          ],
+          "deepLinkSupported": false,
+          "ctaLabel": "Pricing information"
         }
       ],
       "capabilities": [
@@ -512,65 +533,92 @@
           "name": "Invoice creation and payment tracking",
           "sources": [
             {
-              "label": "Feature source",
+              "label": "Official product information",
               "url": "https://quickbooks.intuit.com/accounting/invoicing/",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "Invoice creation and payment tracking"
+                "Invoice creation and payment tracking",
+                "Create and send invoices, then review status and recorded payments."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Create and send invoices, then review status and recorded payments."
         },
         {
           "name": "Automated bookkeeping and bank feeds",
           "sources": [
             {
-              "label": "Feature source",
-              "url": "https://quickbooks.intuit.com/accounting/invoicing/",
+              "label": "Official product information",
+              "url": "https://quickbooks.intuit.com/online/free/",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "Automated bookkeeping and bank feeds"
+                "Automated bookkeeping and bank feeds",
+                "Connect eligible bank accounts to bring transactions into the books for review and categorization."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Connect eligible bank accounts to bring transactions into the books for review and categorization."
         },
         {
           "name": "Expense organization",
           "sources": [
             {
-              "label": "Feature source",
-              "url": "https://quickbooks.intuit.com/accounting/invoicing/",
+              "label": "Official product information",
+              "url": "https://quickbooks.intuit.com/online/free/",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "Expense organization"
+                "Expense organization",
+                "Record and categorize business expenses so they can be reviewed with income."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Record and categorize business expenses so they can be reviewed with income."
         },
         {
           "name": "Financial reports and cash-flow planning",
           "sources": [
             {
-              "label": "Feature source",
-              "url": "https://quickbooks.intuit.com/accounting/invoicing/",
+              "label": "Official product information",
+              "url": "https://quickbooks.intuit.com/online/free/",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "Financial reports and cash-flow planning"
+                "Financial reports and cash-flow planning",
+                "Use available reports such as profit and loss to review business activity; included reports vary by plan."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Use available reports such as profit and loss to review business activity; included reports vary by plan."
         }
       ],
       "limitations": [],
-      "integrations": [],
+      "integrations": [
+        "Eligible bank feeds",
+        "QuickBooks Payments"
+      ],
       "howItWorks": {
-        "summary": "Choose an accounting subscription, connect records and banking sources, then manage invoices, expenses and reporting.",
-        "steps": [],
+        "summary": "Set up the company file and accounts, connect eligible transaction sources, review categories, then use the records for invoicing and reports.",
+        "steps": [
+          "Choose a plan that fits your users and recordkeeping needs.",
+          "Set up the company profile and chart of accounts with an accountable bookkeeper.",
+          "Connect supported bank accounts and review imported transactions.",
+          "Send invoices, reconcile records and review reports on a consistent schedule."
+        ],
         "sources": [
           {
-            "label": "How it works source",
+            "label": "Official product information",
             "url": "https://quickbooks.intuit.com/accounting/invoicing/",
-            "supports": []
+            "checkedAt": "2026-10-31",
+            "supports": [
+              "Set up the company file and accounts, connect eligible transaction sources, review categories, then use the records for invoicing and reports.",
+              "Choose a plan that fits your users and recordkeeping needs.",
+              "Set up the company profile and chart of accounts with an accountable bookkeeper.",
+              "Connect supported bank accounts and review imported transactions.",
+              "Send invoices, reconcile records and review reports on a consistent schedule."
+            ]
           }
         ]
       },
@@ -588,6 +636,18 @@
           "supports": [
             "provider summary"
           ]
+        },
+        {
+          "label": "V4.1 product review",
+          "url": "https://quickbooks.intuit.com/accounting/invoicing/",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "QuickBooks Online helps small businesses track income and expenses, send invoices, organize bookkeeping and review financial reports. Check which features are included in the plan you choose.",
+            "Invoice creation and payment tracking",
+            "Automated bookkeeping and bank feeds",
+            "Expense organization",
+            "Financial reports and cash-flow planning"
+          ]
         }
       ],
       "summaryEvidence": {
@@ -595,7 +655,7 @@
         "sourceUrl": "https://quickbooks.intuit.com/accounting/invoicing/"
       },
       "metadataTitle": "QuickBooks | Distilled Marketplace",
-      "metadataDescription": "QuickBooks offers small-business accounting software covering income and expenses, invoicing, financial reports and cash-flow tools.",
+      "metadataDescription": "QuickBooks Online helps small businesses track income and expenses, send invoices, organize bookkeeping and review financial reports. Check which features are included in the plan you choose.",
       "relatedProviderIds": [],
       "serviceGroup": "Money",
       "roles": [
@@ -611,14 +671,63 @@
         "Automated bookkeeping and bank feeds",
         "Expense organization",
         "Financial reports and cash-flow planning"
-      ]
+      ],
+      "seo": {
+        "description": "QuickBooks Online helps small businesses track income and expenses, send invoices, organize bookkeeping and review financial reports. Check which features are included in the plan you choose."
+      },
+      "useCases": [
+        "Record income and business expenses",
+        "Send invoices and review payment status",
+        "Prepare financial reports for owner review"
+      ],
+      "inputs": [
+        "Business income and expense transactions",
+        "Customer and invoice details",
+        "Connected bank transactions where supported"
+      ],
+      "outputs": [
+        "Categorized bookkeeping records",
+        "Invoices and payment status",
+        "Reports available on the selected plan"
+      ],
+      "workflowTemplates": [
+        {
+          "id": "weekly-books-review",
+          "title": "Set up a weekly books review",
+          "description": "Review transaction records before relying on a report.",
+          "requirements": [
+            "Business bank or card records",
+            "An owner for categorization and reconciliation"
+          ],
+          "steps": [
+            "Bring in recent transactions using available connections or manual records.",
+            "Review uncategorized or unexpected items and attach supporting details.",
+            "Reconcile the period against source statements.",
+            "Review invoice status and relevant reports with the bookkeeper."
+          ],
+          "expectedOutput": "Reviewed bookkeeping records and a current internal planning report."
+        }
+      ],
+      "pricing": {
+        "notes": "Plan features and current charges can change; confirm the provider’s current terms.",
+        "source": {
+          "label": "Official pricing information",
+          "url": "https://quickbooks.intuit.com/pricing/",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "Current plan details"
+          ]
+        },
+        "linkRef": "pricing-details"
+      },
+      "productInfoUpdatedAt": "2026-10-31"
     },
     {
       "id": "xendooonlineaccounting",
       "name": "Xendoo Online Accounting",
       "slug": "xendooonlineaccounting",
       "h1": "Xendoo Online Accounting",
-      "summary": "Xendoo Online Accounting: Compare accounting support around reconciliations, reporting, and tax handoffs.",
+      "summary": "A listed option in Accounting & Bookkeeping. Verify current features and terms with Xendoo Online Accounting before choosing.",
       "primaryCategoryId": "accounting-bookkeeping",
       "categoryIds": [
         "accounting-bookkeeping"
@@ -666,14 +775,18 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Accounting & Bookkeeping. Verify current features and terms with Xendoo Online Accounting before choosing.",
+      "seo": {
+        "description": "A listed option in Accounting & Bookkeeping. Verify current features and terms with Xendoo Online Accounting before choosing."
+      }
     },
     {
       "id": "browseai",
       "name": "Browse AI",
       "slug": "browseai",
       "h1": "Browse AI — Web Data Extraction & Monitoring",
-      "summary": "Browse AI lets users create robots to extract structured data and monitor websites for changes.",
+      "summary": "Browse AI lets teams train robots to extract selected fields from web pages and monitor those fields for changes. Results can be reviewed, exported or connected to other tools.",
       "primaryCategoryId": "ai-automation",
       "categoryIds": [
         "ai-automation"
@@ -737,6 +850,27 @@
               "supports": []
             }
           ]
+        },
+        {
+          "id": "pricing-details",
+          "url": "https://www.browse.ai/pricing",
+          "purpose": "pricing_page",
+          "linkType": "official_website",
+          "isPrimary": false,
+          "isAffiliate": false,
+          "verificationStatus": "not_tested",
+          "sourceReferences": [
+            {
+              "label": "Pricing information",
+              "url": "https://www.browse.ai/pricing",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "Official pricing information"
+              ]
+            }
+          ],
+          "deepLinkSupported": false,
+          "ctaLabel": "Pricing information"
         }
       ],
       "logoUrl": "https://company-images.partnerstack.com/file_MGXvaCKmJw7JNVEaRDkj.png",
@@ -762,77 +896,130 @@
       "features": [
         {
           "name": "No-code data extraction",
-          "sources": [],
-          "evidenceStatus": "draft_from_historical_description"
+          "sources": [
+            {
+              "label": "Official product information",
+              "url": "https://help.browse.ai/en/articles/10504822-how-to-create-robots-without-installing-the-browser-extension",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "No-code data extraction",
+                "Train a robot to capture selected information from a page without writing a scraper."
+              ]
+            }
+          ],
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Train a robot to capture selected information from a page without writing a scraper."
         },
         {
           "name": "Data extraction",
-          "sources": [],
-          "evidenceStatus": "draft_from_historical_description"
+          "sources": [
+            {
+              "label": "Official product information",
+              "url": "https://help.browse.ai/en/articles/10504822-how-to-create-robots-without-installing-the-browser-extension",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "Data extraction",
+                "Collect chosen page fields into structured rows for later review."
+              ]
+            }
+          ],
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Collect chosen page fields into structured rows for later review."
         },
         {
           "name": "Train robots to extract structured web data",
           "sources": [
             {
-              "label": "Feature source",
+              "label": "Official product information",
               "url": "https://help.browse.ai/en/articles/10504822-how-to-create-robots-without-installing-the-browser-extension",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "Train robots to extract structured web data"
+                "Train robots to extract structured web data",
+                "Choose a page and fields a robot should capture, then test the result."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Choose a page and fields a robot should capture, then test the result."
         },
         {
           "name": "Monitor website changes",
           "sources": [
             {
-              "label": "Feature source",
-              "url": "https://help.browse.ai/en/articles/10504822-how-to-create-robots-without-installing-the-browser-extension",
+              "label": "Official product information",
+              "url": "https://help.browse.ai/en/articles/10535487-how-to-set-up-monitoring-for-website-changes",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "Monitor website changes"
+                "Monitor website changes",
+                "Schedule a robot to check captured fields and notify you when the page changes."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Schedule a robot to check captured fields and notify you when the page changes."
         },
         {
           "name": "Use prebuilt robots",
           "sources": [
             {
-              "label": "Feature source",
-              "url": "https://help.browse.ai/en/articles/10504822-how-to-create-robots-without-installing-the-browser-extension",
+              "label": "Official product information",
+              "url": "https://browse.ai/pricing",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "Use prebuilt robots"
+                "Use prebuilt robots",
+                "Start with an available prebuilt robot when it matches the page and data needed."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Start with an available prebuilt robot when it matches the page and data needed."
         },
         {
           "name": "Export extracted data",
           "sources": [
             {
-              "label": "Feature source",
-              "url": "https://help.browse.ai/en/articles/10504822-how-to-create-robots-without-installing-the-browser-extension",
+              "label": "Official product information",
+              "url": "https://www.browse.ai/monitor",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "Export extracted data"
+                "Export extracted data",
+                "Review extracted results and route them to available exports or connected tools."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Review extracted results and route them to available exports or connected tools."
         }
       ],
       "limitations": [],
-      "integrations": [],
+      "integrations": [
+        "Google Sheets",
+        "Airtable",
+        "Zapier",
+        "Make.com",
+        "REST API",
+        "Webhooks"
+      ],
       "howItWorks": {
-        "summary": "Create a robot, provide the target URL, select extraction or monitoring, configure data fields, then run or schedule the robot.",
-        "steps": [],
+        "summary": "Train a robot on the page and fields needed, check the captured data, then configure monitoring or export for a small pilot.",
+        "steps": [
+          "Choose a public page and specify fields to capture.",
+          "Train and run a robot, then inspect extracted rows for accuracy.",
+          "Set a monitoring schedule and change notification if recurring checks are useful.",
+          "Export or connect results, and review whether page changes affect the data."
+        ],
         "sources": [
           {
-            "label": "How it works source",
-            "url": "https://help.browse.ai/en/articles/10504822-how-to-create-robots-without-installing-the-browser-extension",
-            "supports": []
+            "label": "Official product information",
+            "url": "https://www.browse.ai/monitor",
+            "checkedAt": "2026-10-31",
+            "supports": [
+              "Train a robot on the page and fields needed, check the captured data, then configure monitoring or export for a small pilot.",
+              "Choose a public page and specify fields to capture.",
+              "Train and run a robot, then inspect extracted rows for accuracy.",
+              "Set a monitoring schedule and change notification if recurring checks are useful.",
+              "Export or connect results, and review whether page changes affect the data."
+            ]
           }
         ]
       },
@@ -850,6 +1037,20 @@
           "supports": [
             "provider summary"
           ]
+        },
+        {
+          "label": "V4.1 product review",
+          "url": "https://www.browse.ai/monitor",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "Browse AI lets teams train robots to extract selected fields from web pages and monitor those fields for changes. Results can be reviewed, exported or connected to other tools.",
+            "No-code data extraction",
+            "Data extraction",
+            "Train robots to extract structured web data",
+            "Monitor website changes",
+            "Use prebuilt robots",
+            "Export extracted data"
+          ]
         }
       ],
       "summaryEvidence": {
@@ -858,7 +1059,7 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Browse AI | Distilled Marketplace",
-      "metadataDescription": "Browse AI lets users create robots to extract structured data and monitor websites for changes.",
+      "metadataDescription": "Browse AI lets teams train robots to extract selected fields from web pages and monitor those fields for changes. Results can be reviewed, exported or connected to other tools.",
       "relatedProviderIds": [],
       "serviceGroup": "Systems",
       "roles": [
@@ -876,14 +1077,61 @@
         "Monitor website changes",
         "Use prebuilt robots",
         "Export extracted data"
-      ]
+      ],
+      "seo": {
+        "description": "Browse AI lets teams train robots to extract selected fields from web pages and monitor those fields for changes. Results can be reviewed, exported or connected to other tools."
+      },
+      "useCases": [
+        "Track changes to product details, availability or public pages",
+        "Collect public web information into a structured table for review"
+      ],
+      "inputs": [
+        "Target page URL or list of URLs",
+        "Fields or page changes to capture",
+        "A review and monitoring schedule"
+      ],
+      "outputs": [
+        "Structured rows from selected pages",
+        "Change history and notifications"
+      ],
+      "workflowTemplates": [
+        {
+          "id": "monitor-public-product-details",
+          "title": "Monitor public product details",
+          "description": "Track selected public fields such as displayed price or availability, then review changes before acting.",
+          "requirements": [
+            "Public product pages that permit automated access",
+            "Defined fields and a reviewer for change alerts"
+          ],
+          "steps": [
+            "Provide the target page URLs.",
+            "Train a robot to capture the selected fields.",
+            "Run a test and correct fields if output is incomplete.",
+            "Set a monitoring cadence and send changes to a review table or alert channel."
+          ],
+          "expectedOutput": "Structured records of selected page fields and detected changes."
+        }
+      ],
+      "pricing": {
+        "notes": "Plan features and current charges can change; confirm the provider’s current terms.",
+        "source": {
+          "label": "Official pricing information",
+          "url": "https://www.browse.ai/pricing",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "Current plan details"
+          ]
+        },
+        "linkRef": "pricing-details"
+      },
+      "productInfoUpdatedAt": "2026-10-31"
     },
     {
       "id": "mindstudio",
       "name": "MindStudio",
       "slug": "mindstudio",
       "h1": "MindStudio",
-      "summary": "MindStudio: Evaluate automation around repeatable tasks, data quality, and human review.",
+      "summary": "MindStudio is a platform for building, testing, deploying and operating AI-powered applications, automations and agents. Its capability catalog includes workflow, data, productivity and CRM building blocks.",
       "primaryCategoryId": "ai-automation",
       "categoryIds": [
         "ai-automation"
@@ -905,6 +1153,27 @@
           "isAffiliate": false,
           "verificationStatus": "not_tested",
           "sourceReferences": []
+        },
+        {
+          "id": "pricing-details",
+          "url": "https://www.mindstudio.ai/pricing",
+          "purpose": "pricing_page",
+          "linkType": "official_website",
+          "isPrimary": false,
+          "isAffiliate": false,
+          "verificationStatus": "not_tested",
+          "sourceReferences": [
+            {
+              "label": "Pricing information",
+              "url": "https://www.mindstudio.ai/pricing",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "Official pricing information"
+              ]
+            }
+          ],
+          "deepLinkSupported": false,
+          "ctaLabel": "Pricing information"
         }
       ],
       "logoUrl": "https://company-images.partnerstack.com/file_w0fTbI30Xxcx3pMkR7tB.jpeg",
@@ -913,11 +1182,73 @@
       "audiences": [],
       "stages": [],
       "suitableFor": [],
-      "features": [],
+      "features": [
+        {
+          "name": "Build AI applications and agents",
+          "description": "Build, test, deploy and operate AI-powered applications and automations.",
+          "sources": [
+            {
+              "label": "Official product information",
+              "url": "https://www.mindstudio.ai/about",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "Build AI applications and agents",
+                "Build, test, deploy and operate AI-powered applications and automations."
+              ]
+            }
+          ],
+          "evidenceStatus": "verified_primary_source_2026_10_31"
+        },
+        {
+          "name": "Workflow building blocks",
+          "description": "Use workflow logic, data and app capabilities from the platform catalog.",
+          "sources": [
+            {
+              "label": "Official product information",
+              "url": "https://www.mindstudio.ai/capabilities",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "Workflow building blocks",
+                "Use workflow logic, data and app capabilities from the platform catalog."
+              ]
+            }
+          ],
+          "evidenceStatus": "verified_primary_source_2026_10_31"
+        },
+        {
+          "name": "Data sources",
+          "description": "Use available data source actions to upload, retrieve and query workflow information.",
+          "sources": [
+            {
+              "label": "Official product information",
+              "url": "https://www.mindstudio.ai/capabilities",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "Data sources",
+                "Use available data source actions to upload, retrieve and query workflow information."
+              ]
+            }
+          ],
+          "evidenceStatus": "verified_primary_source_2026_10_31"
+        }
+      ],
       "limitations": [],
-      "integrations": [],
+      "integrations": [
+        "Workflow capabilities listed in the MindStudio catalog; confirm availability for your plan"
+      ],
       "faqs": [],
-      "sources": [],
+      "sources": [
+        {
+          "label": "V4.1 product review",
+          "url": "https://www.mindstudio.ai/capabilities",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "MindStudio is a platform for building, testing, deploying and operating AI-powered applications, automations and agents. Its capability catalog includes workflow, data, productivity and CRM building blocks.",
+            "AI app and agent building",
+            "Workflow capabilities"
+          ]
+        }
+      ],
       "summaryEvidence": {
         "classification": "not_sourced"
       },
@@ -932,14 +1263,85 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "MindStudio is a platform for building, testing, deploying and operating AI-powered applications, automations and agents. Its capability catalog includes workflow, data, productivity and CRM building blocks.",
+      "seo": {
+        "description": "MindStudio is a platform for building, testing, deploying and operating AI-powered applications, automations and agents. Its capability catalog includes workflow, data, productivity and CRM building blocks."
+      },
+      "useCases": [
+        "Prototype an AI workflow for a bounded internal task",
+        "Add a review point before an agent output is used"
+      ],
+      "inputs": [
+        "A bounded task and sample input",
+        "Approved data sources and workflow steps",
+        "A reviewer and acceptance criteria"
+      ],
+      "outputs": [
+        "An AI-powered application or workflow",
+        "A result for a person to review before operational use"
+      ],
+      "howItWorks": {
+        "summary": "Define a narrow task, assemble the workflow from available capabilities, test outputs and deployment behavior, then add human review for uncertain results.",
+        "steps": [
+          "Describe the task and result a user needs.",
+          "Choose the data and workflow capabilities for that task.",
+          "Test representative and edge-case inputs; record errors and uncertainty.",
+          "Set a reviewer and fallback before deploying the workflow."
+        ],
+        "sources": [
+          {
+            "label": "Official product information",
+            "url": "https://www.mindstudio.ai/capabilities",
+            "checkedAt": "2026-10-31",
+            "supports": [
+              "Define a narrow task, assemble the workflow from available capabilities, test outputs and deployment behavior, then add human review for uncertain results.",
+              "Describe the task and result a user needs.",
+              "Choose the data and workflow capabilities for that task.",
+              "Test representative and edge-case inputs; record errors and uncertainty.",
+              "Set a reviewer and fallback before deploying the workflow."
+            ]
+          }
+        ]
+      },
+      "workflowTemplates": [
+        {
+          "id": "prototype-reviewed-agent",
+          "title": "Prototype an agent with a review step",
+          "description": "Evaluate an AI workflow on a narrow business task before operational use.",
+          "requirements": [
+            "A low-risk task with sample inputs",
+            "A person who can verify the output"
+          ],
+          "steps": [
+            "Write down the task, expected output and cases to escalate.",
+            "Assemble the workflow using only required data and capabilities.",
+            "Run sample and edge-case inputs and record errors.",
+            "Keep human review before outputs reach customers or change records."
+          ],
+          "expectedOutput": "A tested prototype with acceptance criteria, known gaps and an explicit review point."
+        }
+      ],
+      "pricing": {
+        "notes": "Plan features and current charges can change; confirm the provider’s current terms.",
+        "source": {
+          "label": "Official pricing information",
+          "url": "https://www.mindstudio.ai/pricing",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "Current plan details"
+          ]
+        },
+        "linkRef": "pricing-details"
+      },
+      "productInfoUpdatedAt": "2026-10-31"
     },
     {
       "id": "n8n",
       "name": "n8n",
       "slug": "n8n",
       "h1": "n8n — Workflow Automation and AI Agent Orchestration",
-      "summary": "n8n is a visual workflow-automation platform that connects applications and APIs, with AI actions, human review, and hosting options.",
+      "summary": "n8n lets teams build visual workflows that connect apps and APIs, add AI steps and require human approval at selected points. It offers cloud and self-hosted options.",
       "primaryCategoryId": "ai-automation",
       "categoryIds": [
         "ai-automation"
@@ -971,6 +1373,27 @@
           "isAffiliate": false,
           "verificationStatus": "not_tested",
           "sourceReferences": []
+        },
+        {
+          "id": "pricing-details",
+          "url": "https://n8n.io/pricing/",
+          "purpose": "pricing_page",
+          "linkType": "official_website",
+          "isPrimary": false,
+          "isAffiliate": false,
+          "verificationStatus": "not_tested",
+          "sourceReferences": [
+            {
+              "label": "Pricing information",
+              "url": "https://n8n.io/pricing/",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "Official pricing information"
+              ]
+            }
+          ],
+          "deepLinkSupported": false,
+          "ctaLabel": "Pricing information"
         }
       ],
       "logoUrl": "https://company-images.partnerstack.com/file_DEyEOgFvD4Xb541dXjHw.png",
@@ -996,85 +1419,126 @@
       "features": [
         {
           "name": "Workflow automation",
-          "sources": [],
-          "evidenceStatus": "draft_from_historical_description"
+          "sources": [
+            {
+              "label": "Official product information",
+              "url": "https://n8n.io/",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "Workflow automation",
+                "Connect a trigger to a sequence of actions and inspect each execution."
+              ]
+            }
+          ],
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Connect a trigger to a sequence of actions and inspect each execution."
         },
         {
           "name": "Visual workflow editor",
           "sources": [
             {
-              "label": "Feature source",
+              "label": "Official product information",
               "url": "https://n8n.io/",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "Visual workflow editor"
+                "Visual workflow editor",
+                "Build and revise automations in a node-based editor."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Build and revise automations in a node-based editor."
         },
         {
           "name": "Native integrations and HTTP API connections",
           "sources": [
             {
-              "label": "Feature source",
+              "label": "Official product information",
               "url": "https://n8n.io/",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "Native integrations and HTTP API connections"
+                "Native integrations and HTTP API connections",
+                "Connect supported apps or make HTTP requests where a direct app node is not available."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Connect supported apps or make HTTP requests where a direct app node is not available."
         },
         {
           "name": "AI actions with human-in-the-loop controls",
           "sources": [
             {
-              "label": "Feature source",
+              "label": "Official product information",
               "url": "https://n8n.io/",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "AI actions with human-in-the-loop controls"
+                "AI actions with human-in-the-loop controls",
+                "Add AI steps and pause for a person to review or approve work."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Add AI steps and pause for a person to review or approve work."
         },
         {
           "name": "Self-hosted and cloud deployment",
           "sources": [
             {
-              "label": "Feature source",
+              "label": "Official product information",
               "url": "https://n8n.io/",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "Self-hosted and cloud deployment"
+                "Self-hosted and cloud deployment",
+                "Choose a hosted or self-managed deployment approach."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Choose a hosted or self-managed deployment approach."
         },
         {
           "name": "Workflow execution inspection and error recovery",
           "sources": [
             {
-              "label": "Feature source",
+              "label": "Official product information",
               "url": "https://n8n.io/",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "Workflow execution inspection and error recovery"
+                "Workflow execution inspection and error recovery",
+                "Review execution details to locate failures and revise the workflow."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Review execution details to locate failures and revise the workflow."
         }
       ],
       "limitations": [],
-      "integrations": [],
+      "integrations": [
+        "Connected applications supported by n8n",
+        "HTTP APIs"
+      ],
       "howItWorks": {
-        "summary": "Build workflows in the visual editor, connect services or APIs, define rules and execution triggers, then inspect and revise runs.",
-        "steps": [],
+        "summary": "Start with one repeatable handoff, connect its trigger and services, test the run and decide where a person must review exceptions.",
+        "steps": [
+          "Choose a trigger and define the event that should start the flow.",
+          "Connect services or an API and map the fields that move between them.",
+          "Add conditions and a human approval step before consequential actions.",
+          "Run test data, inspect execution history and document who handles failures."
+        ],
         "sources": [
           {
-            "label": "How it works source",
+            "label": "Official product information",
             "url": "https://n8n.io/",
-            "supports": []
+            "checkedAt": "2026-10-31",
+            "supports": [
+              "Start with one repeatable handoff, connect its trigger and services, test the run and decide where a person must review exceptions.",
+              "Choose a trigger and define the event that should start the flow.",
+              "Connect services or an API and map the fields that move between them.",
+              "Add conditions and a human approval step before consequential actions.",
+              "Run test data, inspect execution history and document who handles failures."
+            ]
           }
         ]
       },
@@ -1092,6 +1556,20 @@
           "supports": [
             "provider summary"
           ]
+        },
+        {
+          "label": "V4.1 product review",
+          "url": "https://n8n.io/",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "n8n lets teams build visual workflows that connect apps and APIs, add AI steps and require human approval at selected points. It offers cloud and self-hosted options.",
+            "Workflow automation",
+            "Visual workflow editor",
+            "Native integrations and HTTP API connections",
+            "AI actions with human-in-the-loop controls",
+            "Self-hosted and cloud deployment",
+            "Workflow execution inspection and error recovery"
+          ]
         }
       ],
       "summaryEvidence": {
@@ -1100,7 +1578,7 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "n8n | Distilled Marketplace",
-      "metadataDescription": "n8n is a visual workflow-automation platform that connects applications and APIs, with AI actions, human review, and hosting options.",
+      "metadataDescription": "n8n lets teams build visual workflows that connect apps and APIs, add AI steps and require human approval at selected points. It offers cloud and self-hosted options.",
       "relatedProviderIds": [],
       "serviceGroup": "Systems",
       "roles": [
@@ -1118,7 +1596,54 @@
         "AI actions with human-in-the-loop controls",
         "Self-hosted and cloud deployment",
         "Workflow execution inspection and error recovery"
-      ]
+      ],
+      "seo": {
+        "description": "n8n lets teams build visual workflows that connect apps and APIs, add AI steps and require human approval at selected points. It offers cloud and self-hosted options."
+      },
+      "useCases": [
+        "Move structured information between connected services",
+        "Add a review step before an automated action runs"
+      ],
+      "inputs": [
+        "A trigger event or schedule",
+        "Records from connected services",
+        "Rules for routing or human review"
+      ],
+      "outputs": [
+        "Updated records or actions in connected services",
+        "Execution history for review"
+      ],
+      "workflowTemplates": [
+        {
+          "id": "reviewable-lead-handoff",
+          "title": "Create a reviewable lead handoff",
+          "description": "Route a new lead to a person before an automated follow-up action.",
+          "requirements": [
+            "A connected source for new leads",
+            "A destination service and assigned reviewer"
+          ],
+          "steps": [
+            "Trigger when a new lead record is created.",
+            "Map lead details and source into a consistent record.",
+            "Pause for a person to review missing or unexpected information.",
+            "After approval, create or update the destination record and log the run."
+          ],
+          "expectedOutput": "A reviewed lead record in the destination service, with execution details for troubleshooting."
+        }
+      ],
+      "pricing": {
+        "notes": "Plan features and current charges can change; confirm the provider’s current terms.",
+        "source": {
+          "label": "Official pricing information",
+          "url": "https://n8n.io/pricing/",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "Current plan details"
+          ]
+        },
+        "linkRef": "pricing-details"
+      },
+      "productInfoUpdatedAt": "2026-10-31"
     },
     {
       "id": "sintra",
@@ -1192,7 +1717,7 @@
       "name": "Softr",
       "slug": "softr",
       "h1": "Softr",
-      "summary": "Softr is a platform that enables users to build custom applications and websites without needing to write code.",
+      "summary": "Softr is a no-code business app builder for portals, internal tools and dashboards. Teams can build from a prompt or template and connect sources such as Airtable, Google Sheets, Notion or HubSpot.",
       "primaryCategoryId": "ai-automation",
       "categoryIds": [
         "ai-automation"
@@ -1224,6 +1749,27 @@
           "isAffiliate": false,
           "verificationStatus": "not_tested",
           "sourceReferences": []
+        },
+        {
+          "id": "pricing-details",
+          "url": "https://www.softr.io/pricing",
+          "purpose": "pricing_page",
+          "linkType": "official_website",
+          "isPrimary": false,
+          "isAffiliate": false,
+          "verificationStatus": "not_tested",
+          "sourceReferences": [
+            {
+              "label": "Pricing information",
+              "url": "https://www.softr.io/pricing",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "Official pricing information"
+              ]
+            }
+          ],
+          "deepLinkSupported": false,
+          "ctaLabel": "Pricing information"
         }
       ],
       "logoUrl": "https://company-images.partnerstack.com/file_VXrRg642S9d2uLmPl6Ni.png",
@@ -1239,20 +1785,47 @@
       "features": [
         {
           "name": "App creation",
-          "sources": [],
-          "evidenceStatus": "draft_from_historical_description"
+          "sources": [
+            {
+              "label": "Official product information",
+              "url": "https://www.softr.io/no-code-app-builder",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "App creation",
+                "Build a business app visually from a prompt, template or blank project."
+              ]
+            }
+          ],
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Build a business app visually from a prompt, template or blank project."
         }
       ],
       "limitations": [],
-      "integrations": [],
+      "integrations": [
+        "Airtable",
+        "Google Sheets",
+        "Notion",
+        "HubSpot",
+        "REST APIs"
+      ],
       "faqs": [],
-      "sources": [],
+      "sources": [
+        {
+          "label": "V4.1 product review",
+          "url": "https://www.softr.io/no-code-app-builder",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "Softr is a no-code business app builder for portals, internal tools and dashboards. Teams can build from a prompt or template and connect sources such as Airtable, Google Sheets, Notion or HubSpot.",
+            "App creation"
+          ]
+        }
+      ],
       "summaryEvidence": {
         "classification": "historical_source_description"
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Softr | Distilled Marketplace",
-      "metadataDescription": "Softr is a platform that enables users to build custom applications and websites without needing to write code.",
+      "metadataDescription": "Softr is a no-code business app builder for portals, internal tools and dashboards. Teams can build from a prompt or template and connect sources such as Airtable, Google Sheets, Notion or HubSpot.",
       "relatedProviderIds": [],
       "serviceGroup": "Systems",
       "roles": [
@@ -1265,7 +1838,77 @@
       ],
       "searchKeywords": [
         "App creation"
-      ]
+      ],
+      "seo": {
+        "description": "Softr is a no-code business app builder for portals, internal tools and dashboards. Teams can build from a prompt or template and connect sources such as Airtable, Google Sheets, Notion or HubSpot."
+      },
+      "useCases": [
+        "Turn a structured spreadsheet into a team portal or internal app",
+        "Create a customer or partner portal with access permissions"
+      ],
+      "inputs": [
+        "A connected data source",
+        "Pages and user roles needed",
+        "Access rules and content to expose"
+      ],
+      "outputs": [
+        "A no-code portal, internal app or dashboard",
+        "A user experience connected to configured data"
+      ],
+      "howItWorks": {
+        "summary": "Choose a template or describe the app, connect its source, configure pages and permissions, then test access with representative users.",
+        "steps": [
+          "Choose the task and user group the app should support.",
+          "Connect a data source and map required records.",
+          "Build pages and define user groups and permissions.",
+          "Test with representative accounts before inviting the team."
+        ],
+        "sources": [
+          {
+            "label": "Official product information",
+            "url": "https://www.softr.io/no-code-app-builder",
+            "checkedAt": "2026-10-31",
+            "supports": [
+              "Choose a template or describe the app, connect its source, configure pages and permissions, then test access with representative users.",
+              "Choose the task and user group the app should support.",
+              "Connect a data source and map required records.",
+              "Build pages and define user groups and permissions.",
+              "Test with representative accounts before inviting the team."
+            ]
+          }
+        ]
+      },
+      "workflowTemplates": [
+        {
+          "id": "build-an-operations-portal",
+          "title": "Build a small operations portal",
+          "description": "Use a structured data source to create a role-aware portal for a repeatable team process.",
+          "requirements": [
+            "A maintained data source",
+            "Defined user groups and access needs"
+          ],
+          "steps": [
+            "List the information each group needs to see or update.",
+            "Connect the source and create list or detail views.",
+            "Set up user groups and permissions.",
+            "Test with representative accounts before inviting the full team."
+          ],
+          "expectedOutput": "A testable portal presenting a selected data source with role-based access."
+        }
+      ],
+      "pricing": {
+        "notes": "Plan features and current charges can change; confirm the provider’s current terms.",
+        "source": {
+          "label": "Official pricing information",
+          "url": "https://www.softr.io/pricing",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "Current plan details"
+          ]
+        },
+        "linkRef": "pricing-details"
+      },
+      "productInfoUpdatedAt": "2026-10-31"
     },
     {
       "id": "synthflow",
@@ -1367,7 +2010,7 @@
       "name": "Airwallex",
       "slug": "airwallex",
       "h1": "Airwallex",
-      "summary": "Airwallex: Compare business accounts around access, cash movement, and controls.",
+      "summary": "A listed option in Banking & Neobanking. Verify current features and terms with Airwallex before choosing.",
       "primaryCategoryId": "banking-neobanking",
       "categoryIds": [
         "banking-neobanking"
@@ -1425,7 +2068,11 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Banking & Neobanking. Verify current features and terms with Airwallex before choosing.",
+      "seo": {
+        "description": "A listed option in Banking & Neobanking. Verify current features and terms with Airwallex before choosing."
+      }
     },
     {
       "id": "found",
@@ -1634,7 +2281,7 @@
       "name": "Lili",
       "slug": "lili",
       "h1": "Lili",
-      "summary": "Lili: Compare business accounts around access, cash movement, and controls.",
+      "summary": "A listed option in Banking & Neobanking. Verify current features and terms with Lili before choosing.",
       "primaryCategoryId": "banking-neobanking",
       "categoryIds": [
         "banking-neobanking"
@@ -1703,14 +2350,18 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Banking & Neobanking. Verify current features and terms with Lili before choosing.",
+      "seo": {
+        "description": "A listed option in Banking & Neobanking. Verify current features and terms with Lili before choosing."
+      }
     },
     {
       "id": "novo",
       "name": "Novo",
       "slug": "novo",
       "h1": "Novo",
-      "summary": "Novo: Compare business accounts around access, cash movement, and controls.",
+      "summary": "A listed option in Banking & Neobanking. Verify current features and terms with Novo before choosing.",
       "primaryCategoryId": "banking-neobanking",
       "categoryIds": [
         "banking-neobanking"
@@ -1790,14 +2441,18 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Banking & Neobanking. Verify current features and terms with Novo before choosing.",
+      "seo": {
+        "description": "A listed option in Banking & Neobanking. Verify current features and terms with Novo before choosing."
+      }
     },
     {
       "id": "ramp",
       "name": "Ramp",
       "slug": "ramp",
       "h1": "Ramp",
-      "summary": "Ramp: Evaluate spending visibility, planning routines, and reporting needs.",
+      "summary": "Ramp brings business card spend, expense workflows, bill payments and accounting automation into a finance operations platform. Availability, eligibility and fees depend on the product and payment method.",
       "primaryCategoryId": "budgeting-finops",
       "categoryIds": [
         "budgeting-finops"
@@ -1829,6 +2484,27 @@
           "isAffiliate": false,
           "verificationStatus": "not_tested",
           "sourceReferences": []
+        },
+        {
+          "id": "pricing-details",
+          "url": "https://ramp.com/pricing",
+          "purpose": "pricing_page",
+          "linkType": "official_website",
+          "isPrimary": false,
+          "isAffiliate": false,
+          "verificationStatus": "not_tested",
+          "sourceReferences": [
+            {
+              "label": "Pricing information",
+              "url": "https://ramp.com/pricing",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "Official pricing information"
+              ]
+            }
+          ],
+          "deepLinkSupported": false,
+          "ctaLabel": "Pricing information"
         }
       ],
       "capabilities": [],
@@ -1836,11 +2512,94 @@
       "audiences": [],
       "stages": [],
       "suitableFor": [],
-      "features": [],
+      "features": [
+        {
+          "name": "Card and spend controls",
+          "description": "Configure card limits and review employee spending workflows.",
+          "sources": [
+            {
+              "label": "Official product information",
+              "url": "https://ramp.com/pricing",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "Card and spend controls",
+                "Configure card limits and review employee spending workflows."
+              ]
+            }
+          ],
+          "evidenceStatus": "verified_primary_source_2026_10_31"
+        },
+        {
+          "name": "Expense workflows",
+          "description": "Collect receipts and match them to transactions for review and coding.",
+          "sources": [
+            {
+              "label": "Official product information",
+              "url": "https://support.ramp.com/ramp-overview/",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "Expense workflows",
+                "Collect receipts and match them to transactions for review and coding."
+              ]
+            }
+          ],
+          "evidenceStatus": "verified_primary_source_2026_10_31"
+        },
+        {
+          "name": "Bill payment approvals",
+          "description": "Route vendor bills through configured approvals and payment methods.",
+          "sources": [
+            {
+              "label": "Official product information",
+              "url": "https://ramp.com/pricing",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "Bill payment approvals",
+                "Route vendor bills through configured approvals and payment methods."
+              ]
+            }
+          ],
+          "evidenceStatus": "verified_primary_source_2026_10_31"
+        },
+        {
+          "name": "Accounting sync",
+          "description": "Apply coding rules and sync supported transactions with accounting software.",
+          "sources": [
+            {
+              "label": "Official product information",
+              "url": "https://support.ramp.com/managing-accounting-rules",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "Accounting sync",
+                "Apply coding rules and sync supported transactions with accounting software."
+              ]
+            }
+          ],
+          "evidenceStatus": "verified_primary_source_2026_10_31"
+        }
+      ],
       "limitations": [],
-      "integrations": [],
+      "integrations": [
+        "QuickBooks Online",
+        "Xero",
+        "Sage Intacct",
+        "NetSuite"
+      ],
       "faqs": [],
-      "sources": [],
+      "sources": [
+        {
+          "label": "V4.1 product review",
+          "url": "https://ramp.com/pricing",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "Ramp brings business card spend, expense workflows, bill payments and accounting automation into a finance operations platform. Availability, eligibility and fees depend on the product and payment method.",
+            "Spend controls",
+            "Expense management",
+            "Bill payments",
+            "Accounting automation"
+          ]
+        }
+      ],
       "summaryEvidence": {
         "classification": "not_sourced"
       },
@@ -1856,14 +2615,86 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "Ramp brings business card spend, expense workflows, bill payments and accounting automation into a finance operations platform. Availability, eligibility and fees depend on the product and payment method.",
+      "seo": {
+        "description": "Ramp brings business card spend, expense workflows, bill payments and accounting automation into a finance operations platform. Availability, eligibility and fees depend on the product and payment method."
+      },
+      "useCases": [
+        "Set up reviewable employee spending workflows",
+        "Route vendor invoices through approvals",
+        "Prepare transactions for reconciliation"
+      ],
+      "inputs": [
+        "Card transactions and receipts",
+        "Vendor invoices and payment instructions",
+        "Accounting categories and approval rules"
+      ],
+      "outputs": [
+        "Reviewed expense and bill records",
+        "Coded transactions and accounting syncs where configured"
+      ],
+      "howItWorks": {
+        "summary": "Configure spend rules and accounting categories, assign reviewers, then reconcile transactions in the connected accounting system.",
+        "steps": [
+          "Map current card, expense and bill approval steps.",
+          "Set spending rules, receipt expectations and invoice approvers.",
+          "Connect accounting and map categories.",
+          "Pilot with a small group and reconcile records before expanding access."
+        ],
+        "sources": [
+          {
+            "label": "Official product information",
+            "url": "https://ramp.com/pricing",
+            "checkedAt": "2026-10-31",
+            "supports": [
+              "Configure spend rules and accounting categories, assign reviewers, then reconcile transactions in the connected accounting system.",
+              "Map current card, expense and bill approval steps.",
+              "Set spending rules, receipt expectations and invoice approvers.",
+              "Connect accounting and map categories.",
+              "Pilot with a small group and reconcile records before expanding access."
+            ]
+          }
+        ]
+      },
+      "workflowTemplates": [
+        {
+          "id": "review-vendor-spend",
+          "title": "Review vendor spend before payment",
+          "description": "Make invoice ownership and coding visible before release.",
+          "requirements": [
+            "Vendor invoices and approvers",
+            "Accounting categories and payment controls"
+          ],
+          "steps": [
+            "Capture the invoice and match it to a vendor record.",
+            "Assign an owner to confirm amount, purpose and category.",
+            "Route the invoice through configured approvals.",
+            "Release payment using the selected method and reconcile the transaction."
+          ],
+          "expectedOutput": "An approved bill with an accountable owner and a record ready for reconciliation."
+        }
+      ],
+      "pricing": {
+        "notes": "Plan features and current charges can change; confirm the provider’s current terms.",
+        "source": {
+          "label": "Official pricing information",
+          "url": "https://ramp.com/pricing",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "Current plan details"
+          ]
+        },
+        "linkRef": "pricing-details"
+      },
+      "productInfoUpdatedAt": "2026-10-31"
     },
     {
       "id": "creditrepaircloud",
       "name": "Credit Repair Cloud",
       "slug": "creditrepaircloud",
       "h1": "Credit Repair Cloud",
-      "summary": "Credit Repair Cloud: Review business credit education, records, and product fit before applying.",
+      "summary": "A listed option in Business Credit. Verify current features and terms with Credit Repair Cloud before choosing.",
       "primaryCategoryId": "business-credit",
       "categoryIds": [
         "business-credit"
@@ -1911,14 +2742,18 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Business Credit. Verify current features and terms with Credit Repair Cloud before choosing.",
+      "seo": {
+        "description": "A listed option in Business Credit. Verify current features and terms with Credit Repair Cloud before choosing."
+      }
     },
     {
       "id": "creditsuite",
       "name": "Credit Suite",
       "slug": "creditsuite",
       "h1": "Credit Suite",
-      "summary": "Credit Suite: Review business credit education, records, and product fit before applying.",
+      "summary": "Credit Suite offers a business credit building program with guidance on business setup, commercial credit profiles and financing options. Evaluate program costs and any financing separately; outcomes depend on each provider and lender.",
       "primaryCategoryId": "business-credit",
       "categoryIds": [
         "business-credit"
@@ -1940,6 +2775,27 @@
           "isAffiliate": true,
           "verificationStatus": "not_tested",
           "sourceReferences": []
+        },
+        {
+          "id": "pricing-details",
+          "url": "https://www.creditsuite.com/renatuspricing/",
+          "purpose": "pricing_page",
+          "linkType": "official_website",
+          "isPrimary": false,
+          "isAffiliate": false,
+          "verificationStatus": "not_tested",
+          "sourceReferences": [
+            {
+              "label": "Pricing information",
+              "url": "https://www.creditsuite.com/renatuspricing/",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "Official pricing information"
+              ]
+            }
+          ],
+          "deepLinkSupported": false,
+          "ctaLabel": "Pricing information"
         }
       ],
       "capabilities": [],
@@ -1947,11 +2803,93 @@
       "audiences": [],
       "stages": [],
       "suitableFor": [],
-      "features": [],
+      "features": [
+        {
+          "name": "Business credit profile guidance",
+          "description": "The program describes assistance setting up commercial credit profiles with business reporting agencies.",
+          "sources": [
+            {
+              "label": "Official product information",
+              "url": "https://www.creditsuite.com/business-credit/",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "Business credit profile guidance",
+                "The program describes assistance setting up commercial credit profiles with business reporting agencies."
+              ]
+            }
+          ],
+          "evidenceStatus": "verified_primary_source_2026_10_31"
+        },
+        {
+          "name": "Business setup review",
+          "description": "The program describes reviewing company setup records as part of its process.",
+          "sources": [
+            {
+              "label": "Official product information",
+              "url": "https://www.creditsuite.com/business-credit/",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "Business setup review",
+                "The program describes reviewing company setup records as part of its process."
+              ]
+            }
+          ],
+          "evidenceStatus": "verified_primary_source_2026_10_31"
+        },
+        {
+          "name": "Credit education and advisor support",
+          "description": "The program lists training and advisor support for navigating business credit records.",
+          "sources": [
+            {
+              "label": "Official product information",
+              "url": "https://www.creditsuite.com/business-credit/",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "Credit education and advisor support",
+                "The program lists training and advisor support for navigating business credit records."
+              ]
+            }
+          ],
+          "evidenceStatus": "verified_primary_source_2026_10_31"
+        },
+        {
+          "name": "Financing access information",
+          "description": "The program describes access to financing options; eligibility and terms are determined separately.",
+          "sources": [
+            {
+              "label": "Official product information",
+              "url": "https://www.creditsuite.com/homepage/",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "Financing access information",
+                "The program describes access to financing options; eligibility and terms are determined separately."
+              ]
+            }
+          ],
+          "evidenceStatus": "verified_primary_source_2026_10_31"
+        }
+      ],
       "limitations": [],
-      "integrations": [],
+      "integrations": [
+        "Dun & Bradstreet",
+        "Experian Business",
+        "Equifax Commercial"
+      ],
       "faqs": [],
-      "sources": [],
+      "sources": [
+        {
+          "label": "V4.1 product review",
+          "url": "https://www.creditsuite.com/business-credit/",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "Credit Suite offers a business credit building program with guidance on business setup, commercial credit profiles and financing options. Evaluate program costs and any financing separately; outcomes depend on each provider and lender.",
+            "Business credit profile guidance",
+            "Business setup review",
+            "Credit education and coaching",
+            "Financing access information"
+          ]
+        }
+      ],
       "summaryEvidence": {
         "classification": "not_sourced"
       },
@@ -1966,7 +2904,78 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "Credit Suite offers a business credit building program with guidance on business setup, commercial credit profiles and financing options. Evaluate program costs and any financing separately; outcomes depend on each provider and lender.",
+      "seo": {
+        "description": "Credit Suite offers a business credit building program with guidance on business setup, commercial credit profiles and financing options. Evaluate program costs and any financing separately; outcomes depend on each provider and lender."
+      },
+      "useCases": [
+        "Organize business setup and commercial credit records",
+        "Review business credit and financing services before enrollment"
+      ],
+      "inputs": [
+        "Business entity and contact information",
+        "Existing commercial credit profile details",
+        "Questions about program costs, scope and financing terms"
+      ],
+      "outputs": [
+        "A checklist of setup and profile questions to verify",
+        "A clearer view of program scope and separate lender terms"
+      ],
+      "howItWorks": {
+        "summary": "Review program inclusions, gather business records, confirm price and service terms in writing, and assess financing directly with the provider and lender.",
+        "steps": [
+          "Document current business setup and commercial credit records.",
+          "Ask which services, reporting agencies and advisor support are included.",
+          "Request current fees, cancellation terms and separate financing costs in writing.",
+          "Evaluate financing directly; enrollment does not establish eligibility or guarantee an outcome."
+        ],
+        "sources": [
+          {
+            "label": "Official product information",
+            "url": "https://www.creditsuite.com/business-credit/",
+            "checkedAt": "2026-10-31",
+            "supports": [
+              "Review program inclusions, gather business records, confirm price and service terms in writing, and assess financing directly with the provider and lender.",
+              "Document current business setup and commercial credit records.",
+              "Ask which services, reporting agencies and advisor support are included.",
+              "Request current fees, cancellation terms and separate financing costs in writing.",
+              "Evaluate financing directly; enrollment does not establish eligibility or guarantee an outcome."
+            ]
+          }
+        ]
+      },
+      "workflowTemplates": [
+        {
+          "id": "evaluate-business-credit-program",
+          "title": "Evaluate a business credit program",
+          "description": "A due-diligence checklist that separates service scope from lending decisions.",
+          "requirements": [
+            "Current business formation and credit records",
+            "Current program terms supplied by the provider"
+          ],
+          "steps": [
+            "List the records and setup tasks you need help with.",
+            "Ask which tasks are included and what remains your responsibility.",
+            "Confirm fees, renewal and cancellation terms before enrollment.",
+            "Review credit or financing products separately with the actual provider and lender."
+          ],
+          "expectedOutput": "A written list of scope, costs, responsibilities and open questions, without assuming financing approval."
+        }
+      ],
+      "pricing": {
+        "notes": "Plan features and current charges can change; confirm the provider’s current terms.",
+        "source": {
+          "label": "Official pricing information",
+          "url": "https://www.creditsuite.com/renatuspricing/",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "Current plan details"
+          ]
+        },
+        "linkRef": "pricing-details"
+      },
+      "productInfoUpdatedAt": "2026-10-31"
     },
     {
       "id": "dunbradstreet",
@@ -2059,7 +3068,7 @@
       "name": "FairFigure",
       "slug": "fairfigure",
       "h1": "FairFigure",
-      "summary": "FairFigure: Review business credit education, records, and product fit before applying.",
+      "summary": "A listed option in Business Credit. Verify current features and terms with FairFigure before choosing.",
       "primaryCategoryId": "business-credit",
       "categoryIds": [
         "business-credit"
@@ -2106,14 +3115,18 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Business Credit. Verify current features and terms with FairFigure before choosing.",
+      "seo": {
+        "description": "A listed option in Business Credit. Verify current features and terms with FairFigure before choosing."
+      }
     },
     {
       "id": "nav",
       "name": "Nav",
       "slug": "nav",
       "h1": "Nav",
-      "summary": "Nav: Review business credit education, records, and product fit before applying.",
+      "summary": "A listed option in Business Credit. Verify current features and terms with Nav before choosing.",
       "primaryCategoryId": "business-credit",
       "categoryIds": [
         "business-credit"
@@ -2171,7 +3184,11 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Business Credit. Verify current features and terms with Nav before choosing.",
+      "seo": {
+        "description": "A listed option in Business Credit. Verify current features and terms with Nav before choosing."
+      }
     },
     {
       "id": "close",
@@ -2254,7 +3271,7 @@
       "name": "Pipedrive",
       "slug": "pipedrive",
       "h1": "Pipedrive — Sales CRM and Pipeline Automation",
-      "summary": "Pipedrive is a sales CRM for tracking leads, managing pipelines, automating follow-ups and analyzing sales activity.",
+      "summary": "Pipedrive is a sales CRM for organizing leads, contacts, deals and follow-up activity in configurable pipelines. Teams can use automations and reporting to manage their sales process.",
       "primaryCategoryId": "crm-sales",
       "categoryIds": [
         "crm-sales"
@@ -2332,78 +3349,107 @@
           "name": "Customizable deal pipelines",
           "sources": [
             {
-              "label": "Feature source",
-              "url": "https://www.pipedrive.com/en/products",
+              "label": "Official product information",
+              "url": "https://www.pipedrive.com/en/products/sales/customizable-crm",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "Customizable deal pipelines"
+                "Customizable deal pipelines",
+                "Rename or reorder stages and maintain multiple pipelines for different sales flows."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Rename or reorder stages and maintain multiple pipelines for different sales flows."
         },
         {
           "name": "Lead and contact management",
           "sources": [
             {
-              "label": "Feature source",
+              "label": "Official product information",
               "url": "https://www.pipedrive.com/en/products",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "Lead and contact management"
+                "Lead and contact management",
+                "Keep lead and contact records alongside the deals and activities tied to them."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Keep lead and contact records alongside the deals and activities tied to them."
         },
         {
           "name": "Sales automations",
           "sources": [
             {
-              "label": "Feature source",
+              "label": "Official product information",
               "url": "https://www.pipedrive.com/en/products",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "Sales automations"
+                "Sales automations",
+                "Use configured automation to support repeatable sales tasks and follow-up."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Use configured automation to support repeatable sales tasks and follow-up."
         },
         {
           "name": "Reports and dashboards",
           "sources": [
             {
-              "label": "Feature source",
+              "label": "Official product information",
               "url": "https://www.pipedrive.com/en/products",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "Reports and dashboards"
+                "Reports and dashboards",
+                "Review pipeline and activity information through reports and dashboards."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Review pipeline and activity information through reports and dashboards."
         },
         {
           "name": "App integrations",
           "sources": [
             {
-              "label": "Feature source",
+              "label": "Official product information",
               "url": "https://www.pipedrive.com/en/products",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "App integrations"
+                "App integrations",
+                "Connect supported apps to fit an existing sales workflow."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Connect supported apps to fit an existing sales workflow."
         }
       ],
       "limitations": [],
-      "integrations": [],
+      "integrations": [
+        "Available integrations listed in the Pipedrive marketplace"
+      ],
       "howItWorks": {
-        "summary": "Import or add leads, configure pipeline stages, track deals and sales activities, and apply reporting or automation.",
-        "steps": [],
+        "summary": "Define stages that match the sales process, add leads, assign owners and next steps, then review stale deals and reports regularly.",
+        "steps": [
+          "Set up stages that reflect the business sales process.",
+          "Add or import lead and contact records with an owner.",
+          "Track each deal and record the next action and due date.",
+          "Review pipeline movement, overdue activities and reports."
+        ],
         "sources": [
           {
-            "label": "How it works source",
-            "url": "https://www.pipedrive.com/en/products",
-            "supports": []
+            "label": "Official product information",
+            "url": "https://www.pipedrive.com/en/features/pipeline-management",
+            "checkedAt": "2026-10-31",
+            "supports": [
+              "Define stages that match the sales process, add leads, assign owners and next steps, then review stale deals and reports regularly.",
+              "Set up stages that reflect the business sales process.",
+              "Add or import lead and contact records with an owner.",
+              "Track each deal and record the next action and due date.",
+              "Review pipeline movement, overdue activities and reports."
+            ]
           }
         ]
       },
@@ -2430,6 +3476,19 @@
           "supports": [
             "provider summary"
           ]
+        },
+        {
+          "label": "V4.1 product review",
+          "url": "https://www.pipedrive.com/en/features/pipeline-management",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "Pipedrive is a sales CRM for organizing leads, contacts, deals and follow-up activity in configurable pipelines. Teams can use automations and reporting to manage their sales process.",
+            "Customizable deal pipelines",
+            "Lead and contact management",
+            "Sales automations",
+            "Reports and dashboards",
+            "App integrations"
+          ]
         }
       ],
       "summaryEvidence": {
@@ -2437,7 +3496,7 @@
         "sourceUrl": "https://www.pipedrive.com/en/products"
       },
       "metadataTitle": "Pipedrive | Distilled Marketplace",
-      "metadataDescription": "Pipedrive is a sales CRM for tracking leads, managing pipelines, automating follow-ups and analyzing sales activity.",
+      "metadataDescription": "Pipedrive is a sales CRM for organizing leads, contacts, deals and follow-up activity in configurable pipelines. Teams can use automations and reporting to manage their sales process.",
       "relatedProviderIds": [],
       "serviceGroup": "Growth",
       "roles": [
@@ -2454,14 +3513,61 @@
         "Sales automations",
         "Reports and dashboards",
         "App integrations"
-      ]
+      ],
+      "seo": {
+        "description": "Pipedrive is a sales CRM for organizing leads, contacts, deals and follow-up activity in configurable pipelines. Teams can use automations and reporting to manage their sales process."
+      },
+      "useCases": [
+        "Assign an owner and next activity to each opportunity",
+        "Review pipeline movement and follow-up gaps"
+      ],
+      "inputs": [
+        "Lead and contact details",
+        "Deal stage, owner and expected close information",
+        "Follow-up activities"
+      ],
+      "outputs": [
+        "A visible sales pipeline",
+        "Assigned next activities and pipeline reports"
+      ],
+      "workflowTemplates": [
+        {
+          "id": "weekly-pipeline-review",
+          "title": "Run a weekly pipeline review",
+          "description": "Use deal stages and activities to identify unowned follow-ups and stale opportunities.",
+          "requirements": [
+            "An agreed pipeline definition",
+            "A deal owner and next-step expectation"
+          ],
+          "steps": [
+            "Filter active deals by stage and last activity.",
+            "Check each deal has a named owner and dated next action.",
+            "Update records when buyer or sales status changes.",
+            "Review overdue activities and agree who will follow up."
+          ],
+          "expectedOutput": "A current pipeline with owned next steps and a short follow-up list."
+        }
+      ],
+      "pricing": {
+        "notes": "Plan features and current charges can change; confirm the provider’s current terms.",
+        "source": {
+          "label": "Official pricing information",
+          "url": "https://www.pipedrive.com/en/pricing?department=sales",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "Current plan details"
+          ]
+        },
+        "linkRef": "link-f6f14aedea5d65"
+      },
+      "productInfoUpdatedAt": "2026-10-31"
     },
     {
       "id": "gorgias",
       "name": "Gorgias",
       "slug": "gorgias",
       "h1": "Gorgias — E-commerce Helpdesk & Customer Support",
-      "summary": "Gorgias centralizes e-commerce customer conversations, order context and support workflows across multiple channels.",
+      "summary": "Gorgias is an e-commerce helpdesk that brings customer messages into one inbox and connects conversations to store and order context. Teams can route tickets, use macros and review support performance.",
       "primaryCategoryId": "ecommerce",
       "categoryIds": [
         "ecommerce"
@@ -2499,6 +3605,27 @@
               "supports": []
             }
           ]
+        },
+        {
+          "id": "pricing-details",
+          "url": "https://www.gorgias.com/pricing",
+          "purpose": "pricing_page",
+          "linkType": "official_website",
+          "isPrimary": false,
+          "isAffiliate": false,
+          "verificationStatus": "not_tested",
+          "sourceReferences": [
+            {
+              "label": "Pricing information",
+              "url": "https://www.gorgias.com/pricing",
+              "checkedAt": "2026-10-31",
+              "supports": [
+                "Official pricing information"
+              ]
+            }
+          ],
+          "deepLinkSupported": false,
+          "ctaLabel": "Pricing information"
         }
       ],
       "capabilities": [
@@ -2523,78 +3650,109 @@
           "name": "Unified customer service inbox",
           "sources": [
             {
-              "label": "Feature source",
+              "label": "Official product information",
               "url": "https://www.gorgias.com/products/helpdesk",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "Unified customer service inbox"
+                "Unified customer service inbox",
+                "Manage customer conversations from supported channels in a shared helpdesk."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Manage customer conversations from supported channels in a shared helpdesk."
         },
         {
           "name": "E-commerce order context and actions",
           "sources": [
             {
-              "label": "Feature source",
-              "url": "https://www.gorgias.com/products/helpdesk",
+              "label": "Official product information",
+              "url": "https://www.gorgias.com/product/order-management",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "E-commerce order context and actions"
+                "E-commerce order context and actions",
+                "View customer and order context and use supported Shopify actions from the helpdesk."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "View customer and order context and use supported Shopify actions from the helpdesk."
         },
         {
           "name": "Ticket management and routing",
           "sources": [
             {
-              "label": "Feature source",
+              "label": "Official product information",
               "url": "https://www.gorgias.com/products/helpdesk",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "Ticket management and routing"
+                "Ticket management and routing",
+                "Assign and prioritize tickets using configured routing rules."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Assign and prioritize tickets using configured routing rules."
         },
         {
           "name": "Customer support automation",
           "sources": [
             {
-              "label": "Feature source",
+              "label": "Official product information",
               "url": "https://www.gorgias.com/products/helpdesk",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "Customer support automation"
+                "Customer support automation",
+                "Use rules and macros for recurring support tasks; review actions before enabling automated replies."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Use rules and macros for recurring support tasks; review actions before enabling automated replies."
         },
         {
           "name": "Helpdesk reporting",
           "sources": [
             {
-              "label": "Feature source",
+              "label": "Official product information",
               "url": "https://www.gorgias.com/products/helpdesk",
+              "checkedAt": "2026-10-31",
               "supports": [
-                "Helpdesk reporting"
+                "Helpdesk reporting",
+                "Review support activity through available dashboards and agent statistics."
               ]
             }
           ],
-          "evidenceStatus": "draft_from_primary_source"
+          "evidenceStatus": "verified_primary_source_2026_10_31",
+          "description": "Review support activity through available dashboards and agent statistics."
         }
       ],
       "limitations": [],
-      "integrations": [],
+      "integrations": [
+        "Shopify",
+        "Supported shipping and fulfillment integrations",
+        "Supported subscription and loyalty integrations"
+      ],
       "howItWorks": {
-        "summary": "Connect supported commerce and contact channels, manage incoming tickets in one inbox, and use rules to streamline follow-up.",
-        "steps": [],
+        "summary": "Connect the store and supported messaging channels, set up ticket ownership and macros, then test order actions and escalation paths.",
+        "steps": [
+          "Connect the supported e-commerce store and message channels.",
+          "Define ticket categories, owner queues and priority rules.",
+          "Create reviewed response macros for recurring questions.",
+          "Test order actions and escalation scenarios before wider use."
+        ],
         "sources": [
           {
-            "label": "How it works source",
+            "label": "Official product information",
             "url": "https://www.gorgias.com/products/helpdesk",
-            "supports": []
+            "checkedAt": "2026-10-31",
+            "supports": [
+              "Connect the store and supported messaging channels, set up ticket ownership and macros, then test order actions and escalation paths.",
+              "Connect the supported e-commerce store and message channels.",
+              "Define ticket categories, owner queues and priority rules.",
+              "Create reviewed response macros for recurring questions.",
+              "Test order actions and escalation scenarios before wider use."
+            ]
           }
         ]
       },
@@ -2612,6 +3770,19 @@
           "supports": [
             "provider summary"
           ]
+        },
+        {
+          "label": "V4.1 product review",
+          "url": "https://www.gorgias.com/products/helpdesk",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "Gorgias is an e-commerce helpdesk that brings customer messages into one inbox and connects conversations to store and order context. Teams can route tickets, use macros and review support performance.",
+            "Unified customer service inbox",
+            "E-commerce order context and actions",
+            "Ticket management and routing",
+            "Customer support automation",
+            "Helpdesk reporting"
+          ]
         }
       ],
       "summaryEvidence": {
@@ -2619,7 +3790,7 @@
         "sourceUrl": "https://www.gorgias.com/products/helpdesk"
       },
       "metadataTitle": "Gorgias | Distilled Marketplace",
-      "metadataDescription": "Gorgias centralizes e-commerce customer conversations, order context and support workflows across multiple channels.",
+      "metadataDescription": "Gorgias is an e-commerce helpdesk that brings customer messages into one inbox and connects conversations to store and order context. Teams can route tickets, use macros and review support performance.",
       "relatedProviderIds": [],
       "serviceGroup": "Growth",
       "roles": [
@@ -2636,7 +3807,56 @@
         "Ticket management and routing",
         "Customer support automation",
         "Helpdesk reporting"
-      ]
+      ],
+      "seo": {
+        "description": "Gorgias is an e-commerce helpdesk that brings customer messages into one inbox and connects conversations to store and order context. Teams can route tickets, use macros and review support performance."
+      },
+      "useCases": [
+        "Centralize e-commerce support conversations",
+        "Route order questions to the right support owner",
+        "Create consistent replies for recurring questions"
+      ],
+      "inputs": [
+        "Messages from connected support channels",
+        "Customer and order context",
+        "Routing rules, macros and escalation expectations"
+      ],
+      "outputs": [
+        "Assigned support tickets",
+        "Consistent replies and configured order actions",
+        "Support activity reports"
+      ],
+      "workflowTemplates": [
+        {
+          "id": "route-order-support",
+          "title": "Route order support requests",
+          "description": "Connect incoming tickets to order context and an accountable support owner.",
+          "requirements": [
+            "A supported e-commerce integration such as Shopify",
+            "Defined ticket categories and escalation owners"
+          ],
+          "steps": [
+            "Receive the customer message in the shared inbox.",
+            "Review customer and order context for the conversation.",
+            "Route by topic or urgency and assign an owner.",
+            "Use an approved macro where appropriate; escalate refunds or exceptions for review."
+          ],
+          "expectedOutput": "A ticket with order context, a named owner and a traceable resolution."
+        }
+      ],
+      "pricing": {
+        "notes": "Plan features and current charges can change; confirm the provider’s current terms.",
+        "source": {
+          "label": "Official pricing information",
+          "url": "https://www.gorgias.com/pricing",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "Current plan details"
+          ]
+        },
+        "linkRef": "pricing-details"
+      },
+      "productInfoUpdatedAt": "2026-10-31"
     },
     {
       "id": "printify",
@@ -2855,7 +4075,7 @@
       "name": "Thimble",
       "slug": "thimble",
       "h1": "Thimble",
-      "summary": "Thimble: Compare coverage and benefits against your business risks and workforce.",
+      "summary": "A listed option in Insurance & Benefits. Verify current features and terms with Thimble before choosing.",
       "primaryCategoryId": "insurance-benefits",
       "categoryIds": [
         "insurance-benefits"
@@ -2903,7 +4123,11 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Insurance & Benefits. Verify current features and terms with Thimble before choosing.",
+      "seo": {
+        "description": "A listed option in Insurance & Benefits. Verify current features and terms with Thimble before choosing."
+      }
     },
     {
       "id": "businessanywhere",
@@ -3022,7 +4246,7 @@
       "name": "Northwest Registered Agent LLC",
       "slug": "northwestregisteredagent",
       "h1": "Northwest Registered Agent LLC",
-      "summary": "Northwest Registered Agent LLC: Evaluate legal and compliance support for your obligations and recordkeeping.",
+      "summary": "A listed option in Legal & Compliance. Verify current features and terms with Northwest Registered Agent LLC before choosing.",
       "primaryCategoryId": "legal-compliance",
       "categoryIds": [
         "legal-compliance"
@@ -3072,14 +4296,18 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Legal & Compliance. Verify current features and terms with Northwest Registered Agent LLC before choosing.",
+      "seo": {
+        "description": "A listed option in Legal & Compliance. Verify current features and terms with Northwest Registered Agent LLC before choosing."
+      }
     },
     {
       "id": "uslegalforms",
       "name": "USLegalForms",
       "slug": "uslegalforms",
       "h1": "USLegalForms",
-      "summary": "USLegalForms: Evaluate legal and compliance support for your obligations and recordkeeping.",
+      "summary": "A listed option in Legal & Compliance. Verify current features and terms with USLegalForms before choosing.",
       "primaryCategoryId": "legal-compliance",
       "categoryIds": [
         "legal-compliance"
@@ -3128,7 +4356,11 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Legal & Compliance. Verify current features and terms with USLegalForms before choosing.",
+      "seo": {
+        "description": "A listed option in Legal & Compliance. Verify current features and terms with USLegalForms before choosing."
+      }
     },
     {
       "id": "brightlocal",
@@ -3271,7 +4503,7 @@
       "name": "Semrush",
       "slug": "semrush",
       "h1": "Semrush",
-      "summary": "Semrush: Compare marketing tools around channels, measurement, and campaign workflow.",
+      "summary": "A listed option in Marketing & SEO. Verify current features and terms with Semrush before choosing.",
       "primaryCategoryId": "marketing-seo",
       "categoryIds": [
         "marketing-seo"
@@ -3340,14 +4572,18 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Marketing & SEO. Verify current features and terms with Semrush before choosing.",
+      "seo": {
+        "description": "A listed option in Marketing & SEO. Verify current features and terms with Semrush before choosing."
+      }
     },
     {
       "id": "tailwind",
       "name": "Tailwind",
       "slug": "tailwind",
       "h1": "Tailwind",
-      "summary": "Tailwind: Compare marketing tools around channels, measurement, and campaign workflow.",
+      "summary": "A listed option in Marketing & SEO. Verify current features and terms with Tailwind before choosing.",
       "primaryCategoryId": "marketing-seo",
       "categoryIds": [
         "marketing-seo"
@@ -3417,14 +4653,18 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Marketing & SEO. Verify current features and terms with Tailwind before choosing.",
+      "seo": {
+        "description": "A listed option in Marketing & SEO. Verify current features and terms with Tailwind before choosing."
+      }
     },
     {
       "id": "ubersuggest",
       "name": "Ubersuggest",
       "slug": "ubersuggest",
       "h1": "Ubersuggest",
-      "summary": "Ubersuggest: Compare marketing tools around channels, measurement, and campaign workflow.",
+      "summary": "A listed option in Marketing & SEO. Verify current features and terms with Ubersuggest before choosing.",
       "primaryCategoryId": "marketing-seo",
       "categoryIds": [
         "marketing-seo"
@@ -3482,7 +4722,11 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Marketing & SEO. Verify current features and terms with Ubersuggest before choosing.",
+      "seo": {
+        "description": "A listed option in Marketing & SEO. Verify current features and terms with Ubersuggest before choosing."
+      }
     },
     {
       "id": "melio",
@@ -3566,7 +4810,7 @@
       "name": "ClickUp",
       "slug": "clickup",
       "h1": "ClickUp",
-      "summary": "ClickUp: Compare ways to coordinate work, handoffs, and shared knowledge.",
+      "summary": "A listed option in Productivity. Verify current features and terms with ClickUp before choosing.",
       "primaryCategoryId": "productivity",
       "categoryIds": [
         "productivity"
@@ -3627,14 +4871,18 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Productivity. Verify current features and terms with ClickUp before choosing.",
+      "seo": {
+        "description": "A listed option in Productivity. Verify current features and terms with ClickUp before choosing."
+      }
     },
     {
       "id": "rentredi",
       "name": "RentRedi",
       "slug": "rentredi",
       "h1": "RentRedi",
-      "summary": "RentRedi: Evaluate property workflows, records, and transaction support.",
+      "summary": "A listed option in Real Estate Services. Verify current features and terms with RentRedi before choosing.",
       "primaryCategoryId": "real-estate-services",
       "categoryIds": [
         "real-estate-services"
@@ -3694,14 +4942,18 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Real Estate Services. Verify current features and terms with RentRedi before choosing.",
+      "seo": {
+        "description": "A listed option in Real Estate Services. Verify current features and terms with RentRedi before choosing."
+      }
     },
     {
       "id": "stessa",
       "name": "Stessa",
       "slug": "stessa",
       "h1": "Stessa",
-      "summary": "Stessa: Evaluate property workflows, records, and transaction support.",
+      "summary": "A listed option in Real Estate Services. Verify current features and terms with Stessa before choosing.",
       "primaryCategoryId": "real-estate-services",
       "categoryIds": [
         "real-estate-services"
@@ -3749,7 +5001,11 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Real Estate Services. Verify current features and terms with Stessa before choosing.",
+      "seo": {
+        "description": "A listed option in Real Estate Services. Verify current features and terms with Stessa before choosing."
+      }
     },
     {
       "id": "fliki",
@@ -3843,7 +5099,7 @@
       "name": "InVideo",
       "slug": "invideo",
       "h1": "InVideo",
-      "summary": "InVideo: Compare content planning, publishing, and audience workflow.",
+      "summary": "A listed option in Social Media & Content. Verify current features and terms with InVideo before choosing.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -3912,14 +5168,18 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Social Media & Content. Verify current features and terms with InVideo before choosing.",
+      "seo": {
+        "description": "A listed option in Social Media & Content. Verify current features and terms with InVideo before choosing."
+      }
     },
     {
       "id": "renderforest",
       "name": "Renderforest",
       "slug": "renderforest",
       "h1": "Renderforest",
-      "summary": "Renderforest: Compare content planning, publishing, and audience workflow.",
+      "summary": "A listed option in Social Media & Content. Verify current features and terms with Renderforest before choosing.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -3967,14 +5227,18 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Social Media & Content. Verify current features and terms with Renderforest before choosing.",
+      "seo": {
+        "description": "A listed option in Social Media & Content. Verify current features and terms with Renderforest before choosing."
+      }
     },
     {
       "id": "veed",
       "name": "VEED",
       "slug": "veed",
       "h1": "VEED",
-      "summary": "VEED: Compare content planning, publishing, and audience workflow.",
+      "summary": "A listed option in Social Media & Content. Verify current features and terms with VEED before choosing.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -4043,14 +5307,18 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Social Media & Content. Verify current features and terms with VEED before choosing.",
+      "seo": {
+        "description": "A listed option in Social Media & Content. Verify current features and terms with VEED before choosing."
+      }
     },
     {
       "id": "10web",
       "name": "10Web",
       "slug": "10web",
       "h1": "10Web",
-      "summary": "10Web: Evaluate automation around repeatable tasks, data quality, and human review.",
+      "summary": "A listed option in AI & Automation. Verify current features and terms with 10Web before choosing.",
       "primaryCategoryId": "ai-automation",
       "categoryIds": [
         "ai-automation"
@@ -4098,14 +5366,18 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in AI & Automation. Verify current features and terms with 10Web before choosing.",
+      "seo": {
+        "description": "A listed option in AI & Automation. Verify current features and terms with 10Web before choosing."
+      }
     },
     {
       "id": "aicascadesolutions",
       "name": "AI Cascade Solutions Corp.",
       "slug": "aicascadesolutions",
       "h1": "AI Cascade Solutions Corp.",
-      "summary": "AI Cascade Solutions Corp.: Evaluate automation around repeatable tasks, data quality, and human review.",
+      "summary": "A listed option in AI & Automation. Verify current features and terms with AI Cascade Solutions Corp. before choosing.",
       "primaryCategoryId": "ai-automation",
       "categoryIds": [
         "ai-automation"
@@ -4154,14 +5426,18 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in AI & Automation. Verify current features and terms with AI Cascade Solutions Corp. before choosing.",
+      "seo": {
+        "description": "A listed option in AI & Automation. Verify current features and terms with AI Cascade Solutions Corp. before choosing."
+      }
     },
     {
       "id": "aisdr",
       "name": "AiSDR, Inc.",
       "slug": "aisdr",
       "h1": "AiSDR, Inc.",
-      "summary": "AiSDR, Inc.: Evaluate automation around repeatable tasks, data quality, and human review.",
+      "summary": "A listed option in AI & Automation. Verify current features and terms with AiSDR, Inc. before choosing.",
       "primaryCategoryId": "ai-automation",
       "categoryIds": [
         "ai-automation"
@@ -4210,14 +5486,18 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in AI & Automation. Verify current features and terms with AiSDR, Inc. before choosing.",
+      "seo": {
+        "description": "A listed option in AI & Automation. Verify current features and terms with AiSDR, Inc. before choosing."
+      }
     },
     {
       "id": "appypie",
       "name": "AppyPie.com",
       "slug": "appypie",
       "h1": "AppyPie.com",
-      "summary": "AppyPie.com: Evaluate automation around repeatable tasks, data quality, and human review.",
+      "summary": "A listed option in AI & Automation. Verify current features and terms with AppyPie.com before choosing.",
       "primaryCategoryId": "ai-automation",
       "categoryIds": [
         "ai-automation"
@@ -4265,14 +5545,18 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in AI & Automation. Verify current features and terms with AppyPie.com before choosing.",
+      "seo": {
+        "description": "A listed option in AI & Automation. Verify current features and terms with AppyPie.com before choosing."
+      }
     },
     {
       "id": "base44",
       "name": "Base44",
       "slug": "base44",
       "h1": "Base44",
-      "summary": "Base44: Evaluate automation around repeatable tasks, data quality, and human review.",
+      "summary": "A listed option in AI & Automation. Verify current features and terms with Base44 before choosing.",
       "primaryCategoryId": "ai-automation",
       "categoryIds": [
         "ai-automation"
@@ -4320,14 +5604,18 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in AI & Automation. Verify current features and terms with Base44 before choosing.",
+      "seo": {
+        "description": "A listed option in AI & Automation. Verify current features and terms with Base44 before choosing."
+      }
     },
     {
       "id": "botsify",
       "name": "Botsify",
       "slug": "botsify",
       "h1": "Botsify",
-      "summary": "Botsify is an affiliate program that allows users to earn commissions by promoting their chatbot solutions.",
+      "summary": "Botsify is listed in AI & Automation. Verify current chatbot features, supported channels and service terms directly before choosing.",
       "primaryCategoryId": "ai-automation",
       "categoryIds": [
         "ai-automation"
@@ -4376,7 +5664,7 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Botsify | Distilled Marketplace",
-      "metadataDescription": "Botsify is an affiliate program that allows users to earn commissions by promoting their chatbot solutions.",
+      "metadataDescription": "Botsify is listed in AI & Automation. Verify current chatbot features, supported channels and service terms directly before choosing.",
       "relatedProviderIds": [],
       "serviceGroup": "Systems",
       "roles": [
@@ -4389,7 +5677,10 @@
       ],
       "searchKeywords": [
         "Chatbot functionality"
-      ]
+      ],
+      "seo": {
+        "description": "Botsify is listed in AI & Automation. Verify current chatbot features, supported channels and service terms directly before choosing."
+      }
     },
     {
       "id": "chatbase",
@@ -4697,7 +5988,7 @@
       "name": "Pickaxe",
       "slug": "pickaxe",
       "h1": "Pickaxe",
-      "summary": "Pickaxe is an affiliate program that allows participants to earn commissions by promoting their AI app services.",
+      "summary": "Pickaxe is listed in AI & Automation. Verify current app-building capabilities, deployment options and service terms directly before choosing.",
       "primaryCategoryId": "ai-automation",
       "categoryIds": [
         "ai-automation"
@@ -4736,7 +6027,7 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Pickaxe | Distilled Marketplace",
-      "metadataDescription": "Pickaxe is an affiliate program that allows participants to earn commissions by promoting their AI app services.",
+      "metadataDescription": "Pickaxe is listed in AI & Automation. Verify current app-building capabilities, deployment options and service terms directly before choosing.",
       "relatedProviderIds": [],
       "serviceGroup": "Systems",
       "roles": [
@@ -4747,14 +6038,17 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "seo": {
+        "description": "Pickaxe is listed in AI & Automation. Verify current app-building capabilities, deployment options and service terms directly before choosing."
+      }
     },
     {
       "id": "sitegptsaffiliateprogram",
-      "name": "SiteGPT's Affiliate Program",
+      "name": "SiteGPT",
       "slug": "sitegptsaffiliateprogram",
-      "h1": "SiteGPT's Affiliate Program",
-      "summary": "By signing up through your unique affiliate link, you can offer businesses an advanced tool to enhance their customer service experience.",
+      "h1": "SiteGPT",
+      "summary": "SiteGPT provides a customer-facing AI chatbot product. Review its current data sources, setup requirements and terms before using it for customer support.",
       "primaryCategoryId": "ai-automation",
       "categoryIds": [
         "ai-automation"
@@ -4802,8 +6096,8 @@
         "classification": "historical_source_description"
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
-      "metadataTitle": "SiteGPT's Affiliate Program | Distilled Marketplace",
-      "metadataDescription": "By signing up through your unique affiliate link, you can offer businesses an advanced tool to enhance their customer service experience.",
+      "metadataTitle": "SiteGPT",
+      "metadataDescription": "SiteGPT provides a customer-facing AI chatbot product. Review its current data sources, setup requirements and terms before using it for customer support.",
       "relatedProviderIds": [],
       "serviceGroup": "Systems",
       "roles": [
@@ -4814,14 +6108,17 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "seo": {
+        "description": "SiteGPT provides a customer-facing AI chatbot product. Review its current data sources, setup requirements and terms before using it for customer support."
+      }
     },
     {
       "id": "stammerai",
       "name": "Stammer.ai",
       "slug": "stammerai",
       "h1": "Stammer.ai",
-      "summary": "http://stammer.ai/ is a white-label AI SaaS platform that offers businesses the ability to integrate advanced speech recognition and processing technologies into their own products.",
+      "summary": "A listed option in AI & Automation. Verify current product details and terms with Stammer.ai before choosing.",
       "primaryCategoryId": "ai-automation",
       "categoryIds": [
         "ai-automation"
@@ -4870,7 +6167,7 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Stammer.ai | Distilled Marketplace",
-      "metadataDescription": "http://stammer.ai/ is a white-label AI SaaS platform that offers businesses the ability to integrate advanced speech recognition and processing technologie",
+      "metadataDescription": "A listed option in AI & Automation. Verify current product details and terms with Stammer.ai before choosing.",
       "relatedProviderIds": [],
       "serviceGroup": "Systems",
       "roles": [
@@ -4881,7 +6178,10 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "seo": {
+        "description": "A listed option in AI & Automation. Verify current product details and terms with Stammer.ai before choosing."
+      }
     },
     {
       "id": "tars",
@@ -4975,7 +6275,7 @@
       "name": "Finta.io",
       "slug": "fintaio",
       "h1": "Finta.io",
-      "summary": "Finta.io: Evaluate spending visibility, planning routines, and reporting needs.",
+      "summary": "A listed option in Budgeting & FinanceOps. Verify current features and terms with Finta.io before choosing.",
       "primaryCategoryId": "budgeting-finops",
       "categoryIds": [
         "budgeting-finops"
@@ -5034,7 +6334,11 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Budgeting & FinanceOps. Verify current features and terms with Finta.io before choosing.",
+      "seo": {
+        "description": "A listed option in Budgeting & FinanceOps. Verify current features and terms with Finta.io before choosing."
+      }
     },
     {
       "id": "projectionlab",
@@ -5108,7 +6412,7 @@
       "name": "Tiller Money (US)",
       "slug": "tillermoney",
       "h1": "Tiller Money (US)",
-      "summary": "Tiller Money (US): Evaluate spending visibility, planning routines, and reporting needs.",
+      "summary": "A listed option in Budgeting & FinanceOps. Verify current features and terms with Tiller Money (US) before choosing.",
       "primaryCategoryId": "budgeting-finops",
       "categoryIds": [
         "budgeting-finops"
@@ -5156,14 +6460,18 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Budgeting & FinanceOps. Verify current features and terms with Tiller Money (US) before choosing.",
+      "seo": {
+        "description": "A listed option in Budgeting & FinanceOps. Verify current features and terms with Tiller Money (US) before choosing."
+      }
     },
     {
       "id": "viably",
       "name": "Viably",
       "slug": "viably",
       "h1": "Viably",
-      "summary": "Viably: Evaluate spending visibility, planning routines, and reporting needs.",
+      "summary": "A listed option in Budgeting & FinanceOps. Verify current features and terms with Viably before choosing.",
       "primaryCategoryId": "budgeting-finops",
       "categoryIds": [
         "budgeting-finops"
@@ -5212,14 +6520,18 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Budgeting & FinanceOps. Verify current features and terms with Viably before choosing.",
+      "seo": {
+        "description": "A listed option in Budgeting & FinanceOps. Verify current features and terms with Viably before choosing."
+      }
     },
     {
       "id": "creditfirmnet",
       "name": "CreditFirm.net",
       "slug": "creditfirmnet",
       "h1": "CreditFirm.net",
-      "summary": "CreditFirm.net: Review business credit education, records, and product fit before applying.",
+      "summary": "A listed option in Business Credit. Verify current features and terms with CreditFirm.net before choosing.",
       "primaryCategoryId": "business-credit",
       "categoryIds": [
         "business-credit"
@@ -5267,14 +6579,18 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Business Credit. Verify current features and terms with CreditFirm.net before choosing.",
+      "seo": {
+        "description": "A listed option in Business Credit. Verify current features and terms with CreditFirm.net before choosing."
+      }
     },
     {
       "id": "fundandgrow",
       "name": "Fund&Grow",
       "slug": "fundandgrow",
       "h1": "Fund&Grow",
-      "summary": "Fund&Grow: Review business credit education, records, and product fit before applying.",
+      "summary": "A listed option in Business Credit. Verify current features and terms with Fund&Grow before choosing.",
       "primaryCategoryId": "business-credit",
       "categoryIds": [
         "business-credit"
@@ -5332,14 +6648,18 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Business Credit. Verify current features and terms with Fund&Grow before choosing.",
+      "seo": {
+        "description": "A listed option in Business Credit. Verify current features and terms with Fund&Grow before choosing."
+      }
     },
     {
       "id": "growcredit",
       "name": "GrowCredit",
       "slug": "growcredit",
       "h1": "GrowCredit",
-      "summary": "GrowCredit: Review business credit education, records, and product fit before applying.",
+      "summary": "A listed option in Business Credit. Verify current features and terms with GrowCredit before choosing.",
       "primaryCategoryId": "business-credit",
       "categoryIds": [
         "business-credit"
@@ -5397,14 +6717,18 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Business Credit. Verify current features and terms with GrowCredit before choosing.",
+      "seo": {
+        "description": "A listed option in Business Credit. Verify current features and terms with GrowCredit before choosing."
+      }
     },
     {
       "id": "kikoff",
       "name": "Kikoff",
       "slug": "kikoff",
       "h1": "Kikoff",
-      "summary": "Kikoff: Review business credit education, records, and product fit before applying.",
+      "summary": "A listed option in Business Credit. Verify current features and terms with Kikoff before choosing.",
       "primaryCategoryId": "business-credit",
       "categoryIds": [
         "business-credit"
@@ -5462,7 +6786,11 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Business Credit. Verify current features and terms with Kikoff before choosing.",
+      "seo": {
+        "description": "A listed option in Business Credit. Verify current features and terms with Kikoff before choosing."
+      }
     },
     {
       "id": "apolloio",
@@ -6264,7 +7592,7 @@
       "name": "RocketReach LLC",
       "slug": "rocketreach",
       "h1": "RocketReach LLC",
-      "summary": "RocketReach LLC: Compare customer records, follow-up processes, and sales handoffs.",
+      "summary": "A listed option in CRM & Sales. Verify current features and terms with RocketReach LLC before choosing.",
       "primaryCategoryId": "crm-sales",
       "categoryIds": [
         "crm-sales"
@@ -6312,7 +7640,11 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in CRM & Sales. Verify current features and terms with RocketReach LLC before choosing.",
+      "seo": {
+        "description": "A listed option in CRM & Sales. Verify current features and terms with RocketReach LLC before choosing."
+      }
     },
     {
       "id": "salesflare",
@@ -6394,7 +7726,7 @@
       "name": "SalesRabbit",
       "slug": "salesrabbit",
       "h1": "SalesRabbit",
-      "summary": "SalesRabbit: Compare customer records, follow-up processes, and sales handoffs.",
+      "summary": "A listed option in CRM & Sales. Verify current features and terms with SalesRabbit before choosing.",
       "primaryCategoryId": "crm-sales",
       "categoryIds": [
         "crm-sales"
@@ -6442,7 +7774,11 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in CRM & Sales. Verify current features and terms with SalesRabbit before choosing.",
+      "seo": {
+        "description": "A listed option in CRM & Sales. Verify current features and terms with SalesRabbit before choosing."
+      }
     },
     {
       "id": "seamlessai",
@@ -6658,7 +7994,7 @@
       "name": "Tidio LLC",
       "slug": "tidio",
       "h1": "Tidio LLC",
-      "summary": "Tidio LLC: Compare customer records, follow-up processes, and sales handoffs.",
+      "summary": "A listed option in CRM & Sales. Verify current features and terms with Tidio LLC before choosing.",
       "primaryCategoryId": "crm-sales",
       "categoryIds": [
         "crm-sales"
@@ -6716,7 +8052,11 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in CRM & Sales. Verify current features and terms with Tidio LLC before choosing.",
+      "seo": {
+        "description": "A listed option in CRM & Sales. Verify current features and terms with Tidio LLC before choosing."
+      }
     },
     {
       "id": "zoominfo",
@@ -8050,7 +9390,7 @@
       "name": "CrowdHealth",
       "slug": "crowdhealth",
       "h1": "CrowdHealth",
-      "summary": "CrowdHealth: Compare coverage and benefits against your business risks and workforce.",
+      "summary": "A listed option in Insurance & Benefits. Verify current features and terms with CrowdHealth before choosing.",
       "primaryCategoryId": "insurance-benefits",
       "categoryIds": [
         "insurance-benefits"
@@ -8109,14 +9449,18 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Insurance & Benefits. Verify current features and terms with CrowdHealth before choosing.",
+      "seo": {
+        "description": "A listed option in Insurance & Benefits. Verify current features and terms with CrowdHealth before choosing."
+      }
     },
     {
       "id": "insurify",
       "name": "Insurify",
       "slug": "insurify",
       "h1": "Insurify",
-      "summary": "Insurify: Compare coverage and benefits against your business risks and workforce.",
+      "summary": "A listed option in Insurance & Benefits. Verify current features and terms with Insurify before choosing.",
       "primaryCategoryId": "insurance-benefits",
       "categoryIds": [
         "insurance-benefits"
@@ -8164,14 +9508,18 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Insurance & Benefits. Verify current features and terms with Insurify before choosing.",
+      "seo": {
+        "description": "A listed option in Insurance & Benefits. Verify current features and terms with Insurify before choosing."
+      }
     },
     {
       "id": "betterlegal",
       "name": "BetterLegal Inc",
       "slug": "betterlegal",
       "h1": "BetterLegal Inc",
-      "summary": "BetterLegal Inc: Evaluate legal and compliance support for your obligations and recordkeeping.",
+      "summary": "A listed option in Legal & Compliance. Verify current features and terms with BetterLegal Inc before choosing.",
       "primaryCategoryId": "legal-compliance",
       "categoryIds": [
         "legal-compliance"
@@ -8221,14 +9569,18 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Legal & Compliance. Verify current features and terms with BetterLegal Inc before choosing.",
+      "seo": {
+        "description": "A listed option in Legal & Compliance. Verify current features and terms with BetterLegal Inc before choosing."
+      }
     },
     {
       "id": "efilecom",
       "name": "E-File.com (US)",
       "slug": "efilecom",
       "h1": "E-File.com (US)",
-      "summary": "E-File.com (US): Evaluate legal and compliance support for your obligations and recordkeeping.",
+      "summary": "A listed option in Legal & Compliance. Verify current features and terms with E-File.com (US) before choosing.",
       "primaryCategoryId": "legal-compliance",
       "categoryIds": [
         "legal-compliance"
@@ -8277,7 +9629,11 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Legal & Compliance. Verify current features and terms with E-File.com (US) before choosing.",
+      "seo": {
+        "description": "A listed option in Legal & Compliance. Verify current features and terms with E-File.com (US) before choosing."
+      }
     },
     {
       "id": "authority",
@@ -8351,7 +9707,7 @@
       "name": "MyCompanyWorks, Inc.",
       "slug": "mycompanyworks",
       "h1": "MyCompanyWorks, Inc.",
-      "summary": "MyCompanyWorks, Inc.: Evaluate legal and compliance support for your obligations and recordkeeping.",
+      "summary": "A listed option in Legal & Compliance. Verify current features and terms with MyCompanyWorks, Inc. before choosing.",
       "primaryCategoryId": "legal-compliance",
       "categoryIds": [
         "legal-compliance"
@@ -8401,14 +9757,18 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Legal & Compliance. Verify current features and terms with MyCompanyWorks, Inc. before choosing.",
+      "seo": {
+        "description": "A listed option in Legal & Compliance. Verify current features and terms with MyCompanyWorks, Inc. before choosing."
+      }
     },
     {
       "id": "mycorporation",
       "name": "MyCorporation",
       "slug": "mycorporation",
       "h1": "MyCorporation",
-      "summary": "MyCorporation: Evaluate legal and compliance support for your obligations and recordkeeping.",
+      "summary": "A listed option in Legal & Compliance. Verify current features and terms with MyCorporation before choosing.",
       "primaryCategoryId": "legal-compliance",
       "categoryIds": [
         "legal-compliance"
@@ -8458,7 +9818,11 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Legal & Compliance. Verify current features and terms with MyCorporation before choosing.",
+      "seo": {
+        "description": "A listed option in Legal & Compliance. Verify current features and terms with MyCorporation before choosing."
+      }
     },
     {
       "id": "namecheap",
@@ -8598,7 +9962,7 @@
       "name": "ZenBusiness, PBC",
       "slug": "zenbusinesspbc",
       "h1": "ZenBusiness, PBC",
-      "summary": "ZenBusiness, PBC: Evaluate legal and compliance support for your obligations and recordkeeping.",
+      "summary": "A listed option in Legal & Compliance. Verify current features and terms with ZenBusiness, PBC before choosing.",
       "primaryCategoryId": "legal-compliance",
       "categoryIds": [
         "legal-compliance"
@@ -8660,7 +10024,11 @@
       ],
       "searchKeywords": [
         "Business formation services"
-      ]
+      ],
+      "metadataDescription": "A listed option in Legal & Compliance. Verify current features and terms with ZenBusiness, PBC before choosing.",
+      "seo": {
+        "description": "A listed option in Legal & Compliance. Verify current features and terms with ZenBusiness, PBC before choosing."
+      }
     },
     {
       "id": "adcreativeai",
@@ -9199,7 +10567,7 @@
       "name": "Mailchimp",
       "slug": "mailchimp",
       "h1": "Mailchimp",
-      "summary": "Mailchimp: Compare marketing tools around channels, measurement, and campaign workflow.",
+      "summary": "A listed option in Marketing & SEO. Verify current features and terms with Mailchimp before choosing.",
       "primaryCategoryId": "marketing-seo",
       "categoryIds": [
         "marketing-seo"
@@ -9247,7 +10615,11 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Marketing & SEO. Verify current features and terms with Mailchimp before choosing.",
+      "seo": {
+        "description": "A listed option in Marketing & SEO. Verify current features and terms with Mailchimp before choosing."
+      }
     },
     {
       "id": "manychat",
@@ -9310,7 +10682,7 @@
       "name": "Moosend",
       "slug": "moosend",
       "h1": "Moosend",
-      "summary": "Moosend: Compare marketing tools around channels, measurement, and campaign workflow.",
+      "summary": "A listed option in Marketing & SEO. Verify current features and terms with Moosend before choosing.",
       "primaryCategoryId": "marketing-seo",
       "categoryIds": [
         "marketing-seo"
@@ -9358,14 +10730,18 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Marketing & SEO. Verify current features and terms with Moosend before choosing.",
+      "seo": {
+        "description": "A listed option in Marketing & SEO. Verify current features and terms with Moosend before choosing."
+      }
     },
     {
       "id": "promotekit",
       "name": "PromoteKit",
       "slug": "promotekit",
       "h1": "PromoteKit",
-      "summary": "PromoteKit: Compare marketing tools around channels, measurement, and campaign workflow.",
+      "summary": "A listed option in Marketing & SEO. Verify current features and terms with PromoteKit before choosing.",
       "primaryCategoryId": "marketing-seo",
       "categoryIds": [
         "marketing-seo"
@@ -9414,7 +10790,7 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "PromoteKit | Distilled Marketplace",
-      "metadataDescription": "PromoteKit is an affiliate program that offers a generous commission rate of 25% on referred payments without any commission limit.",
+      "metadataDescription": "A listed option in Marketing & SEO. Verify current features and terms with PromoteKit before choosing.",
       "relatedProviderIds": [],
       "serviceGroup": "Growth",
       "roles": [
@@ -9425,7 +10801,10 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "seo": {
+        "description": "A listed option in Marketing & SEO. Verify current features and terms with PromoteKit before choosing."
+      }
     },
     {
       "id": "socialbee",
@@ -9499,7 +10878,7 @@
       "name": "Sprout Social",
       "slug": "sproutsocial",
       "h1": "Sprout Social",
-      "summary": "Sprout Social: Compare marketing tools around channels, measurement, and campaign workflow.",
+      "summary": "A listed option in Marketing & SEO. Verify current features and terms with Sprout Social before choosing.",
       "primaryCategoryId": "marketing-seo",
       "categoryIds": [
         "marketing-seo"
@@ -9547,7 +10926,11 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Marketing & SEO. Verify current features and terms with Sprout Social before choosing.",
+      "seo": {
+        "description": "A listed option in Marketing & SEO. Verify current features and terms with Sprout Social before choosing."
+      }
     },
     {
       "id": "surfer",
@@ -9704,7 +11087,7 @@
       "name": "Vendasta",
       "slug": "vendasta",
       "h1": "Vendasta",
-      "summary": "Vendasta: Compare marketing tools around channels, measurement, and campaign workflow.",
+      "summary": "A listed option in Marketing & SEO. Verify current features and terms with Vendasta before choosing.",
       "primaryCategoryId": "marketing-seo",
       "categoryIds": [
         "marketing-seo"
@@ -9752,14 +11135,18 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Marketing & SEO. Verify current features and terms with Vendasta before choosing.",
+      "seo": {
+        "description": "A listed option in Marketing & SEO. Verify current features and terms with Vendasta before choosing."
+      }
     },
     {
       "id": "zerobounce",
       "name": "ZeroBounce",
       "slug": "zerobounce",
       "h1": "ZeroBounce",
-      "summary": "ZeroBounce: Compare marketing tools around channels, measurement, and campaign workflow.",
+      "summary": "A listed option in Marketing & SEO. Verify current features and terms with ZeroBounce before choosing.",
       "primaryCategoryId": "marketing-seo",
       "categoryIds": [
         "marketing-seo"
@@ -9807,7 +11194,11 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Marketing & SEO. Verify current features and terms with ZeroBounce before choosing.",
+      "seo": {
+        "description": "A listed option in Marketing & SEO. Verify current features and terms with ZeroBounce before choosing."
+      }
     },
     {
       "id": "paysend",
@@ -9880,7 +11271,7 @@
       "name": "Box Inc.",
       "slug": "box",
       "h1": "Box Inc.",
-      "summary": "Box Inc.: Compare ways to coordinate work, handoffs, and shared knowledge.",
+      "summary": "A listed option in Productivity. Verify current features and terms with Box Inc. before choosing.",
       "primaryCategoryId": "productivity",
       "categoryIds": [
         "productivity"
@@ -9940,7 +11331,11 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Productivity. Verify current features and terms with Box Inc. before choosing.",
+      "seo": {
+        "description": "A listed option in Productivity. Verify current features and terms with Box Inc. before choosing."
+      }
     },
     {
       "id": "claap",
@@ -10027,7 +11422,7 @@
       "name": "Krisp",
       "slug": "krisp",
       "h1": "Krisp",
-      "summary": "Krisp: Compare ways to coordinate work, handoffs, and shared knowledge.",
+      "summary": "A listed option in Productivity. Verify current features and terms with Krisp before choosing.",
       "primaryCategoryId": "productivity",
       "categoryIds": [
         "productivity"
@@ -10076,14 +11471,18 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Productivity. Verify current features and terms with Krisp before choosing.",
+      "seo": {
+        "description": "A listed option in Productivity. Verify current features and terms with Krisp before choosing."
+      }
     },
     {
       "id": "mindmanager",
       "name": "MindManager",
       "slug": "mindmanager",
       "h1": "MindManager",
-      "summary": "MindManager: Compare ways to coordinate work, handoffs, and shared knowledge.",
+      "summary": "A listed option in Productivity. Verify current features and terms with MindManager before choosing.",
       "primaryCategoryId": "productivity",
       "categoryIds": [
         "productivity"
@@ -10132,14 +11531,18 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Productivity. Verify current features and terms with MindManager before choosing.",
+      "seo": {
+        "description": "A listed option in Productivity. Verify current features and terms with MindManager before choosing."
+      }
     },
     {
       "id": "motion",
       "name": "Motion",
       "slug": "motion",
       "h1": "Motion",
-      "summary": "Motion: Compare ways to coordinate work, handoffs, and shared knowledge.",
+      "summary": "A listed option in Productivity. Verify current features and terms with Motion before choosing.",
       "primaryCategoryId": "productivity",
       "categoryIds": [
         "productivity"
@@ -10199,14 +11602,18 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Productivity. Verify current features and terms with Motion before choosing.",
+      "seo": {
+        "description": "A listed option in Productivity. Verify current features and terms with Motion before choosing."
+      }
     },
     {
       "id": "nordlayer",
       "name": "NordLayer",
       "slug": "nordlayer",
       "h1": "NordLayer",
-      "summary": "NordLayer: Compare ways to coordinate work, handoffs, and shared knowledge.",
+      "summary": "A listed option in Productivity. Verify current features and terms with NordLayer before choosing.",
       "primaryCategoryId": "productivity",
       "categoryIds": [
         "productivity"
@@ -10255,14 +11662,18 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Productivity. Verify current features and terms with NordLayer before choosing.",
+      "seo": {
+        "description": "A listed option in Productivity. Verify current features and terms with NordLayer before choosing."
+      }
     },
     {
       "id": "otterai",
       "name": "Otter.ai",
       "slug": "otterai",
       "h1": "Otter.ai",
-      "summary": "Otter.ai: Compare ways to coordinate work, handoffs, and shared knowledge.",
+      "summary": "A listed option in Productivity. Verify current features and terms with Otter.ai before choosing.",
       "primaryCategoryId": "productivity",
       "categoryIds": [
         "productivity"
@@ -10322,7 +11733,11 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Productivity. Verify current features and terms with Otter.ai before choosing.",
+      "seo": {
+        "description": "A listed option in Productivity. Verify current features and terms with Otter.ai before choosing."
+      }
     },
     {
       "id": "pandadoc",
@@ -10509,7 +11924,7 @@
       "name": "DealCheck.io",
       "slug": "dealcheckio",
       "h1": "DealCheck.io",
-      "summary": "http://dealcheck.io/ is an affiliate platform designed for real estate investors, providing tools for analyzing and managing investment properties.",
+      "summary": "DealCheck is a real estate investment analysis tool listing. Verify supported calculations, assumptions and terms directly before relying on an analysis.",
       "primaryCategoryId": "real-estate-services",
       "categoryIds": [
         "real-estate-services"
@@ -10547,7 +11962,7 @@
         "classification": "historical_source_description"
       },
       "metadataTitle": "DealCheck.io | Distilled Marketplace",
-      "metadataDescription": "http://dealcheck.io/ is an affiliate platform designed for real estate investors, providing tools for analyzing and managing investment properties.",
+      "metadataDescription": "DealCheck is a real estate investment analysis tool listing. Verify supported calculations, assumptions and terms directly before relying on an analysis.",
       "relatedProviderIds": [],
       "serviceGroup": "People & risk",
       "roles": [
@@ -10558,14 +11973,17 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "seo": {
+        "description": "DealCheck is a real estate investment analysis tool listing. Verify supported calculations, assumptions and terms directly before relying on an analysis."
+      }
     },
     {
       "id": "autoshortsai",
       "name": "AutoShorts.ai",
       "slug": "autoshortsai",
       "h1": "AutoShorts.ai",
-      "summary": "http://autoshorts.ai/ is an AI-driven platform designed for creating faceless videos tailored for TikTok and YouTube.",
+      "summary": "A listed option in Social Media & Content. Verify current product details and terms with AutoShorts.ai before choosing.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -10614,7 +12032,7 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "AutoShorts.ai | Distilled Marketplace",
-      "metadataDescription": "http://autoshorts.ai/ is an AI-driven platform designed for creating faceless videos tailored for TikTok and YouTube.",
+      "metadataDescription": "A listed option in Social Media & Content. Verify current product details and terms with AutoShorts.ai before choosing.",
       "relatedProviderIds": [],
       "serviceGroup": "Growth",
       "roles": [
@@ -10625,14 +12043,17 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "seo": {
+        "description": "A listed option in Social Media & Content. Verify current product details and terms with AutoShorts.ai before choosing."
+      }
     },
     {
       "id": "billoapp",
       "name": "Billo.app",
       "slug": "billoapp",
       "h1": "Billo.app",
-      "summary": "Billo.app: Compare content planning, publishing, and audience workflow.",
+      "summary": "A listed option in Social Media & Content. Verify current features and terms with Billo.app before choosing.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -10691,14 +12112,18 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Social Media & Content. Verify current features and terms with Billo.app before choosing.",
+      "seo": {
+        "description": "A listed option in Social Media & Content. Verify current features and terms with Billo.app before choosing."
+      }
     },
     {
       "id": "capcutaffiliateprogram",
-      "name": "CapCut Affiliate Program",
+      "name": "CapCut",
       "slug": "capcutaffiliateprogram",
-      "h1": "CapCut Affiliate Program",
-      "summary": "CapCut Affiliate Program: Compare content planning, publishing, and audience workflow.",
+      "h1": "CapCut",
+      "summary": "CapCut is a video editing product. Check current editing tools, export limits and commercial-use terms directly with the provider.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -10735,7 +12160,7 @@
       "summaryEvidence": {
         "classification": "not_sourced"
       },
-      "metadataTitle": "CapCut Affiliate Program | Distilled Marketplace",
+      "metadataTitle": "CapCut",
       "relatedProviderIds": [],
       "serviceGroup": "Growth",
       "roles": [
@@ -10746,14 +12171,18 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "CapCut is a video editing product. Check current editing tools, export limits and commercial-use terms directly with the provider.",
+      "seo": {
+        "description": "CapCut is a video editing product. Check current editing tools, export limits and commercial-use terms directly with the provider."
+      }
     },
     {
       "id": "deepbrainai",
       "name": "DeepBrain AI",
       "slug": "deepbrainai",
       "h1": "DeepBrain AI",
-      "summary": "DeepBrain AI offers an innovative affiliate program through AI STUDIO, which is recognized as one of the best AI video generators available.",
+      "summary": "DeepBrain AI is listed in video tools. Verify the current AI Studio product, supported workflows and usage terms with the provider.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -10812,7 +12241,7 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "DeepBrain AI | Distilled Marketplace",
-      "metadataDescription": "DeepBrain AI offers an innovative affiliate program through AI STUDIO, which is recognized as one of the best AI video generators available.",
+      "metadataDescription": "DeepBrain AI is listed in video tools. Verify the current AI Studio product, supported workflows and usage terms with the provider.",
       "relatedProviderIds": [],
       "serviceGroup": "Growth",
       "roles": [
@@ -10825,7 +12254,10 @@
       ],
       "searchKeywords": [
         "Video creation"
-      ]
+      ],
+      "seo": {
+        "description": "DeepBrain AI is listed in video tools. Verify the current AI Studio product, supported workflows and usage terms with the provider."
+      }
     },
     {
       "id": "elevenlabs",
@@ -10908,7 +12340,7 @@
       "name": "FastShorts.ai",
       "slug": "fastshortsai",
       "h1": "FastShorts.ai",
-      "summary": "http://fastshorts.ai/ offers a solution for creating unique, AI-generated short videos that can be automatically uploaded to platforms like TikTok, Shorts, and Reels daily.",
+      "summary": "A listed option in Social Media & Content. Verify current product details and terms with FastShorts.ai before choosing.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -10957,7 +12389,7 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "FastShorts.ai | Distilled Marketplace",
-      "metadataDescription": "http://fastshorts.ai/ offers a solution for creating unique, AI-generated short videos that can be automatically uploaded to platforms like TikTok, Shorts,",
+      "metadataDescription": "A listed option in Social Media & Content. Verify current product details and terms with FastShorts.ai before choosing.",
       "relatedProviderIds": [],
       "serviceGroup": "Growth",
       "roles": [
@@ -10968,7 +12400,10 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "seo": {
+        "description": "A listed option in Social Media & Content. Verify current product details and terms with FastShorts.ai before choosing."
+      }
     },
     {
       "id": "firework",
@@ -11050,7 +12485,7 @@
       "name": "Later",
       "slug": "later",
       "h1": "Later",
-      "summary": "Later: Compare content planning, publishing, and audience workflow.",
+      "summary": "A listed option in Social Media & Content. Verify current features and terms with Later before choosing.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -11098,14 +12533,18 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Social Media & Content. Verify current features and terms with Later before choosing.",
+      "seo": {
+        "description": "A listed option in Social Media & Content. Verify current features and terms with Later before choosing."
+      }
     },
     {
       "id": "livereactinglivereacting",
       "name": "Live Reacting - livereacting",
       "slug": "livereactinglivereacting",
       "h1": "Live Reacting - livereacting",
-      "summary": "Live Reacting - livereacting: Compare content planning, publishing, and audience workflow.",
+      "summary": "A listed option in Social Media & Content. Verify current features and terms with Live Reacting - livereacting before choosing.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -11164,7 +12603,11 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Social Media & Content. Verify current features and terms with Live Reacting - livereacting before choosing.",
+      "seo": {
+        "description": "A listed option in Social Media & Content. Verify current features and terms with Live Reacting - livereacting before choosing."
+      }
     },
     {
       "id": "murfai",
@@ -11294,7 +12737,7 @@
       "name": "Syllaby.io",
       "slug": "syllabyio",
       "h1": "Syllaby.io",
-      "summary": "http://syllaby.io/ is an innovative platform that allows users to turn any idea into engaging faceless videos and AI avatars.",
+      "summary": "A listed option in Social Media & Content. Verify current product details and terms with Syllaby.io before choosing.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -11343,7 +12786,7 @@
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Syllaby.io | Distilled Marketplace",
-      "metadataDescription": "http://syllaby.io/ is an innovative platform that allows users to turn any idea into engaging faceless videos and AI avatars.",
+      "metadataDescription": "A listed option in Social Media & Content. Verify current product details and terms with Syllaby.io before choosing.",
       "relatedProviderIds": [],
       "serviceGroup": "Growth",
       "roles": [
@@ -11354,7 +12797,10 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "seo": {
+        "description": "A listed option in Social Media & Content. Verify current product details and terms with Syllaby.io before choosing."
+      }
     },
     {
       "id": "testmythumbnails",
@@ -11494,7 +12940,7 @@
       "name": "WeVideo",
       "slug": "wevideo",
       "h1": "WeVideo",
-      "summary": "WeVideo: Compare content planning, publishing, and audience workflow.",
+      "summary": "A listed option in Social Media & Content. Verify current features and terms with WeVideo before choosing.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -11553,14 +12999,18 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Social Media & Content. Verify current features and terms with WeVideo before choosing.",
+      "seo": {
+        "description": "A listed option in Social Media & Content. Verify current features and terms with WeVideo before choosing."
+      }
     },
     {
       "id": "wistia",
       "name": "Wistia",
       "slug": "wistia",
       "h1": "Wistia",
-      "summary": "Wistia: Compare content planning, publishing, and audience workflow.",
+      "summary": "A listed option in Social Media & Content. Verify current features and terms with Wistia before choosing.",
       "primaryCategoryId": "social-media-content",
       "categoryIds": [
         "social-media-content"
@@ -11608,7 +13058,11 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "metadataDescription": "A listed option in Social Media & Content. Verify current features and terms with Wistia before choosing.",
+      "seo": {
+        "description": "A listed option in Social Media & Content. Verify current features and terms with Wistia before choosing."
+      }
     }
   ],
   "offers": [],

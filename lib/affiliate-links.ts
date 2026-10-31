@@ -15,7 +15,7 @@ export function getPrimaryLink(provider: Provider) {
 export function primaryCtaLabel(provider: Provider) {
   return provider.ctas.find(cta => cta.placement === "primary" && (cta.linkRef === "primary" || cta.linkRef === getPrimaryLink(provider).id))?.label ?? getPrimaryLink(provider).ctaLabel ?? `Explore ${provider.name}`;
 }
-const informationalPurposes = new Set(["documentation", "help_center", "blog", "resource"]);
+const informationalPurposes = new Set(["documentation", "help_center", "blog", "resource", "pricing_page"]);
 export function visibleSecondaryLinks(provider: Provider) {
   const hasAffiliatePrimary = getPrimaryLink(provider).isAffiliate;
   return provider.links.filter(link => !link.isPrimary && link.verificationStatus !== "invalid" && link.verificationStatus !== "withdrawn" && (!hasAffiliatePrimary || link.isAffiliate || informationalPurposes.has(link.purpose)));
