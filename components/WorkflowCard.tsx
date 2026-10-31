@@ -7,6 +7,6 @@ export function WorkflowCard({ workflow, providerNames }: { workflow:WorkflowLis
     <h3><Link href={`/workflows/${workflow.slug}`}>{workflow.title}</Link></h3>
     <p>{workflow.summary}</p>
     <div className="workflow-card-meta"><span><b>Starts when</b>{workflow.trigger}</span><span><b>Expected outcome</b>{workflow.outcome}</span></div>
-    <div className="workflow-card-bottom"><span>{workflow.providerIds.map(id=>providerNames[id]??id).join(" + ")}</span><Link href={`/workflows/${workflow.slug}`}>Explore blueprint <span aria-hidden="true">↗</span></Link></div>
+    <div className="workflow-card-bottom"><span><b>Named provider{workflow.providerIds.length===1?"":"s"}</b>{workflow.providerIds.map(id=>providerNames[id]??id).join(" + ")}</span><div><Link href={`/workflows/${workflow.slug}`}>Explore blueprint ↗</Link><Link href={`/workflows/${workflow.slug}#customize-workflow`}>Customize plan →</Link></div></div>
   </article>;
 }

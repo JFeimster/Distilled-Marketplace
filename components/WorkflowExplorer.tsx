@@ -1,11 +1,12 @@
 "use client";
 import { useMemo, useState } from "react";
 import { WorkflowCard } from "@/components/WorkflowCard";
-import { emptyWorkflowFilters, filterWorkflowListings, type WorkflowFilters, type WorkflowListing } from "@/lib/workflow-discovery";
+import { emptyWorkflowFilters, filterWorkflowListings, workflowOutcomes, type WorkflowFilters, type WorkflowListing } from "@/lib/workflow-discovery";
 
 type Option = { id:string; name:string };
 function initialFilters(params:Record<string,string|undefined>): WorkflowFilters {
-  return {q:params.q??"",industry:params.industry??"all",category:params.category??"all",provider:params.provider??"all"};
+  return {q:params.q??"",industry:params.industry??"all",category:params.category??"all",provider:params.provider??"all",
+    outcome:workflowOutcomes.some(item=>item.id===params.outcome)?params.outcome!:"all"};
 }
 function writeUrl(filters:WorkflowFilters) {
   const query=new URLSearchParams();
@@ -20,6 +21,7 @@ export function WorkflowExplorer({workflows,providers,categories,industries,init
   const clear=()=>{setFilters(emptyWorkflowFilters);writeUrl(emptyWorkflowFilters);};
   return <section className="wrap workflow-index-body">
     <div className="workflow-filter-head"><div><span className="eyebrow">BUSINESS AUTOMATION FINDER</span><h2>{results.length} blueprints to explore</h2><p>Filter by the work, service area, industry or provider already in your stack.</p></div><button type="button" onClick={clear}>Clear filters</button></div>
+    <div className="workflow-outcome-guide" aria-label="Browse by business outcome"><div><span className="eyebrow">START WITH AN OUTCOME</span><p>Grouped from published blueprint wording and service areas. Review each blueprint’s prerequisites before choosing a tool.</p></div><div className="workflow-outcome-options"><button type="button" aria-pressed={filters.outcome==="all"} onClick={()=>update({outcome:"all"})}>All outcomes <small>{workflows.length}</small></button>{workflowOutcomes.map(item=><button key={item.id} type="button" aria-pressed={filters.outcome===item.id} onClick={()=>update({outcome:item.id})}>{item.label} <small>{filterWorkflowListings(workflows,{...emptyWorkflowFilters,outcome:item.id}).length}</small></button>)}</div></div>
     <div className="workflow-filters">
       <label>Search workflows<input type="search" value={filters.q} onChange={event=>update({q:event.target.value})} placeholder="Try intake, documents, invoices…"/></label>
       <label>Industry<select value={filters.industry} onChange={event=>update({industry:event.target.value})}><option value="all">All industries</option>{industries.map(item=><option key={item.id} value={item.id}>{item.name}</option>)}</select></label>

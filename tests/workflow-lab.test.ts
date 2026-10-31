@@ -4,7 +4,7 @@ import { isValidElement } from "react";
 import raw from "../data/marketplace/catalog.json";
 import { catalog } from "@/lib/catalog";
 import { validateCatalog } from "@/lib/validate";
-import { deriveWorkflowConnections, emptyWorkflowFilters, evaluateWorkflowCoverage, filterWorkflowListings } from "@/lib/workflow-discovery";
+import { deriveWorkflowConnections, emptyWorkflowFilters, evaluateWorkflowCoverage, filterWorkflowListings, recommendRelatedWorkflows, workflowOutcomes, workflowStackPresets } from "@/lib/workflow-discovery";
 import { publishedWorkflows, workflowListing, workflowsForIndustry, workflowsForProvider } from "@/lib/workflows";
 import WorkflowIndex from "@/app/workflows/page";
 import WorkflowPage from "@/app/workflows/[slug]/page";
@@ -50,6 +50,14 @@ test("workflow relationships and filters use catalog fields", () => {
   const filtered = filterWorkflowListings(listings, { ...emptyWorkflowFilters, q: "books", provider: "quickbooks" });
   assert.ok(filtered.some(workflow => workflow.slug === "weekly-books-review"));
   assert.equal(filterWorkflowListings(listings, { ...emptyWorkflowFilters, provider: "unknown-provider" }).length, 0);
+  assert.equal(workflowOutcomes.length, 7);
+  assert.ok(workflowOutcomes.every(outcome => filterWorkflowListings(listings, { ...emptyWorkflowFilters, outcome: outcome.id }).length > 0));
+  assert.ok(filterWorkflowListings(listings, { ...emptyWorkflowFilters, outcome: "finance" }).some(item => item.slug === "ramp-quickbooks-reconciliation"));
+  assert.ok(filterWorkflowListings(listings, { ...emptyWorkflowFilters, outcome: "leads", provider: "pipedrive" }).some(item => item.slug === "funding-intake-review"));
+  const related = recommendRelatedWorkflows(listings.find(item => item.slug === "funding-intake-review")!, listings);
+  assert.equal(related.length, 3);
+  assert.ok(related.every(item => item.workflow.slug !== "funding-intake-review" && item.score > 0));
+  assert.deepEqual(related, recommendRelatedWorkflows(listings.find(item => item.slug === "funding-intake-review")!, listings));
 });
 
 test("stack coverage separates required providers from documented integration support", () => {
@@ -69,6 +77,9 @@ test("stack coverage separates required providers from documented integration su
   assert.equal(partial.missing.length, 1);
   const undocumented = evaluateWorkflowCoverage(listings.filter(item => item.providerIds.includes(unknown.providerIds[0]) && item.providerIds.includes(unknown.providerIds[1])), unknown.providerIds, connections);
   assert.ok(undocumented.some(result => result.integration === "not_listed"));
+  const presets = workflowStackPresets(listings);
+  assert.equal(presets.length, 4);
+  assert.ok(presets.every(preset => preset.providerIds.every(id => catalog.providers.some(provider => provider.id === id))));
 });
 
 test("workflow, integration, playbook, and provider pages render catalog handoffs", async () => {
