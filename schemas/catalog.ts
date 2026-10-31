@@ -26,6 +26,24 @@ const providerLink = z.object({
 const media = z.object({ url: httpsUrl, alt: z.string().min(3), type: z.enum(["image", "video"]).default("image"), caption: z.string().optional() });
 const feature = z.object({ name: z.string().min(2), description: z.string().optional(), icon: z.string().optional(), media: media.optional(), sources: z.array(publicSource).default([]), evidenceStatus: z.string().optional() });
 const workflow = z.object({ id: slug, title: z.string().min(3), description: z.string().optional(), requirements: z.array(z.string()).default([]), steps: z.array(z.string()).min(1), expectedOutput: z.string().optional(), resourceUrl: resourceDestination.optional() });
+const workflowSource = z.object({
+  label: z.string().min(3), kind: z.enum(["catalog_template", "internal_editorial", "published_article", "official_documentation"]),
+  visibility: z.enum(["public", "internal"]), url: httpsUrl.optional(), checkedAt: date, locator: z.string().optional()
+}).refine(value => value.visibility === "public" ? Boolean(value.url) : !value.url, "Public sources need a URL; internal references must not expose one");
+const workflowBlueprint = z.object({
+  id: slug, slug, title: z.string().min(5), status: z.literal("published"),
+  summary: z.string().min(40), useCase: z.string().min(20), outcome: z.string().min(20),
+  industryTags: z.array(slug).min(1), categoryIds: z.array(slug).min(1), providerIds: z.array(slug).min(1),
+  requiredServices: z.array(z.string().min(3)).min(1), trigger: z.string().min(10),
+  inputs: z.array(z.string().min(3)).min(1), outputs: z.array(z.string().min(3)).min(1),
+  flowSteps: z.array(z.object({ label: z.string().min(3), detail: z.string().min(10) })).min(3),
+  setupSteps: z.array(z.string().min(10)).min(2), humanReview: z.string().min(20),
+  failureNotes: z.string().min(20), maintenanceNotes: z.string().min(20),
+  sourceReferences: z.array(workflowSource).min(1),
+  licenseStatus: z.enum(["original_editorial", "rights_unverified"]), attribution: z.string().min(10),
+  importStatus: z.literal("editorial_blueprint_only"),
+  integrationEvidence: z.array(z.object({ providerIds: z.tuple([slug, slug]), source: publicSource })).default([])
+});
 const resource = z.object({ id: slug, title: z.string().min(2), type: z.enum(["article", "video", "calculator", "solution", "site", "guide", "template", "partner_resource"]), url: resourceDestination, description: z.string().min(3), thumbnail: httpsUrl.optional() });
 const cta = z.object({ label: z.string().min(2), linkRef: z.string().min(1), placement: z.enum(["primary", "secondary", "pricing", "final"]), icon: z.string().optional() });
 export const providerSchema = z.object({
@@ -64,9 +82,10 @@ const comparison = z.object({ id: slug, title: z.string().min(10), providerIds: 
 const crossLink = z.object({ id: slug, label: z.string(), url: httpsUrl, status: z.enum(["verified-preview", "verified-public"]), context: z.string() });
 export const catalogSchema = z.object({
   version: z.literal(1), updated: date, editorialStatus: z.literal("staging"),
-  categories: z.array(category).min(1), collections: z.array(collection), providers: z.array(providerSchema), offers: z.array(offer), comparisons: z.array(comparison), crossPropertyLinks: z.array(crossLink)
+  categories: z.array(category).min(1), collections: z.array(collection), providers: z.array(providerSchema), workflowBlueprints: z.array(workflowBlueprint), offers: z.array(offer), comparisons: z.array(comparison), crossPropertyLinks: z.array(crossLink)
 });
 export type Catalog = z.infer<typeof catalogSchema>;
 export type Category = Catalog["categories"][number];
 export type Collection = Catalog["collections"][number];
 export type Provider = z.infer<typeof providerSchema>;
+export type WorkflowBlueprint = z.infer<typeof workflowBlueprint>;

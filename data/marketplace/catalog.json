@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "editorialStatus": "staging",
   "categories": [
     {
@@ -13063,6 +13063,1641 @@
       "seo": {
         "description": "A listed option in Social Media & Content. Verify current features and terms with Wistia before choosing."
       }
+    }
+  ],
+  "workflowBlueprints": [
+    {
+      "id": "weekly-books-review",
+      "slug": "weekly-books-review",
+      "title": "Set up a weekly books review",
+      "status": "published",
+      "summary": "Review transaction records before relying on a report.",
+      "useCase": "Record income and business expenses",
+      "outcome": "Reviewed bookkeeping records and a current internal planning report.",
+      "industryTags": [
+        "professional-services"
+      ],
+      "categoryIds": [
+        "accounting-bookkeeping"
+      ],
+      "providerIds": [
+        "quickbooks"
+      ],
+      "requiredServices": [
+        "Business bank or card records",
+        "An owner for categorization and reconciliation"
+      ],
+      "trigger": "Weekly bookkeeping review window",
+      "inputs": [
+        "Business income and expense transactions",
+        "Customer and invoice details",
+        "Connected bank transactions where supported"
+      ],
+      "outputs": [
+        "Categorized bookkeeping records",
+        "Invoices and payment status",
+        "Reports available on the selected plan"
+      ],
+      "flowSteps": [
+        {
+          "label": "Bring in transactions",
+          "detail": "Bring in recent transactions using available connections or manual records."
+        },
+        {
+          "label": "Review exceptions",
+          "detail": "Review uncategorized or unexpected items and attach supporting details."
+        },
+        {
+          "label": "Reconcile records",
+          "detail": "Reconcile the period against source statements."
+        },
+        {
+          "label": "Read the reports",
+          "detail": "Review invoice status and relevant reports with the bookkeeper."
+        }
+      ],
+      "setupSteps": [
+        "Choose a plan that fits your users and recordkeeping needs.",
+        "Set up the company profile and chart of accounts with an accountable bookkeeper.",
+        "Connect supported bank accounts and review imported transactions.",
+        "Send invoices, reconcile records and review reports on a consistent schedule."
+      ],
+      "humanReview": "A bookkeeper or owner approves transaction categories and reconciliations before relying on reports.",
+      "failureNotes": "If a bank feed is unavailable or a transaction does not match, hold it for manual review; do not silently discard it.",
+      "maintenanceNotes": "Review account connections, uncategorized transactions and reporting access each week.",
+      "sourceReferences": [
+        {
+          "kind": "catalog_template",
+          "visibility": "public",
+          "label": "Marketplace QuickBooks workflow template and official source",
+          "url": "https://quickbooks.intuit.com/accounting/invoicing/",
+          "locator": "weekly-books-review",
+          "checkedAt": "2026-10-31"
+        }
+      ],
+      "licenseStatus": "original_editorial",
+      "attribution": "Adapted from the existing Marketplace QuickBooks workflow template. No vendor workflow file is included.",
+      "importStatus": "editorial_blueprint_only",
+      "integrationEvidence": []
+    },
+    {
+      "id": "monitor-public-product-details",
+      "slug": "monitor-public-product-details",
+      "title": "Monitor public product details",
+      "status": "published",
+      "summary": "Track selected public fields such as displayed price or availability, then review changes before acting.",
+      "useCase": "Track changes to product details, availability or public pages",
+      "outcome": "Structured records of selected page fields and detected changes.",
+      "industryTags": [
+        "ecommerce"
+      ],
+      "categoryIds": [
+        "ai-automation"
+      ],
+      "providerIds": [
+        "browseai"
+      ],
+      "requiredServices": [
+        "Public product pages that permit automated access",
+        "Defined fields and a reviewer for change alerts"
+      ],
+      "trigger": "Scheduled check of selected public pages",
+      "inputs": [
+        "Target page URL or list of URLs",
+        "Fields or page changes to capture",
+        "A review and monitoring schedule"
+      ],
+      "outputs": [
+        "Structured rows from selected pages",
+        "Change history and notifications"
+      ],
+      "flowSteps": [
+        {
+          "label": "Choose public pages",
+          "detail": "Provide the target page URLs."
+        },
+        {
+          "label": "Train the robot",
+          "detail": "Train a robot to capture the selected fields."
+        },
+        {
+          "label": "Check the capture",
+          "detail": "Run a test and correct fields if output is incomplete."
+        },
+        {
+          "label": "Monitor changes",
+          "detail": "Set a monitoring cadence and send changes to a review table or alert channel."
+        }
+      ],
+      "setupSteps": [
+        "Choose a public page and specify fields to capture.",
+        "Train and run a robot, then inspect extracted rows for accuracy.",
+        "Set a monitoring schedule and change notification if recurring checks are useful.",
+        "Export or connect results, and review whether page changes affect the data."
+      ],
+      "humanReview": "A person checks extracted fields and meaningful changes before updating business decisions or customer-facing material.",
+      "failureNotes": "A changed page structure can produce missing or incorrect fields; flag incomplete captures and pause downstream use.",
+      "maintenanceNotes": "Review monitored URLs, access rules, capture accuracy and credit use on a regular schedule.",
+      "sourceReferences": [
+        {
+          "kind": "catalog_template",
+          "visibility": "public",
+          "label": "Marketplace Browse AI workflow template and official source",
+          "url": "https://help.browse.ai/en/articles/10504822-how-to-create-robots-without-installing-the-browser-extension",
+          "locator": "monitor-public-product-details",
+          "checkedAt": "2026-10-31"
+        }
+      ],
+      "licenseStatus": "original_editorial",
+      "attribution": "Adapted from the existing Marketplace Browse AI workflow template. No vendor workflow file is included.",
+      "importStatus": "editorial_blueprint_only",
+      "integrationEvidence": []
+    },
+    {
+      "id": "prototype-reviewed-agent",
+      "slug": "prototype-reviewed-agent",
+      "title": "Prototype an agent with a review step",
+      "status": "published",
+      "summary": "Evaluate an AI workflow on a narrow business task before operational use.",
+      "useCase": "Prototype an AI workflow for a bounded internal task",
+      "outcome": "A tested prototype with acceptance criteria, known gaps and an explicit review point.",
+      "industryTags": [
+        "professional-services"
+      ],
+      "categoryIds": [
+        "ai-automation"
+      ],
+      "providerIds": [
+        "mindstudio"
+      ],
+      "requiredServices": [
+        "A low-risk task with sample inputs",
+        "A person who can verify the output"
+      ],
+      "trigger": "A bounded internal task is submitted for AI assistance",
+      "inputs": [
+        "A bounded task and sample input",
+        "Approved data sources and workflow steps",
+        "A reviewer and acceptance criteria"
+      ],
+      "outputs": [
+        "An AI-powered application or workflow",
+        "A result for a person to review before operational use"
+      ],
+      "flowSteps": [
+        {
+          "label": "Define the task",
+          "detail": "Write down the task, expected output and cases to escalate."
+        },
+        {
+          "label": "Assemble capabilities",
+          "detail": "Assemble the workflow using only required data and capabilities."
+        },
+        {
+          "label": "Test edge cases",
+          "detail": "Run sample and edge-case inputs and record errors."
+        },
+        {
+          "label": "Review deployment",
+          "detail": "Keep human review before outputs reach customers or change records."
+        }
+      ],
+      "setupSteps": [
+        "Describe the task and result a user needs.",
+        "Choose the data and workflow capabilities for that task.",
+        "Test representative and edge-case inputs; record errors and uncertainty.",
+        "Set a reviewer and fallback before deploying the workflow."
+      ],
+      "humanReview": "A person checks uncertain outputs and approves any action that affects customers or business records.",
+      "failureNotes": "Escalate missing data, unsupported capabilities and low-confidence results to the assigned reviewer.",
+      "maintenanceNotes": "Recheck representative inputs, connected data sources and model behavior after changes.",
+      "sourceReferences": [
+        {
+          "kind": "catalog_template",
+          "visibility": "public",
+          "label": "Marketplace MindStudio workflow template and official source",
+          "url": "https://www.mindstudio.ai/capabilities",
+          "locator": "prototype-reviewed-agent",
+          "checkedAt": "2026-10-31"
+        }
+      ],
+      "licenseStatus": "original_editorial",
+      "attribution": "Adapted from the existing Marketplace MindStudio workflow template. No vendor workflow file is included.",
+      "importStatus": "editorial_blueprint_only",
+      "integrationEvidence": []
+    },
+    {
+      "id": "reviewable-lead-handoff",
+      "slug": "reviewable-lead-handoff",
+      "title": "Create a reviewable lead handoff",
+      "status": "published",
+      "summary": "Route a new lead to a person before an automated follow-up action.",
+      "useCase": "Move structured information between connected services",
+      "outcome": "A reviewed lead record in the destination service, with execution details for troubleshooting.",
+      "industryTags": [
+        "professional-services"
+      ],
+      "categoryIds": [
+        "ai-automation"
+      ],
+      "providerIds": [
+        "n8n"
+      ],
+      "requiredServices": [
+        "A connected source for new leads",
+        "A destination service and assigned reviewer"
+      ],
+      "trigger": "A new lead record appears in the connected source",
+      "inputs": [
+        "A trigger event or schedule",
+        "Records from connected services",
+        "Rules for routing or human review"
+      ],
+      "outputs": [
+        "Updated records or actions in connected services",
+        "Execution history for review"
+      ],
+      "flowSteps": [
+        {
+          "label": "Receive the event",
+          "detail": "Trigger when a new lead record is created."
+        },
+        {
+          "label": "Map lead fields",
+          "detail": "Map lead details and source into a consistent record."
+        },
+        {
+          "label": "Pause for review",
+          "detail": "Pause for a person to review missing or unexpected information."
+        },
+        {
+          "label": "Write the handoff",
+          "detail": "After approval, create or update the destination record and log the run."
+        }
+      ],
+      "setupSteps": [
+        "Choose a trigger and define the event that should start the flow.",
+        "Connect services or an API and map the fields that move between them.",
+        "Add conditions and a human approval step before consequential actions.",
+        "Run test data, inspect execution history and document who handles failures."
+      ],
+      "humanReview": "The destination write and any customer contact wait for a named reviewer when information is missing or consequential.",
+      "failureNotes": "Capture a minimal event reference and alert the owner; retry only after checking for a prior write.",
+      "maintenanceNotes": "Review credentials, mappings, execution failures and consent handling when upstream systems change.",
+      "sourceReferences": [
+        {
+          "kind": "catalog_template",
+          "visibility": "public",
+          "label": "Marketplace n8n workflow template and official source",
+          "url": "https://n8n.io/",
+          "locator": "reviewable-lead-handoff",
+          "checkedAt": "2026-10-31"
+        }
+      ],
+      "licenseStatus": "original_editorial",
+      "attribution": "Adapted from the existing Marketplace n8n workflow template. No vendor workflow file is included.",
+      "importStatus": "editorial_blueprint_only",
+      "integrationEvidence": []
+    },
+    {
+      "id": "build-an-operations-portal",
+      "slug": "build-an-operations-portal",
+      "title": "Build a small operations portal",
+      "status": "published",
+      "summary": "Use a structured data source to create a role-aware portal for a repeatable team process.",
+      "useCase": "Turn a structured spreadsheet into a team portal or internal app",
+      "outcome": "A testable portal presenting a selected data source with role-based access.",
+      "industryTags": [
+        "professional-services"
+      ],
+      "categoryIds": [
+        "ai-automation"
+      ],
+      "providerIds": [
+        "softr"
+      ],
+      "requiredServices": [
+        "A maintained data source",
+        "Defined user groups and access needs"
+      ],
+      "trigger": "A team needs a controlled view of structured operating records",
+      "inputs": [
+        "A connected data source",
+        "Pages and user roles needed",
+        "Access rules and content to expose"
+      ],
+      "outputs": [
+        "A no-code portal, internal app or dashboard",
+        "A user experience connected to configured data"
+      ],
+      "flowSteps": [
+        {
+          "label": "Define access",
+          "detail": "List the information each group needs to see or update."
+        },
+        {
+          "label": "Connect records",
+          "detail": "Connect the source and create list or detail views."
+        },
+        {
+          "label": "Build views",
+          "detail": "Set up user groups and permissions."
+        },
+        {
+          "label": "Test permissions",
+          "detail": "Test with representative accounts before inviting the full team."
+        }
+      ],
+      "setupSteps": [
+        "Choose the task and user group the app should support.",
+        "Connect a data source and map required records.",
+        "Build pages and define user groups and permissions.",
+        "Test with representative accounts before inviting the team."
+      ],
+      "humanReview": "A data owner signs off on user groups and record visibility before inviting real users.",
+      "failureNotes": "If records or permissions do not load as expected, remove access to the affected view until corrected.",
+      "maintenanceNotes": "Recheck source mappings and permissions as the team and underlying data change.",
+      "sourceReferences": [
+        {
+          "kind": "catalog_template",
+          "visibility": "public",
+          "label": "Marketplace Softr workflow template and official source",
+          "url": "https://www.softr.io/no-code-app-builder",
+          "locator": "build-an-operations-portal",
+          "checkedAt": "2026-10-31"
+        }
+      ],
+      "licenseStatus": "original_editorial",
+      "attribution": "Adapted from the existing Marketplace Softr workflow template. No vendor workflow file is included.",
+      "importStatus": "editorial_blueprint_only",
+      "integrationEvidence": []
+    },
+    {
+      "id": "review-vendor-spend",
+      "slug": "review-vendor-spend",
+      "title": "Review vendor spend before payment",
+      "status": "published",
+      "summary": "Make invoice ownership and coding visible before release.",
+      "useCase": "Set up reviewable employee spending workflows",
+      "outcome": "An approved bill with an accountable owner and a record ready for reconciliation.",
+      "industryTags": [
+        "professional-services"
+      ],
+      "categoryIds": [
+        "budgeting-finops"
+      ],
+      "providerIds": [
+        "ramp"
+      ],
+      "requiredServices": [
+        "Vendor invoices and approvers",
+        "Accounting categories and payment controls"
+      ],
+      "trigger": "A vendor invoice enters the bill review queue",
+      "inputs": [
+        "Card transactions and receipts",
+        "Vendor invoices and payment instructions",
+        "Accounting categories and approval rules"
+      ],
+      "outputs": [
+        "Reviewed expense and bill records",
+        "Coded transactions and accounting syncs where configured"
+      ],
+      "flowSteps": [
+        {
+          "label": "Capture the bill",
+          "detail": "Capture the invoice and match it to a vendor record."
+        },
+        {
+          "label": "Check coding",
+          "detail": "Assign an owner to confirm amount, purpose and category."
+        },
+        {
+          "label": "Approve spend",
+          "detail": "Route the invoice through configured approvals."
+        },
+        {
+          "label": "Reconcile payment",
+          "detail": "Release payment using the selected method and reconcile the transaction."
+        }
+      ],
+      "setupSteps": [
+        "Map current card, expense and bill approval steps.",
+        "Set spending rules, receipt expectations and invoice approvers.",
+        "Connect accounting and map categories.",
+        "Pilot with a small group and reconcile records before expanding access."
+      ],
+      "humanReview": "An authorized person confirms the amount, purpose, payee and payment method before release.",
+      "failureNotes": "Duplicate invoices or mismatched vendor details are held for investigation; no automatic payment is made.",
+      "maintenanceNotes": "Review approvers, accounting categories and payment method fees as policies change.",
+      "sourceReferences": [
+        {
+          "kind": "catalog_template",
+          "visibility": "public",
+          "label": "Marketplace Ramp workflow template and official source",
+          "url": "https://ramp.com/pricing",
+          "locator": "review-vendor-spend",
+          "checkedAt": "2026-10-31"
+        }
+      ],
+      "licenseStatus": "original_editorial",
+      "attribution": "Adapted from the existing Marketplace Ramp workflow template. No vendor workflow file is included.",
+      "importStatus": "editorial_blueprint_only",
+      "integrationEvidence": []
+    },
+    {
+      "id": "evaluate-business-credit-program",
+      "slug": "evaluate-business-credit-program",
+      "title": "Evaluate a business credit program",
+      "status": "published",
+      "summary": "A due-diligence checklist that separates service scope from lending decisions.",
+      "useCase": "Organize business setup and commercial credit records",
+      "outcome": "A written list of scope, costs, responsibilities and open questions, without assuming financing approval.",
+      "industryTags": [
+        "funding-agencies"
+      ],
+      "categoryIds": [
+        "business-credit"
+      ],
+      "providerIds": [
+        "creditsuite"
+      ],
+      "requiredServices": [
+        "Current business formation and credit records",
+        "Current program terms supplied by the provider"
+      ],
+      "trigger": "A business owner begins evaluating a business credit program",
+      "inputs": [
+        "Business entity and contact information",
+        "Existing commercial credit profile details",
+        "Questions about program costs, scope and financing terms"
+      ],
+      "outputs": [
+        "A checklist of setup and profile questions to verify",
+        "A clearer view of program scope and separate lender terms"
+      ],
+      "flowSteps": [
+        {
+          "label": "List needs",
+          "detail": "List the records and setup tasks you need help with."
+        },
+        {
+          "label": "Check scope",
+          "detail": "Ask which tasks are included and what remains your responsibility."
+        },
+        {
+          "label": "Confirm terms",
+          "detail": "Confirm fees, renewal and cancellation terms before enrollment."
+        },
+        {
+          "label": "Review separately",
+          "detail": "Review credit or financing products separately with the actual provider and lender."
+        }
+      ],
+      "setupSteps": [
+        "Document current business setup and commercial credit records.",
+        "Ask which services, reporting agencies and advisor support are included.",
+        "Request current fees, cancellation terms and separate financing costs in writing.",
+        "Evaluate financing directly; enrollment does not establish eligibility or guarantee an outcome."
+      ],
+      "humanReview": "The owner reviews service terms and separately evaluates any credit or financing with the actual provider or lender.",
+      "failureNotes": "If scope, fees or cancellation terms are unclear, stop before enrollment and request written clarification.",
+      "maintenanceNotes": "Recheck program terms and current commercial credit records before any later decision.",
+      "sourceReferences": [
+        {
+          "kind": "catalog_template",
+          "visibility": "public",
+          "label": "Marketplace Credit Suite workflow template and official source",
+          "url": "https://www.creditsuite.com/business-credit/",
+          "locator": "evaluate-business-credit-program",
+          "checkedAt": "2026-10-31"
+        }
+      ],
+      "licenseStatus": "original_editorial",
+      "attribution": "Adapted from the existing Marketplace Credit Suite workflow template. No vendor workflow file is included.",
+      "importStatus": "editorial_blueprint_only",
+      "integrationEvidence": []
+    },
+    {
+      "id": "weekly-pipeline-review",
+      "slug": "weekly-pipeline-review",
+      "title": "Run a weekly pipeline review",
+      "status": "published",
+      "summary": "Use deal stages and activities to identify unowned follow-ups and stale opportunities.",
+      "useCase": "Assign an owner and next activity to each opportunity",
+      "outcome": "A current pipeline with owned next steps and a short follow-up list.",
+      "industryTags": [
+        "professional-services"
+      ],
+      "categoryIds": [
+        "crm-sales"
+      ],
+      "providerIds": [
+        "pipedrive"
+      ],
+      "requiredServices": [
+        "An agreed pipeline definition",
+        "A deal owner and next-step expectation"
+      ],
+      "trigger": "Weekly sales pipeline review window",
+      "inputs": [
+        "Lead and contact details",
+        "Deal stage, owner and expected close information",
+        "Follow-up activities"
+      ],
+      "outputs": [
+        "A visible sales pipeline",
+        "Assigned next activities and pipeline reports"
+      ],
+      "flowSteps": [
+        {
+          "label": "Find stale deals",
+          "detail": "Filter active deals by stage and last activity."
+        },
+        {
+          "label": "Check ownership",
+          "detail": "Check each deal has a named owner and dated next action."
+        },
+        {
+          "label": "Update next steps",
+          "detail": "Update records when buyer or sales status changes."
+        },
+        {
+          "label": "Review follow-up",
+          "detail": "Review overdue activities and agree who will follow up."
+        }
+      ],
+      "setupSteps": [
+        "Set up stages that reflect the business sales process.",
+        "Add or import lead and contact records with an owner.",
+        "Track each deal and record the next action and due date.",
+        "Review pipeline movement, overdue activities and reports."
+      ],
+      "humanReview": "A sales owner confirms stage, next action and close assumptions; automation does not decide deal outcomes.",
+      "failureNotes": "Records without an owner or next action enter an exception list for manual assignment.",
+      "maintenanceNotes": "Review stage definitions and overdue activity rules as the sales process changes.",
+      "sourceReferences": [
+        {
+          "kind": "catalog_template",
+          "visibility": "public",
+          "label": "Marketplace Pipedrive workflow template and official source",
+          "url": "https://www.pipedrive.com/en/products",
+          "locator": "weekly-pipeline-review",
+          "checkedAt": "2026-10-31"
+        }
+      ],
+      "licenseStatus": "original_editorial",
+      "attribution": "Adapted from the existing Marketplace Pipedrive workflow template. No vendor workflow file is included.",
+      "importStatus": "editorial_blueprint_only",
+      "integrationEvidence": []
+    },
+    {
+      "id": "route-order-support",
+      "slug": "route-order-support",
+      "title": "Route order support requests",
+      "status": "published",
+      "summary": "Connect incoming tickets to order context and an accountable support owner.",
+      "useCase": "Centralize e-commerce support conversations",
+      "outcome": "A ticket with order context, a named owner and a traceable resolution.",
+      "industryTags": [
+        "ecommerce"
+      ],
+      "categoryIds": [
+        "ecommerce"
+      ],
+      "providerIds": [
+        "gorgias"
+      ],
+      "requiredServices": [
+        "A supported e-commerce integration such as Shopify",
+        "Defined ticket categories and escalation owners"
+      ],
+      "trigger": "A customer support message arrives through a connected channel",
+      "inputs": [
+        "Messages from connected support channels",
+        "Customer and order context",
+        "Routing rules, macros and escalation expectations"
+      ],
+      "outputs": [
+        "Assigned support tickets",
+        "Consistent replies and configured order actions",
+        "Support activity reports"
+      ],
+      "flowSteps": [
+        {
+          "label": "Receive the message",
+          "detail": "Receive the customer message in the shared inbox."
+        },
+        {
+          "label": "Read order context",
+          "detail": "Review customer and order context for the conversation."
+        },
+        {
+          "label": "Assign the ticket",
+          "detail": "Route by topic or urgency and assign an owner."
+        },
+        {
+          "label": "Resolve or escalate",
+          "detail": "Use an approved macro where appropriate; escalate refunds or exceptions for review."
+        }
+      ],
+      "setupSteps": [
+        "Connect the supported e-commerce store and message channels.",
+        "Define ticket categories, owner queues and priority rules.",
+        "Create reviewed response macros for recurring questions.",
+        "Test order actions and escalation scenarios before wider use."
+      ],
+      "humanReview": "A support agent reviews refunds, cancellations and unusual order actions before carrying them out.",
+      "failureNotes": "If store context is missing or channel sync fails, route the ticket to a human with the missing context noted.",
+      "maintenanceNotes": "Review routing rules, approved macros and store connection health after process changes.",
+      "sourceReferences": [
+        {
+          "kind": "catalog_template",
+          "visibility": "public",
+          "label": "Marketplace Gorgias workflow template and official source",
+          "url": "https://www.gorgias.com/products/helpdesk",
+          "locator": "route-order-support",
+          "checkedAt": "2026-10-31"
+        }
+      ],
+      "licenseStatus": "original_editorial",
+      "attribution": "Adapted from the existing Marketplace Gorgias workflow template. No vendor workflow file is included.",
+      "importStatus": "editorial_blueprint_only",
+      "integrationEvidence": []
+    },
+    {
+      "id": "funding-intake-review",
+      "slug": "funding-intake-review",
+      "title": "Capture funding intake for broker review",
+      "status": "published",
+      "summary": "Normalize a funding inquiry into a review queue with consent and source information intact, while keeping sensitive documents outside the workflow.",
+      "useCase": "A funding team receives leads from a form or approved intake source.",
+      "outcome": "A single CRM record is ready for a broker to review, with source and next action visible.",
+      "industryTags": [
+        "funding-agencies"
+      ],
+      "categoryIds": [
+        "ai-automation",
+        "crm-sales"
+      ],
+      "providerIds": [
+        "n8n",
+        "pipedrive"
+      ],
+      "requiredServices": [
+        "Approved intake form",
+        "CRM with a review queue",
+        "Secure document provider for later collection"
+      ],
+      "trigger": "A new intake submission is received",
+      "inputs": [
+        "Submission reference and contact route",
+        "Consent flags and source tag",
+        "Banded business context; no raw documents"
+      ],
+      "outputs": [
+        "Received-stage CRM record",
+        "Broker review task",
+        "Minimal intake audit event"
+      ],
+      "flowSteps": [
+        {
+          "label": "Validate",
+          "detail": "Check required fields and consent flags without making a funding decision."
+        },
+        {
+          "label": "Normalize",
+          "detail": "Map source, contact route and banded context into the existing CRM fields."
+        },
+        {
+          "label": "Check for prior records",
+          "detail": "Flag possible duplicates for a person instead of merging on name or email alone."
+        },
+        {
+          "label": "Queue review",
+          "detail": "Create a broker task and a neutral receipt acknowledgment only where consent permits."
+        }
+      ],
+      "setupSteps": [
+        "Map the exact approved form fields to the CRM's existing record.",
+        "Define which missing fields block the queue and which need a human follow-up.",
+        "Test consent, duplicate and failure paths with fictional records."
+      ],
+      "humanReview": "A broker reviews the inquiry and decides all funding next steps; the workflow never qualifies or approves a borrower.",
+      "failureNotes": "On invalid data or a failed CRM write, retain only an event reference and alert an operator; avoid duplicate creation on retry.",
+      "maintenanceNotes": "Review field mappings, consent text and the queue owner when intake forms or CRM fields change.",
+      "sourceReferences": [
+        {
+          "kind": "internal_editorial",
+          "visibility": "internal",
+          "label": "n8n Workflow Pattern Library",
+          "locator": "Pattern 1",
+          "checkedAt": "2026-10-31"
+        },
+        {
+          "kind": "internal_editorial",
+          "visibility": "internal",
+          "label": "Broker Intake Workflow Examples",
+          "locator": "Workflow Pattern 1",
+          "checkedAt": "2026-10-31"
+        },
+        {
+          "kind": "internal_editorial",
+          "visibility": "internal",
+          "label": "Automation Pack asset descriptions",
+          "locator": "1. Lead Intake + CRM Creation",
+          "checkedAt": "2026-10-31"
+        },
+        {
+          "kind": "published_article",
+          "visibility": "public",
+          "label": "Funding Agency Automation: n8n Templates & CRM Workflow",
+          "url": "https://www.distilledfunding.com/post/funding-agency-automation-n8n-templates",
+          "checkedAt": "2026-10-31"
+        }
+      ],
+      "licenseStatus": "original_editorial",
+      "attribution": "Original Marketplace editorial blueprint informed by the cited patterns. No third-party workflow JSON is included.",
+      "importStatus": "editorial_blueprint_only",
+      "integrationEvidence": [
+        {
+          "providerIds": [
+            "n8n",
+            "pipedrive"
+          ],
+          "source": {
+            "label": "n8n Pipedrive integration documentation",
+            "url": "https://n8n.io/integrations/pipedrive/",
+            "checkedAt": "2026-10-31",
+            "supports": [
+              "Pipedrive node and supported CRM actions in n8n"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "missing-intake-information",
+      "slug": "missing-intake-information",
+      "title": "Request missing intake information safely",
+      "status": "published",
+      "summary": "Identify absent intake fields, prepare a focused request and return the record to a human-owned review queue without guessing borrower facts.",
+      "useCase": "A submitted funding inquiry lacks information needed for an initial broker conversation.",
+      "outcome": "The broker sees the gaps and can approve a concise, consent-aware request.",
+      "industryTags": [
+        "funding-agencies"
+      ],
+      "categoryIds": [
+        "ai-automation",
+        "crm-sales"
+      ],
+      "providerIds": [
+        "n8n",
+        "pipedrive"
+      ],
+      "requiredServices": [
+        "CRM with missing-field task status",
+        "Approved email or messaging channel"
+      ],
+      "trigger": "A new intake record is marked incomplete",
+      "inputs": [
+        "CRM record reference",
+        "List of missing non-sensitive fields",
+        "Consent and preferred contact channel"
+      ],
+      "outputs": [
+        "Missing-information task",
+        "Approved request status",
+        "Updated CRM activity record"
+      ],
+      "flowSteps": [
+        {
+          "label": "Identify gaps",
+          "detail": "Compare the record with the team's required-field checklist."
+        },
+        {
+          "label": "Draft request",
+          "detail": "Prepare only the missing non-sensitive questions and a secure upload reference if needed."
+        },
+        {
+          "label": "Review and send",
+          "detail": "Have the owner approve wording, channel and timing before sending."
+        },
+        {
+          "label": "Track response",
+          "detail": "Update the task when the person replies; do not infer a funding result."
+        }
+      ],
+      "setupSteps": [
+        "Write the required-field checklist for each intake source.",
+        "Set consent and opt-out checks before any message branch.",
+        "Assign an owner for unanswered or bounced requests."
+      ],
+      "humanReview": "A broker or processor approves the request and decides whether the response is sufficient for further review.",
+      "failureNotes": "If contact details, consent or a secure link are missing, hold the message and create a manual task.",
+      "maintenanceNotes": "Review question wording and required fields after changes to the intake process.",
+      "sourceReferences": [
+        {
+          "kind": "internal_editorial",
+          "visibility": "internal",
+          "label": "Broker Intake Workflow Examples",
+          "locator": "Workflow Pattern 6",
+          "checkedAt": "2026-10-31"
+        },
+        {
+          "kind": "internal_editorial",
+          "visibility": "internal",
+          "label": "n8n Workflow Pattern Library",
+          "locator": "Pattern 1",
+          "checkedAt": "2026-10-31"
+        },
+        {
+          "kind": "published_article",
+          "visibility": "public",
+          "label": "Funding Agency Automation: n8n Templates & CRM Workflow",
+          "url": "https://www.distilledfunding.com/post/funding-agency-automation-n8n-templates",
+          "checkedAt": "2026-10-31"
+        }
+      ],
+      "licenseStatus": "original_editorial",
+      "attribution": "Original Marketplace editorial blueprint informed by the cited patterns. No third-party workflow JSON is included.",
+      "importStatus": "editorial_blueprint_only",
+      "integrationEvidence": []
+    },
+    {
+      "id": "duplicate-lead-review",
+      "slug": "duplicate-lead-review",
+      "title": "Flag possible duplicate leads for review",
+      "status": "published",
+      "summary": "Surface possible duplicate CRM records before creating a new deal, while preserving each original record and its source attribution.",
+      "useCase": "The same business may appear through a form, phone call or referral source.",
+      "outcome": "An operator receives a comparison task and decides whether records represent the same case.",
+      "industryTags": [
+        "funding-agencies"
+      ],
+      "categoryIds": [
+        "ai-automation",
+        "crm-sales"
+      ],
+      "providerIds": [
+        "n8n",
+        "pipedrive"
+      ],
+      "requiredServices": [
+        "CRM search or duplicate view",
+        "Human review queue"
+      ],
+      "trigger": "An intake event matches an existing record on one or more configured signals",
+      "inputs": [
+        "New intake reference",
+        "Existing record references and non-sensitive match signals",
+        "Source and attribution fields"
+      ],
+      "outputs": [
+        "Potential-duplicate review task",
+        "Decision log with original record references"
+      ],
+      "flowSteps": [
+        {
+          "label": "Search",
+          "detail": "Look for possible matches using more than one signal."
+        },
+        {
+          "label": "Flag",
+          "detail": "Keep both records intact and show the differing context to a reviewer."
+        },
+        {
+          "label": "Resolve",
+          "detail": "Let an authorized operator choose the correct record and next action."
+        },
+        {
+          "label": "Record",
+          "detail": "Log the resolution without erasing prior source attribution."
+        }
+      ],
+      "setupSteps": [
+        "Define match signals and false-positive examples for the existing CRM.",
+        "Keep merge and delete actions outside the automation.",
+        "Test repeated email, shared business names and partner referral cases."
+      ],
+      "humanReview": "Only an authorized person may decide whether to merge, link or keep records separate; name or email alone is insufficient.",
+      "failureNotes": "If search fails, create the new intake in a review state with a possible-duplicate warning rather than merging automatically.",
+      "maintenanceNotes": "Review false positives and match rules as data sources change.",
+      "sourceReferences": [
+        {
+          "kind": "internal_editorial",
+          "visibility": "internal",
+          "label": "Broker Intake Workflow Examples",
+          "locator": "Workflow Pattern 7",
+          "checkedAt": "2026-10-31"
+        },
+        {
+          "kind": "published_article",
+          "visibility": "public",
+          "label": "Funding Agency Automation: n8n Templates & CRM Workflow",
+          "url": "https://www.distilledfunding.com/post/funding-agency-automation-n8n-templates",
+          "checkedAt": "2026-10-31"
+        }
+      ],
+      "licenseStatus": "original_editorial",
+      "attribution": "Original Marketplace editorial blueprint informed by the cited patterns. No third-party workflow JSON is included.",
+      "importStatus": "editorial_blueprint_only",
+      "integrationEvidence": []
+    },
+    {
+      "id": "secure-document-request",
+      "slug": "secure-document-request",
+      "title": "Send a reviewed secure document request",
+      "status": "published",
+      "summary": "Move from broker review to a secure upload request with a clear checklist and consent-aware reminders, without putting files into automation payloads.",
+      "useCase": "A broker has decided which documents are appropriate to request for a specific inquiry.",
+      "outcome": "The borrower receives an approved secure upload route and the team can track receipt by reference.",
+      "industryTags": [
+        "funding-agencies"
+      ],
+      "categoryIds": [
+        "ai-automation",
+        "crm-sales"
+      ],
+      "providerIds": [
+        "n8n",
+        "pipedrive"
+      ],
+      "requiredServices": [
+        "Secure document upload provider",
+        "CRM with request status",
+        "Approved messaging channel"
+      ],
+      "trigger": "A broker authorizes a document request",
+      "inputs": [
+        "Broker-approved checklist",
+        "Secure upload link or folder reference",
+        "Consent and contact preferences"
+      ],
+      "outputs": [
+        "Document-request activity",
+        "Secure upload reference on the CRM record",
+        "Reminder task if configured"
+      ],
+      "flowSteps": [
+        {
+          "label": "Approve checklist",
+          "detail": "Broker checks the requested items for this case."
+        },
+        {
+          "label": "Create secure route",
+          "detail": "Generate or retrieve a secure upload reference; keep file bytes outside the CRM and messages."
+        },
+        {
+          "label": "Send request",
+          "detail": "Send the approved link and checklist through an allowed channel."
+        },
+        {
+          "label": "Track state",
+          "detail": "Record only request and receipt status, then create a human task if it remains open."
+        }
+      ],
+      "setupSteps": [
+        "Connect the existing secure upload service to the CRM by reference only.",
+        "Define approved checklist language and consent checks.",
+        "Set reminder limits and an escalation owner before enabling sends."
+      ],
+      "humanReview": "A broker determines which documents to request and reviews any financial or identity material in the secure provider.",
+      "failureNotes": "If the secure link cannot be created or a send fails, pause the sequence and notify the owner; never fall back to email attachments.",
+      "maintenanceNotes": "Review link expiry, consent, reminder caps and secure-provider permissions regularly.",
+      "sourceReferences": [
+        {
+          "kind": "internal_editorial",
+          "visibility": "internal",
+          "label": "n8n Workflow Pattern Library",
+          "locator": "Pattern 4",
+          "checkedAt": "2026-10-31"
+        },
+        {
+          "kind": "internal_editorial",
+          "visibility": "internal",
+          "label": "Broker Intake Workflow Examples",
+          "locator": "Workflow Pattern 8",
+          "checkedAt": "2026-10-31"
+        },
+        {
+          "kind": "internal_editorial",
+          "visibility": "internal",
+          "label": "Automation Pack asset descriptions",
+          "locator": "2. Document Collection Sequence",
+          "checkedAt": "2026-10-31"
+        },
+        {
+          "kind": "published_article",
+          "visibility": "public",
+          "label": "Funding Agency Automation: n8n Templates & CRM Workflow",
+          "url": "https://www.distilledfunding.com/post/funding-agency-automation-n8n-templates",
+          "checkedAt": "2026-10-31"
+        }
+      ],
+      "licenseStatus": "original_editorial",
+      "attribution": "Original Marketplace editorial blueprint informed by the cited patterns. No third-party workflow JSON is included.",
+      "importStatus": "editorial_blueprint_only",
+      "integrationEvidence": []
+    },
+    {
+      "id": "secure-document-received",
+      "slug": "secure-document-received",
+      "title": "Hand off a secure document receipt",
+      "status": "published",
+      "summary": "Acknowledge an upload event, record only a secure file reference and alert the assigned broker that material is ready for human review.",
+      "useCase": "A secure upload provider reports that a requested file has arrived.",
+      "outcome": "The broker has a review task and a reference to the file in the secure system.",
+      "industryTags": [
+        "funding-agencies"
+      ],
+      "categoryIds": [
+        "ai-automation",
+        "crm-sales"
+      ],
+      "providerIds": [
+        "n8n",
+        "pipedrive"
+      ],
+      "requiredServices": [
+        "Secure document upload provider with receipt event",
+        "CRM review task"
+      ],
+      "trigger": "A secure upload provider sends a completed-upload event",
+      "inputs": [
+        "CRM record ID and upload event ID",
+        "Secure file reference and document type; no file contents"
+      ],
+      "outputs": [
+        "Receipt status on the CRM record",
+        "Broker review notification"
+      ],
+      "flowSteps": [
+        {
+          "label": "Verify event",
+          "detail": "Confirm the upload event belongs to the expected record."
+        },
+        {
+          "label": "Store reference",
+          "detail": "Write only the secure file reference and receipt status."
+        },
+        {
+          "label": "Alert broker",
+          "detail": "Create a task for the assigned reviewer without copying document contents."
+        },
+        {
+          "label": "Acknowledge",
+          "detail": "Send a neutral receipt confirmation only when the approved process permits."
+        }
+      ],
+      "setupSteps": [
+        "Map secure-provider event IDs and CRM record IDs.",
+        "Define retry behavior using the event ID so duplicate webhooks do not create duplicate tasks.",
+        "Test expired links and mismatched record IDs with fictional data."
+      ],
+      "humanReview": "A broker reviews the actual document in the secure provider and decides whether more information is needed.",
+      "failureNotes": "Hold unknown or mismatched file references for operator investigation; never include document text in error logs.",
+      "maintenanceNotes": "Review webhook signatures, access permissions and retention settings with the secure provider.",
+      "sourceReferences": [
+        {
+          "kind": "internal_editorial",
+          "visibility": "internal",
+          "label": "n8n Workflow Pattern Library",
+          "locator": "Pattern 5",
+          "checkedAt": "2026-10-31"
+        },
+        {
+          "kind": "internal_editorial",
+          "visibility": "internal",
+          "label": "Broker Intake Workflow Examples",
+          "locator": "Workflow Pattern 8",
+          "checkedAt": "2026-10-31"
+        }
+      ],
+      "licenseStatus": "original_editorial",
+      "attribution": "Original Marketplace editorial blueprint informed by the cited patterns. No third-party workflow JSON is included.",
+      "importStatus": "editorial_blueprint_only",
+      "integrationEvidence": []
+    },
+    {
+      "id": "first-contact-escalation",
+      "slug": "first-contact-escalation",
+      "title": "Escalate leads without a recorded first contact",
+      "status": "published",
+      "summary": "Watch the team's chosen response window and alert an owner when an intake remains uncontacted, while respecting business hours and consent.",
+      "useCase": "New inquiries may sit in a CRM queue without an assigned or completed first contact.",
+      "outcome": "A manager or broker receives an actionable exception task before a lead is forgotten.",
+      "industryTags": [
+        "funding-agencies"
+      ],
+      "categoryIds": [
+        "ai-automation",
+        "crm-sales"
+      ],
+      "providerIds": [
+        "n8n",
+        "pipedrive"
+      ],
+      "requiredServices": [
+        "CRM activity timestamps",
+        "Internal alert channel"
+      ],
+      "trigger": "A scheduled check finds a received record past its configured contact window",
+      "inputs": [
+        "Received timestamp and assigned owner",
+        "Last contact activity reference",
+        "Team business hours and escalation rule"
+      ],
+      "outputs": [
+        "Escalation task or internal alert",
+        "Recorded exception status"
+      ],
+      "flowSteps": [
+        {
+          "label": "Find open records",
+          "detail": "Query received records with no recorded first contact."
+        },
+        {
+          "label": "Apply local rule",
+          "detail": "Compare elapsed business time with the team's configured service window."
+        },
+        {
+          "label": "Notify owner",
+          "detail": "Send a reference-only internal alert to the assigned person or overflow queue."
+        },
+        {
+          "label": "Close exception",
+          "detail": "Clear the alert when contact is logged or a person resolves it."
+        }
+      ],
+      "setupSteps": [
+        "Define the response window and business timezone.",
+        "Choose an overflow owner for unassigned records.",
+        "Test holidays, reassignments and duplicate alerts."
+      ],
+      "humanReview": "A person decides how to contact the borrower and whether any further action is appropriate.",
+      "failureNotes": "If CRM timestamps are missing or future-dated, mark the record for manual review rather than calculating a false overdue state.",
+      "maintenanceNotes": "Review response windows, owner rosters and alert volume monthly.",
+      "sourceReferences": [
+        {
+          "kind": "internal_editorial",
+          "visibility": "internal",
+          "label": "Automation Pack asset descriptions",
+          "locator": "10. No-Contact Escalation",
+          "checkedAt": "2026-10-31"
+        },
+        {
+          "kind": "internal_editorial",
+          "visibility": "internal",
+          "label": "n8n Workflow Pattern Library",
+          "locator": "Pattern 3",
+          "checkedAt": "2026-10-31"
+        },
+        {
+          "kind": "published_article",
+          "visibility": "public",
+          "label": "Funding Agency Automation: n8n Templates & CRM Workflow",
+          "url": "https://www.distilledfunding.com/post/funding-agency-automation-n8n-templates",
+          "checkedAt": "2026-10-31"
+        }
+      ],
+      "licenseStatus": "original_editorial",
+      "attribution": "Original Marketplace editorial blueprint informed by the cited patterns. No third-party workflow JSON is included.",
+      "importStatus": "editorial_blueprint_only",
+      "integrationEvidence": []
+    },
+    {
+      "id": "partner-attribution-check",
+      "slug": "partner-attribution-check",
+      "title": "Check partner source attribution at intake",
+      "status": "published",
+      "summary": "Preserve the referral source on a submitted lead and flag unknown partner references for operator review without changing partner payments or statuses.",
+      "useCase": "A funding inquiry arrives with an existing partner or campaign reference.",
+      "outcome": "The intake retains its source and an operator can resolve mismatched attribution.",
+      "industryTags": [
+        "funding-agencies"
+      ],
+      "categoryIds": [
+        "ai-automation",
+        "crm-sales"
+      ],
+      "providerIds": [
+        "n8n",
+        "pipedrive"
+      ],
+      "requiredServices": [
+        "Existing referral source identifier",
+        "CRM source field",
+        "Operator review task"
+      ],
+      "trigger": "A referred intake is received with a partner or campaign reference",
+      "inputs": [
+        "Intake event ID",
+        "Partner reference or campaign tag",
+        "CRM record reference"
+      ],
+      "outputs": [
+        "Source-linked CRM record",
+        "Attribution exception task when the source is unknown"
+      ],
+      "flowSteps": [
+        {
+          "label": "Capture source",
+          "detail": "Carry the partner or campaign identifier from the approved intake event."
+        },
+        {
+          "label": "Resolve reference",
+          "detail": "Check it against the existing authorized partner record."
+        },
+        {
+          "label": "Record or flag",
+          "detail": "Persist a valid source on the intake; send unknown references to review."
+        },
+        {
+          "label": "Audit handoff",
+          "detail": "Keep the original event reference for later reconciliation."
+        }
+      ],
+      "setupSteps": [
+        "Map the existing partner identifier and source fields without creating a new registry.",
+        "Define who can resolve unknown references.",
+        "Test repeated submissions and attribution conflicts."
+      ],
+      "humanReview": "An operator resolves attribution disputes and any payout or partner-status decisions in the owning system.",
+      "failureNotes": "Never invent a partner record or silently assign attribution when the reference is unknown.",
+      "maintenanceNotes": "Review mappings when the partner system or intake source changes; reconcile exceptions with the owning operations team.",
+      "sourceReferences": [
+        {
+          "kind": "internal_editorial",
+          "visibility": "internal",
+          "label": "n8n Workflow Pattern Library",
+          "locator": "Pattern 11",
+          "checkedAt": "2026-10-31"
+        },
+        {
+          "kind": "internal_editorial",
+          "visibility": "internal",
+          "label": "Broker Intake Workflow Examples",
+          "locator": "Workflow Pattern 2",
+          "checkedAt": "2026-10-31"
+        },
+        {
+          "kind": "internal_editorial",
+          "visibility": "internal",
+          "label": "Automation Pack asset descriptions",
+          "locator": "9. Partner/Affiliate Attribution + Routing",
+          "checkedAt": "2026-10-31"
+        },
+        {
+          "kind": "published_article",
+          "visibility": "public",
+          "label": "Funding Agency Automation: n8n Templates & CRM Workflow",
+          "url": "https://www.distilledfunding.com/post/funding-agency-automation-n8n-templates",
+          "checkedAt": "2026-10-31"
+        }
+      ],
+      "licenseStatus": "original_editorial",
+      "attribution": "Original Marketplace editorial blueprint informed by the cited patterns. No third-party workflow JSON is included.",
+      "importStatus": "editorial_blueprint_only",
+      "integrationEvidence": []
+    },
+    {
+      "id": "deal-packet-readiness",
+      "slug": "deal-packet-readiness",
+      "title": "Prepare a deal packet for broker review",
+      "status": "published",
+      "summary": "Assemble a checklist and secure document references into a broker review task, without creating a submission-ready claim or sending material to a lender.",
+      "useCase": "A broker wants one view of what has been collected before deciding the next step.",
+      "outcome": "A reviewer sees a checklist of available references, missing items and unresolved questions.",
+      "industryTags": [
+        "funding-agencies"
+      ],
+      "categoryIds": [
+        "ai-automation",
+        "crm-sales"
+      ],
+      "providerIds": [
+        "n8n",
+        "pipedrive"
+      ],
+      "requiredServices": [
+        "CRM record and checklist",
+        "Secure document provider",
+        "Human reviewer"
+      ],
+      "trigger": "A broker requests a packet readiness review",
+      "inputs": [
+        "CRM record reference and current status",
+        "Secure document references only",
+        "Required item checklist for this case"
+      ],
+      "outputs": [
+        "Readiness checklist",
+        "Broker review task with missing-item notes"
+      ],
+      "flowSteps": [
+        {
+          "label": "Collect references",
+          "detail": "Read current CRM fields and secure-provider document references."
+        },
+        {
+          "label": "Check completeness",
+          "detail": "Compare available references with the broker's case-specific checklist."
+        },
+        {
+          "label": "Prepare review",
+          "detail": "Present missing items and conflicts to the broker; do not attach files in messages."
+        },
+        {
+          "label": "Decide next step",
+          "detail": "Broker reviews underlying documents in the secure system before any outside submission."
+        }
+      ],
+      "setupSteps": [
+        "Agree on a checklist that reflects the team's actual review process.",
+        "Restrict access to document references and log who opens the secure records.",
+        "Test incomplete and conflicting packets with fictional cases."
+      ],
+      "humanReview": "A broker validates the documents and decides whether anything may be shared or submitted; the workflow cannot approve, qualify or submit.",
+      "failureNotes": "If a reference is missing, expired or inaccessible, mark it unresolved and stop any downstream handoff.",
+      "maintenanceNotes": "Review checklist versions, access permissions and secure link expiry rules.",
+      "sourceReferences": [
+        {
+          "kind": "internal_editorial",
+          "visibility": "internal",
+          "label": "Automation Pack asset descriptions",
+          "locator": "6. Deal Packet Auto-Generation",
+          "checkedAt": "2026-10-31"
+        },
+        {
+          "kind": "internal_editorial",
+          "visibility": "internal",
+          "label": "n8n Workflow Pattern Library",
+          "locator": "Pattern 5",
+          "checkedAt": "2026-10-31"
+        },
+        {
+          "kind": "published_article",
+          "visibility": "public",
+          "label": "Funding Agency Automation: n8n Templates & CRM Workflow",
+          "url": "https://www.distilledfunding.com/post/funding-agency-automation-n8n-templates",
+          "checkedAt": "2026-10-31"
+        }
+      ],
+      "licenseStatus": "original_editorial",
+      "attribution": "Original Marketplace editorial blueprint informed by the cited patterns. No third-party workflow JSON is included.",
+      "importStatus": "editorial_blueprint_only",
+      "integrationEvidence": []
+    },
+    {
+      "id": "aggregate-operations-digest",
+      "slug": "aggregate-operations-digest",
+      "title": "Prepare a privacy-safe operations digest",
+      "status": "published",
+      "summary": "Summarize counts of new, open and exception records for an internal operator without including document contents or detailed borrower financial data.",
+      "useCase": "A funding team needs a daily overview of workload and unowned exceptions.",
+      "outcome": "An internal digest shows aggregate activity and a short list of records requiring human attention.",
+      "industryTags": [
+        "funding-agencies"
+      ],
+      "categoryIds": [
+        "ai-automation",
+        "crm-sales"
+      ],
+      "providerIds": [
+        "n8n",
+        "pipedrive"
+      ],
+      "requiredServices": [
+        "CRM reporting access",
+        "Internal operator channel"
+      ],
+      "trigger": "A daily or weekly internal reporting schedule",
+      "inputs": [
+        "Counts by workflow state",
+        "Unassigned and overdue task references",
+        "Reporting window and timezone"
+      ],
+      "outputs": [
+        "Aggregate operations summary",
+        "Exception links for authorized operators"
+      ],
+      "flowSteps": [
+        {
+          "label": "Collect counts",
+          "detail": "Query the existing CRM for stage counts and open task references."
+        },
+        {
+          "label": "Check scope",
+          "detail": "Remove sensitive fields and apply the reporting window."
+        },
+        {
+          "label": "Format digest",
+          "detail": "Show counts, changes and exception references without document content."
+        },
+        {
+          "label": "Review delivery",
+          "detail": "Send only to authorized internal operators."
+        }
+      ],
+      "setupSteps": [
+        "Choose the reporting window and timezone.",
+        "Define the minimum fields needed for counts and exception links.",
+        "Test zero records, stale timestamps and partial CRM outages."
+      ],
+      "humanReview": "An operator interprets the digest and decides follow-up actions; counts do not make borrower decisions.",
+      "failureNotes": "If a source query fails, label the digest incomplete and alert the operator instead of showing a misleading zero.",
+      "maintenanceNotes": "Review metric definitions and recipients whenever CRM stages or team access change.",
+      "sourceReferences": [
+        {
+          "kind": "internal_editorial",
+          "visibility": "internal",
+          "label": "n8n Workflow Pattern Library",
+          "locator": "Pattern 13",
+          "checkedAt": "2026-10-31"
+        },
+        {
+          "kind": "published_article",
+          "visibility": "public",
+          "label": "Funding Agency Automation: n8n Templates & CRM Workflow",
+          "url": "https://www.distilledfunding.com/post/funding-agency-automation-n8n-templates",
+          "checkedAt": "2026-10-31"
+        }
+      ],
+      "licenseStatus": "original_editorial",
+      "attribution": "Original Marketplace editorial blueprint informed by the cited patterns. No third-party workflow JSON is included.",
+      "importStatus": "editorial_blueprint_only",
+      "integrationEvidence": []
+    },
+    {
+      "id": "public-research-to-crm-review",
+      "slug": "public-research-to-crm-review",
+      "title": "Review public web research before CRM use",
+      "status": "published",
+      "summary": "Collect selected public page fields, verify the extraction and hand reviewed notes to a CRM owner without assuming a direct product integration.",
+      "useCase": "A sales team tracks public business information for research and outreach planning.",
+      "outcome": "Reviewed public facts are available for a CRM owner to enter or connect through an approved path.",
+      "industryTags": [
+        "professional-services"
+      ],
+      "categoryIds": [
+        "ai-automation",
+        "crm-sales"
+      ],
+      "providerIds": [
+        "browseai",
+        "pipedrive"
+      ],
+      "requiredServices": [
+        "Public pages that permit automated access",
+        "A research review owner",
+        "CRM data entry or approved import path"
+      ],
+      "trigger": "A scheduled public-page monitor reports a change",
+      "inputs": [
+        "Public page URLs and selected fields",
+        "Extraction result and page timestamp",
+        "CRM record reference where one exists"
+      ],
+      "outputs": [
+        "Reviewed research note",
+        "Manual or approved CRM update task"
+      ],
+      "flowSteps": [
+        {
+          "label": "Capture",
+          "detail": "Use Browse AI to extract only the public fields selected for the pilot."
+        },
+        {
+          "label": "Validate",
+          "detail": "A reviewer checks the page and corrects missing or misleading values."
+        },
+        {
+          "label": "Handoff",
+          "detail": "Prepare a note for the Pipedrive owner; use an approved import path only after verification."
+        },
+        {
+          "label": "Track source",
+          "detail": "Keep the page URL and check date beside the research note."
+        }
+      ],
+      "setupSteps": [
+        "Check access rules for the chosen public pages.",
+        "Define field accuracy checks and a reviewer.",
+        "Confirm the data handoff path; direct integration support is not listed here."
+      ],
+      "humanReview": "A person verifies facts and authorizes any CRM update or outreach decision.",
+      "failureNotes": "If extraction breaks or page access changes, pause the handoff and mark the result unverified.",
+      "maintenanceNotes": "Review page structure, monitoring frequency and data relevance regularly.",
+      "sourceReferences": [
+        {
+          "kind": "official_documentation",
+          "visibility": "public",
+          "label": "Browse AI monitoring documentation",
+          "url": "https://help.browse.ai/en/articles/10535487-how-to-set-up-monitoring-for-website-changes",
+          "checkedAt": "2026-10-31"
+        },
+        {
+          "kind": "official_documentation",
+          "visibility": "public",
+          "label": "Pipedrive product information",
+          "url": "https://www.pipedrive.com/en/products",
+          "checkedAt": "2026-10-31"
+        }
+      ],
+      "licenseStatus": "original_editorial",
+      "attribution": "Original Marketplace editorial blueprint informed by the cited patterns. No third-party workflow JSON is included.",
+      "importStatus": "editorial_blueprint_only",
+      "integrationEvidence": []
+    },
+    {
+      "id": "ramp-quickbooks-reconciliation",
+      "slug": "ramp-quickbooks-reconciliation",
+      "title": "Review Ramp expenses in QuickBooks Online",
+      "status": "published",
+      "summary": "Use the documented Ramp and QuickBooks Online connection to send reviewed expense data into accounting, then reconcile exceptions with a bookkeeper.",
+      "useCase": "A finance team wants card expense records in its accounting books.",
+      "outcome": "Reviewed Ramp transactions reach QuickBooks Online and unresolved items remain visible for reconciliation.",
+      "industryTags": [
+        "professional-services"
+      ],
+      "categoryIds": [
+        "budgeting-finops",
+        "accounting-bookkeeping"
+      ],
+      "providerIds": [
+        "ramp",
+        "quickbooks"
+      ],
+      "requiredServices": [
+        "Ramp accounting access",
+        "QuickBooks Online company access",
+        "Bookkeeper or finance reviewer"
+      ],
+      "trigger": "A Ramp expense is ready for accounting sync",
+      "inputs": [
+        "Finalized Ramp transaction and receipt reference",
+        "Vendor and category mapping",
+        "Accounting sync settings"
+      ],
+      "outputs": [
+        "QuickBooks Online expense record where sync succeeds",
+        "Exception list for unreconciled records"
+      ],
+      "flowSteps": [
+        {
+          "label": "Configure",
+          "detail": "Connect the QuickBooks Online company and map accounts in Ramp."
+        },
+        {
+          "label": "Review",
+          "detail": "Check receipt, vendor and category before a transaction is finalized."
+        },
+        {
+          "label": "Sync",
+          "detail": "Send supported finalized transactions through the documented connection."
+        },
+        {
+          "label": "Reconcile",
+          "detail": "Review the resulting QuickBooks entry and resolve any mismatch in the owning system."
+        }
+      ],
+      "setupSteps": [
+        "Confirm the company and account mapping with the bookkeeper.",
+        "Pilot a small batch and check the resulting expenses in QuickBooks Online.",
+        "Define the error owner and avoid duplicate manual imports."
+      ],
+      "humanReview": "A bookkeeper approves coding and reconciliation; the workflow does not approve payments or change financial conclusions.",
+      "failureNotes": "If sync fails or records mismatch, hold the item for manual review and inspect both systems before retrying.",
+      "maintenanceNotes": "Review connection access and account mappings after chart-of-accounts or policy changes.",
+      "sourceReferences": [
+        {
+          "kind": "official_documentation",
+          "visibility": "public",
+          "label": "Ramp QuickBooks Online overview",
+          "url": "https://support.ramp.com/quickbooks-online-overview/",
+          "checkedAt": "2026-10-31"
+        }
+      ],
+      "licenseStatus": "original_editorial",
+      "attribution": "Original Marketplace editorial blueprint informed by the cited patterns. No third-party workflow JSON is included.",
+      "importStatus": "editorial_blueprint_only",
+      "integrationEvidence": [
+        {
+          "providerIds": [
+            "ramp",
+            "quickbooks"
+          ],
+          "source": {
+            "label": "Ramp QuickBooks Online overview",
+            "url": "https://support.ramp.com/quickbooks-online-overview/",
+            "checkedAt": "2026-10-31",
+            "supports": [
+              "Ramp direct integration with QuickBooks Online"
+            ]
+          }
+        }
+      ]
     }
   ],
   "offers": [],

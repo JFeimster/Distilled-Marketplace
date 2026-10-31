@@ -39,22 +39,37 @@ try {
   Write-Host 'Running existing project checks before staging...' -ForegroundColor Cyan
   Invoke-Checked 'npm' @('run', 'check')
 
-  # Intentionally omit _reference/, output/, local reports, .env*, and arbitrary files.
+  $alreadyStaged = @(& git diff --cached --name-only)
+  if ($alreadyStaged.Count) { throw "Pre-existing staged changes found: $($alreadyStaged -join ', '). Review them before release." }
+
+  # Stage only the V4.2 implementation. BUILD-REPORT.md and other local work remain unstaged.
   $allow = @(
-    '.github', '.gitignore', 'README.md', 'AGENTS.md',
-    'app', 'components', 'lib', 'schemas', 'scripts', 'tests', 'public',
-    'data/marketplace', 'docs',
-    'package.json', 'package-lock.json', 'next.config.ts',
-    'tsconfig.json', 'eslint.config.mjs',
-    'CANONICAL-SITEMAP.txt', 'PROVIDER-V3-BUILD-REPORT.md'
+    'CANONICAL-SITEMAP.txt',
+    'app/layout.tsx', 'app/providers/[slug]/page.tsx', 'app/workflow-lab.css',
+    'app/workflows/page.tsx', 'app/workflows/[slug]/page.tsx',
+    'app/integrations/page.tsx', 'app/compatibility/page.tsx',
+    'app/playbooks/page.tsx', 'app/playbooks/[slug]/page.tsx',
+    'components/SiteFooter.tsx', 'components/SiteHeader.tsx',
+    'components/WorkflowCard.tsx', 'components/WorkflowExplorer.tsx',
+    'components/CompatibilityWorkspace.tsx',
+    'data/marketplace/catalog.json', 'data/marketplace/generated/routes.json',
+    'lib/routes.ts', 'lib/validate.ts', 'lib/workflow-discovery.ts', 'lib/workflows.ts',
+    'schemas/catalog.ts',
+    'scripts/generate.ts', 'scripts/validate.ts', 'scripts/release-marketplace.ps1',
+    'tests/workflow-lab.test.ts'
   )
   $existing = @($allow | Where-Object { Test-Path -LiteralPath $_ })
   if ($existing.Count -eq 0) { throw 'No recognized project paths available to stage.' }
-  Invoke-Checked 'git' (@('add', '-A', '--') + $existing)
+  Invoke-Checked 'git' (@('add', '-A', '--') + @($existing | ForEach-Object { ":(literal)$_" }))
 
   $staged = @(& git diff --cached --name-only)
   if ($LASTEXITCODE -ne 0) { throw 'Unable to inspect staged changes.' }
   if ($staged.Count -eq 0) { throw 'No changes staged; nothing to release.' }
+  $allowedPaths = [System.Collections.Generic.HashSet[string]]::new([StringComparer]::Ordinal)
+  foreach ($file in $allow) { [void]$allowedPaths.Add($file) }
+  foreach ($file in $staged) {
+    if (-not $allowedPaths.Contains($file)) { throw "Unapproved staged path: $file" }
+  }
 
   $forbidden = @('(^|/)(_reference|output|node_modules|\.next|\.vercel)/', '(^|/)\.env', '\.(pem|key|p12|pfx)$', 'credential|service[_-]?role|secret|token')
   foreach ($file in $staged) {
@@ -78,20 +93,21 @@ try {
 
   $releaseBranch = 'release/marketplace-' + (Get-Date -Format 'yyyyMMdd-HHmmss')
   Invoke-Checked 'git' @('switch', '-c', $releaseBranch)
-  Invoke-Checked 'git' @('commit', '-m', 'feat: publish owner-approved marketplace provider inventory')
+  Invoke-Checked 'git' @('commit', '-m', 'feat: add Marketplace Workflow Lab blueprints and discovery')
   Invoke-Checked 'git' @('push', '-u', 'origin', $releaseBranch)
 
   $body = @'
-## Marketplace provider publication
-- Publish owner-approved provider listings from local v3 implementation.
-- Preserve 52 saved referral destinations; 102 company website primaries.
-- Preserve noindex and empty sitemap.
+## Marketplace Workflow Lab V4.2
+- Publish 20 editorial workflow blueprints, a searchable finder, provider connections, deterministic stack coverage, and three industry playbooks.
+- Link provider profiles to relevant blueprints. No importable workflow files, runtime, or new backend.
+- Preserve 154 provider records and all 52 saved affiliate-primary destinations.
+- Preserve noindex, X-Robots-Tag, and empty staging sitemap.
 - Validation: npm run check passed locally.
 
-CI must pass before merging. No live redirect crawl or redundant affiliate reverification gate.
+CI must pass before the existing workflow squash-merges this PR. Vercel deploys from main.
 '@
   Invoke-Checked 'gh' @('pr', 'create', '--base', 'main', '--head', $releaseBranch,
-    '--title', 'feat: activate 154 Marketplace provider listings', '--body', $body)
+    '--title', 'feat: add V4.2 Workflow Lab to Distilled Marketplace', '--body', $body)
 
   if (-not $NoAutoSquash) {
     # The workflow only performs the squash after its own check job is green.
@@ -103,7 +119,7 @@ CI must pass before merging. No live redirect crawl or redundant affiliate rever
   } else {
     Write-Host 'PR opened for review. Auto-squash not requested.' -ForegroundColor Yellow
   }
-  Invoke-Checked 'gh' @('pr', 'view', $releaseBranch, '--web')
+  Invoke-Checked 'gh' @('pr', 'view', $releaseBranch, '--json', 'url', '--jq', '.url')
 } finally {
   Pop-Location
 }

@@ -3,8 +3,8 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 const menu = [
-  { label: "Discover", links: [["Directory", "/directory"], ["All categories", "/categories"], ["Collections", "/collections"]] },
-  { label: "Decide", links: [["Find my stack", "/#stack-finder"], ["Compare", "/compare"], ["Current offers", "/deals"]] },
+  { label: "Discover", links: [["Directory", "/directory"], ["All categories", "/categories"], ["Collections", "/collections"], ["Workflow Lab", "/workflows"], ["Industry playbooks", "/playbooks"]] },
+  { label: "Decide", links: [["Find my stack", "/#stack-finder"], ["Compare", "/compare"], ["Stack coverage", "/compatibility"], ["Connections", "/integrations"], ["Current offers", "/deals"]] },
   { label: "Trust", links: [["How we evaluate", "/about"], ["Disclosures", "/disclosures"], ["Suggest a provider", "/submit"]] }
 ];
 export function SiteHeader() {

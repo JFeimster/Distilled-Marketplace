@@ -9,12 +9,15 @@ export function validateCatalog(input: unknown) {
   unique(catalog.collections.map(x => x.id), "collection ID");
   unique(catalog.providers.map(x => x.id), "provider ID");
   unique(catalog.providers.map(x => x.slug), "provider slug");
+  unique(catalog.workflowBlueprints.map(x => x.id), "workflow ID");
+  unique(catalog.workflowBlueprints.map(x => x.slug), "workflow slug");
   unique(catalog.offers.map(x => x.id), "offer ID");
   unique(catalog.comparisons.map(x => x.id), "comparison ID");
   const categories = new Set(catalog.categories.map(x => x.id));
   const categoryById = new Map(catalog.categories.map(x => [x.id, x]));
   const providers = new Set(catalog.providers.filter(x => x.status === "published" || x.status === "needs_update").map(x => x.id));
-  const validRoutes = new Set(["/", "/directory", "/categories", "/compare", "/collections", "/deals", "/about", "/disclosures", "/submit", ...catalog.categories.map(x => `/categories/${x.id}`), ...catalog.collections.map(x => `/collections/${x.id}`), ...catalog.providers.map(x => `/providers/${x.slug}`), ...catalog.comparisons.map(x => `/compare/${x.id}`)]);
+  const industryTags = [...new Set(catalog.workflowBlueprints.filter(x => x.status === "published").flatMap(x => x.industryTags))];
+  const validRoutes = new Set(["/", "/directory", "/categories", "/compare", "/collections", "/deals", "/about", "/disclosures", "/submit", "/workflows", "/integrations", "/compatibility", "/playbooks", ...catalog.categories.map(x => `/categories/${x.id}`), ...catalog.collections.map(x => `/collections/${x.id}`), ...catalog.providers.map(x => `/providers/${x.slug}`), ...catalog.workflowBlueprints.map(x => `/workflows/${x.slug}`), ...industryTags.map(x => `/playbooks/${x}`), ...catalog.comparisons.map(x => `/compare/${x.id}`)]);
   const approvedExternalResources = new Set(catalog.crossPropertyLinks.map(link => link.url));
   const validResource = (url: string) => url.startsWith("/") ? validRoutes.has(url) : approvedExternalResources.has(url);
   for (const category of catalog.categories) for (const id of category.related) if (!categories.has(id) || id === category.id) errors.push(`Bad related category ${category.id} -> ${id}`);
@@ -38,10 +41,20 @@ export function validateCatalog(input: unknown) {
     for (const workflow of [...provider.workflowTemplates, ...provider.promptTemplates]) if (workflow.resourceUrl && !validResource(workflow.resourceUrl)) errors.push(`Unapproved workflow resource for ${provider.id}: ${workflow.resourceUrl}`);
   }
   for (const offer of catalog.offers) if (!providers.has(offer.providerId)) errors.push(`Unknown offer provider ${offer.id}`);
+  for (const blueprint of catalog.workflowBlueprints) {
+    for (const id of blueprint.providerIds) if (!providers.has(id)) errors.push(`Unknown workflow provider ${blueprint.id} -> ${id}`);
+    for (const id of blueprint.categoryIds) if (!categories.has(id)) errors.push(`Unknown workflow category ${blueprint.id} -> ${id}`);
+    if (new Set(blueprint.providerIds).size !== blueprint.providerIds.length) errors.push(`Duplicate workflow provider for ${blueprint.id}`);
+    for (const evidence of blueprint.integrationEvidence) {
+      if (evidence.providerIds[0] === evidence.providerIds[1] || evidence.providerIds.some(id => !blueprint.providerIds.includes(id))) errors.push(`Invalid workflow integration evidence for ${blueprint.id}`);
+    }
+  }
   for (const comparison of catalog.comparisons) for (const id of comparison.providerIds) if (!providers.has(id)) errors.push(`Unknown comparison provider ${comparison.id} -> ${id}`);
   const routes = [
     ...catalog.categories.map(x => `/categories/${x.id}`), ...catalog.collections.map(x => `/collections/${x.id}`),
     ...catalog.providers.filter(x => x.status === "published" || x.status === "needs_update").map(x => `/providers/${x.slug}`),
+    ...catalog.workflowBlueprints.filter(x => x.status === "published").map(x => `/workflows/${x.slug}`),
+    ...industryTags.map(x => `/playbooks/${x}`),
     ...catalog.comparisons.map(x => `/compare/${x.id}`)
   ];
   unique(routes, "route");
