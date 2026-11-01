@@ -5,7 +5,7 @@ import raw from "../data/marketplace/catalog.json";
 import { catalog } from "@/lib/catalog";
 import { validateCatalog } from "@/lib/validate";
 import { deriveWorkflowConnections, emptyWorkflowFilters, evaluateWorkflowCoverage, filterWorkflowListings, recommendRelatedWorkflows, workflowOutcomes, workflowStackPresets } from "@/lib/workflow-discovery";
-import { publishedWorkflows, workflowListing, workflowsForIndustry, workflowsForProvider } from "@/lib/workflows";
+import { publishedWorkflows, workflowDiscoveriesForProvider, workflowListing, workflowsForIndustry, workflowsForProvider } from "@/lib/workflows";
 import WorkflowIndex from "@/app/workflows/page";
 import WorkflowPage from "@/app/workflows/[slug]/page";
 import IntegrationsPage from "@/app/integrations/page";
@@ -58,6 +58,14 @@ test("workflow relationships and filters use catalog fields", () => {
   assert.equal(related.length, 3);
   assert.ok(related.every(item => item.workflow.slug !== "funding-intake-review" && item.score > 0));
   assert.deepEqual(related, recommendRelatedWorkflows(listings.find(item => item.slug === "funding-intake-review")!, listings));
+});
+
+test("workflow discovery labels explicit provider references separately from category suggestions", () => {
+  const xendoo = catalog.providers.find(provider => provider.id === "xendooonlineaccounting")!;
+  const related = workflowDiscoveriesForProvider(xendoo.id, xendoo.categoryIds);
+  assert.ok(related.some(item => item.matchType === "category-related" && item.workflow.categoryIds.includes("accounting-bookkeeping")));
+  const quickbooks = catalog.providers.find(provider => provider.id === "quickbooks")!;
+  assert.ok(workflowDiscoveriesForProvider(quickbooks.id, quickbooks.categoryIds).some(item => item.matchType === "provider-listed" && item.workflow.providerIds.includes(quickbooks.id)));
 });
 
 test("stack coverage separates required providers from documented integration support", () => {

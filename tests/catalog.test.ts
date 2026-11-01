@@ -7,7 +7,7 @@ import { filterCategories, findStack, emptyFilters } from "../lib/discovery";
 test("catalog publishes the owner-approved provider inventory", () => {
   const { catalog, errors } = validateCatalog(raw);
   assert.deepEqual(errors, []);
-  assert.equal(catalog.categories.length, 16);
+  assert.equal(catalog.categories.length, 17);
   assert.equal(catalog.providers.length, 154);
   assert.equal(catalog.providers.filter(provider => provider.linkType === "saved_tracking_referral").length, 52);
   assert.equal(catalog.providers.filter(provider => provider.linkType === "official_website").length, 102);

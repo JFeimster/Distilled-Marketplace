@@ -45,6 +45,19 @@ test("directory search and category, group, role, stage, and capability facets c
   assert.equal(filterProviders(catalog.providers, catalog.categories, { ...filters, stage: "starting" }).length, 0);
 });
 
+test("functional tags keep personal credit tools out of business credit discovery", () => {
+  const personal = filterProviders(catalog.providers, catalog.categories, { ...emptyProviderFilters, capability: "personal-credit-building" });
+  assert.deepEqual(personal.map(provider => provider.id).sort(), ["growcredit", "kikoff"]);
+  assert.ok(personal.every(provider => !provider.categoryIds.includes("business-credit")));
+  for (const id of ["growcredit", "kikoff"]) {
+    const provider = catalog.providers.find(item => item.id === id)!;
+    assert.equal(provider.primaryUrl, provider.affiliateUrl);
+    assert.ok(provider.sources.length > 0);
+  }
+  const nav = catalog.providers.find(provider => provider.id === "nav")!;
+  assert.ok(nav.functionalTags.includes("business-credit-monitoring"));
+});
+
 test("provider card supports grid and list views with customer-facing CTAs", () => {
   const provider = catalog.providers.find(item => item.slug === "browseai")!;
   const category = catalog.categories.find(item => item.id === provider.primaryCategoryId)!;
@@ -64,7 +77,9 @@ test("profiles render authored sections and omit missing workflow content", asyn
   assert.match(rich, /What to explore/);
   assert.match(rich, /Before you decide/);
   assert.match(sparse, /Check Current Pricing/);
-  assert.doesNotMatch(sparse, /WORKFLOW LAB/);
+  assert.match(sparse, /Related workflows/);
+  assert.match(sparse, /same service area/);
+  assert.doesNotMatch(sparse, /This blueprint lists this provider/);
   assert.doesNotMatch(rich, /Saved referral link|Current attribution/i);
 });
 

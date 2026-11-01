@@ -2,11 +2,17 @@
 Marketplace release: validate, commit scoped changes, push a release branch,
 create a PR, and opt in to CI-gated squash merge. Does not force-push or deploy directly.
 Requires Git, Node/npm, and authenticated GitHub CLI (gh).
-Run from any directory: pwsh -NoProfile -ExecutionPolicy Bypass -File .\scripts\release-marketplace.ps1
+Pass exact repository-relative paths through -Files plus release metadata and notes.
 Use -NoAutoSquash to keep the PR open after CI.
 #>
 [CmdletBinding()]
-param([switch]$NoAutoSquash)
+param(
+  [Parameter(Mandatory)][string[]]$Files,
+  [Parameter(Mandatory)][string]$ReleaseTitle,
+  [Parameter(Mandatory)][string]$CommitMessage,
+  [Parameter(Mandatory)][string[]]$ReleaseNotes,
+  [switch]$NoAutoSquash
+)
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
@@ -42,18 +48,15 @@ try {
   $alreadyStaged = @(& git diff --cached --name-only)
   if ($alreadyStaged.Count) { throw "Pre-existing staged changes found: $($alreadyStaged -join ', '). Review them before release." }
 
-  # Stage only the V4.3 implementation. BUILD-REPORT.md and other local work remain unstaged.
-  $allow = @(
-    'app/compatibility/page.tsx', 'app/workflow-lab.css', 'app/workflows/[slug]/page.tsx',
-    'components/ActionPackBuilder.tsx', 'components/CompatibilityWorkspace.tsx',
-    'components/WorkflowCard.tsx', 'components/WorkflowExplorer.tsx',
-    'lib/workflow-action-pack.ts', 'lib/workflow-discovery.ts', 'lib/workflows.ts',
-    'scripts/release-marketplace.ps1',
-    'tests/workflow-action-pack.test.ts', 'tests/workflow-lab.test.ts'
-  )
-  $existing = @($allow | Where-Object { Test-Path -LiteralPath $_ })
-  if ($existing.Count -eq 0) { throw 'No recognized project paths available to stage.' }
-  Invoke-Checked 'git' (@('add', '-A', '--') + @($existing | ForEach-Object { ":(literal)$_" }))
+  if (-not $Files.Count) { throw 'Pass the exact release scope through -Files.' }
+  $allow = @($Files | ForEach-Object {
+    $path = $_.Replace('\', '/')
+    if ([IO.Path]::IsPathRooted($path) -or $path -match '(^|/)\.\.(?:/|$)') { throw "Release path must stay inside the repository: $_" }
+    if (-not (Test-Path -LiteralPath $_)) { throw "Release path does not exist: $_" }
+    $path
+  } | Sort-Object -Unique)
+  if ($allow.Count -ne $Files.Count) { throw 'Release file manifest contains duplicate paths.' }
+  Invoke-Checked 'git' (@('add', '-A', '--') + @($allow | ForEach-Object { ":(literal)$_" }))
 
   $staged = @(& git diff --cached --name-only)
   if ($LASTEXITCODE -ne 0) { throw 'Unable to inspect staged changes.' }
@@ -86,21 +89,20 @@ try {
 
   $releaseBranch = 'release/marketplace-' + (Get-Date -Format 'yyyyMMdd-HHmmss')
   Invoke-Checked 'git' @('switch', '-c', $releaseBranch)
-  Invoke-Checked 'git' @('commit', '-m', 'feat: add Workflow Lab action packs and guided discovery')
+  Invoke-Checked 'git' @('commit', '-m', $CommitMessage)
   Invoke-Checked 'git' @('push', '-u', 'origin', $releaseBranch)
 
-  $body = @'
-## Marketplace Workflow Lab V4.3
-- Add a client-side action pack builder with live preview, copy, Markdown download, and reset to every existing blueprint.
-- Improve stack coverage with catalog-derived presets, provider groups, and linked gaps; add outcome-based finder filters and related-blueprint relevance.
-- Preserve the 20 editorial blueprints, 154 provider records, and all 52 saved affiliate-primary destinations.
-- Preserve noindex, X-Robots-Tag, and empty staging sitemap.
-- Validation: npm run check passed locally.
+  $notes = $ReleaseNotes | ForEach-Object { "- $_" }
+  $body = @"
+## $ReleaseTitle
+$($notes -join "`n")
+- Preserve noindex, X-Robots-Tag, and the empty staging sitemap.
+- Local validation: npm run check passed.
 
-CI must pass before the existing workflow squash-merges this PR. Vercel deploys from main.
-'@
+CI must pass before the existing workflow squash-merges this PR. Vercel deploys when main updates.
+"@
   Invoke-Checked 'gh' @('pr', 'create', '--base', 'main', '--head', $releaseBranch,
-    '--title', 'feat: add V4.3 Workflow Lab action packs', '--body', $body)
+    '--title', $ReleaseTitle, '--body', $body)
 
   if (-not $NoAutoSquash) {
     # The workflow only performs the squash after its own check job is green.

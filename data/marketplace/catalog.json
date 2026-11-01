@@ -119,7 +119,8 @@
       ],
       "related": [
         "financing",
-        "legal-compliance"
+        "legal-compliance",
+        "personal-credit"
       ]
     },
     {
@@ -386,6 +387,29 @@
         "marketing-seo",
         "crm-sales"
       ]
+    },
+    {
+      "id": "personal-credit",
+      "name": "Personal Credit",
+      "group": "Money",
+      "summary": "Review consumer credit-building and monitoring services against personal credit goals and current terms.",
+      "question": "Which personal credit records, behaviors, and services are relevant to your situation?",
+      "watchFor": "Credit-building products do not guarantee score changes; review reporting, fees, account terms, and potential credit impacts.",
+      "capabilities": [
+        "personal-credit-building",
+        "credit-education"
+      ],
+      "audiences": [
+        "owner"
+      ],
+      "stages": [
+        "starting",
+        "growing"
+      ],
+      "related": [
+        "business-credit",
+        "financing"
+      ]
     }
   ],
   "collections": [
@@ -540,6 +564,21 @@
                 "Invoice creation and payment tracking",
                 "Create and send invoices, then review status and recorded payments."
               ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://quickbooks.intuit.com/accounting/invoicing/",
+              "supports": [
+                "Invoice creation and payment tracking"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://quickbooks.intuit.com/accounting/invoicing/",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Invoice creation and payment tracking"
+              ]
             }
           ],
           "evidenceStatus": "verified_primary_source_2026_10_31",
@@ -555,6 +594,21 @@
               "supports": [
                 "Automated bookkeeping and bank feeds",
                 "Connect eligible bank accounts to bring transactions into the books for review and categorization."
+              ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://quickbooks.intuit.com/accounting/invoicing/",
+              "supports": [
+                "Automated bookkeeping and bank feeds"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://quickbooks.intuit.com/accounting/invoicing/",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Automated bookkeeping and bank feeds"
               ]
             }
           ],
@@ -572,6 +626,21 @@
                 "Expense organization",
                 "Record and categorize business expenses so they can be reviewed with income."
               ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://quickbooks.intuit.com/accounting/invoicing/",
+              "supports": [
+                "Expense organization"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://quickbooks.intuit.com/accounting/invoicing/",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Expense organization"
+              ]
             }
           ],
           "evidenceStatus": "verified_primary_source_2026_10_31",
@@ -587,6 +656,21 @@
               "supports": [
                 "Financial reports and cash-flow planning",
                 "Use available reports such as profit and loss to review business activity; included reports vary by plan."
+              ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://quickbooks.intuit.com/accounting/invoicing/",
+              "supports": [
+                "Financial reports and cash-flow planning"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://quickbooks.intuit.com/accounting/invoicing/",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Financial reports and cash-flow planning"
               ]
             }
           ],
@@ -720,7 +804,13 @@
         },
         "linkRef": "pricing-details"
       },
-      "productInfoUpdatedAt": "2026-10-31"
+      "productInfoUpdatedAt": "2026-10-31",
+      "functionalTags": [],
+      "serviceTypes": [],
+      "industries": [],
+      "media": [],
+      "promptTemplates": [],
+      "relatedResources": []
     },
     {
       "id": "xendooonlineaccounting",
@@ -779,7 +869,17 @@
       "metadataDescription": "A listed option in Accounting & Bookkeeping. Verify current features and terms with Xendoo Online Accounting before choosing.",
       "seo": {
         "description": "A listed option in Accounting & Bookkeeping. Verify current features and terms with Xendoo Online Accounting before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "browseai",
@@ -937,6 +1037,21 @@
                 "Train robots to extract structured web data",
                 "Choose a page and fields a robot should capture, then test the result."
               ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://help.browse.ai/en/articles/10504822-how-to-create-robots-without-installing-the-browser-extension",
+              "supports": [
+                "Train robots to extract structured web data"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://help.browse.ai/en/articles/10504822-how-to-create-robots-without-installing-the-browser-extension",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Train robots to extract structured web data"
+              ]
             }
           ],
           "evidenceStatus": "verified_primary_source_2026_10_31",
@@ -952,6 +1067,21 @@
               "supports": [
                 "Monitor website changes",
                 "Schedule a robot to check captured fields and notify you when the page changes."
+              ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://help.browse.ai/en/articles/10504822-how-to-create-robots-without-installing-the-browser-extension",
+              "supports": [
+                "Monitor website changes"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://help.browse.ai/en/articles/10504822-how-to-create-robots-without-installing-the-browser-extension",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Monitor website changes"
               ]
             }
           ],
@@ -969,6 +1099,21 @@
                 "Use prebuilt robots",
                 "Start with an available prebuilt robot when it matches the page and data needed."
               ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://help.browse.ai/en/articles/10504822-how-to-create-robots-without-installing-the-browser-extension",
+              "supports": [
+                "Use prebuilt robots"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://help.browse.ai/en/articles/10504822-how-to-create-robots-without-installing-the-browser-extension",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Use prebuilt robots"
+              ]
             }
           ],
           "evidenceStatus": "verified_primary_source_2026_10_31",
@@ -984,6 +1129,21 @@
               "supports": [
                 "Export extracted data",
                 "Review extracted results and route them to available exports or connected tools."
+              ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://help.browse.ai/en/articles/10504822-how-to-create-robots-without-installing-the-browser-extension",
+              "supports": [
+                "Export extracted data"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://help.browse.ai/en/articles/10504822-how-to-create-robots-without-installing-the-browser-extension",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Export extracted data"
               ]
             }
           ],
@@ -1124,7 +1284,13 @@
         },
         "linkRef": "pricing-details"
       },
-      "productInfoUpdatedAt": "2026-10-31"
+      "productInfoUpdatedAt": "2026-10-31",
+      "functionalTags": [],
+      "serviceTypes": [],
+      "industries": [],
+      "media": [],
+      "promptTemplates": [],
+      "relatedResources": []
     },
     {
       "id": "mindstudio",
@@ -1334,7 +1500,13 @@
         },
         "linkRef": "pricing-details"
       },
-      "productInfoUpdatedAt": "2026-10-31"
+      "productInfoUpdatedAt": "2026-10-31",
+      "functionalTags": [],
+      "serviceTypes": [],
+      "industries": [],
+      "media": [],
+      "promptTemplates": [],
+      "relatedResources": []
     },
     {
       "id": "n8n",
@@ -1444,6 +1616,21 @@
                 "Visual workflow editor",
                 "Build and revise automations in a node-based editor."
               ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://n8n.io/",
+              "supports": [
+                "Visual workflow editor"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://n8n.io/",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Visual workflow editor"
+              ]
             }
           ],
           "evidenceStatus": "verified_primary_source_2026_10_31",
@@ -1459,6 +1646,21 @@
               "supports": [
                 "Native integrations and HTTP API connections",
                 "Connect supported apps or make HTTP requests where a direct app node is not available."
+              ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://n8n.io/",
+              "supports": [
+                "Native integrations and HTTP API connections"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://n8n.io/",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Native integrations and HTTP API connections"
               ]
             }
           ],
@@ -1476,6 +1678,21 @@
                 "AI actions with human-in-the-loop controls",
                 "Add AI steps and pause for a person to review or approve work."
               ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://n8n.io/",
+              "supports": [
+                "AI actions with human-in-the-loop controls"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://n8n.io/",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "AI actions with human-in-the-loop controls"
+              ]
             }
           ],
           "evidenceStatus": "verified_primary_source_2026_10_31",
@@ -1492,6 +1709,21 @@
                 "Self-hosted and cloud deployment",
                 "Choose a hosted or self-managed deployment approach."
               ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://n8n.io/",
+              "supports": [
+                "Self-hosted and cloud deployment"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://n8n.io/",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Self-hosted and cloud deployment"
+              ]
             }
           ],
           "evidenceStatus": "verified_primary_source_2026_10_31",
@@ -1507,6 +1739,21 @@
               "supports": [
                 "Workflow execution inspection and error recovery",
                 "Review execution details to locate failures and revise the workflow."
+              ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://n8n.io/",
+              "supports": [
+                "Workflow execution inspection and error recovery"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://n8n.io/",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Workflow execution inspection and error recovery"
               ]
             }
           ],
@@ -1643,7 +1890,13 @@
         },
         "linkRef": "pricing-details"
       },
-      "productInfoUpdatedAt": "2026-10-31"
+      "productInfoUpdatedAt": "2026-10-31",
+      "functionalTags": [],
+      "serviceTypes": [],
+      "industries": [],
+      "media": [],
+      "promptTemplates": [],
+      "relatedResources": []
     },
     {
       "id": "sintra",
@@ -1710,7 +1963,17 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "softr",
@@ -1908,7 +2171,13 @@
         },
         "linkRef": "pricing-details"
       },
-      "productInfoUpdatedAt": "2026-10-31"
+      "productInfoUpdatedAt": "2026-10-31",
+      "functionalTags": [],
+      "serviceTypes": [],
+      "industries": [],
+      "media": [],
+      "promptTemplates": [],
+      "relatedResources": []
     },
     {
       "id": "synthflow",
@@ -2003,7 +2272,17 @@
         "Automated phone calls",
         "AI voice agents",
         "Lead-conversion workflows"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "airwallex",
@@ -2072,7 +2351,17 @@
       "metadataDescription": "A listed option in Banking & Neobanking. Verify current features and terms with Airwallex before choosing.",
       "seo": {
         "description": "A listed option in Banking & Neobanking. Verify current features and terms with Airwallex before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "found",
@@ -2156,6 +2445,14 @@
               "supports": [
                 "Business checking and debit card"
               ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://found.com/pricing",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Business checking and debit card"
+              ]
             }
           ],
           "evidenceStatus": "draft_from_primary_source"
@@ -2166,6 +2463,14 @@
             {
               "label": "Feature source",
               "url": "https://found.com/pricing",
+              "supports": [
+                "Expense categorization and reports"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://found.com/pricing",
+              "checkedAt": "2026-10-30",
               "supports": [
                 "Expense categorization and reports"
               ]
@@ -2182,6 +2487,14 @@
               "supports": [
                 "Tax savings and estimates"
               ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://found.com/pricing",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Tax savings and estimates"
+              ]
             }
           ],
           "evidenceStatus": "draft_from_primary_source"
@@ -2195,6 +2508,14 @@
               "supports": [
                 "Contractor payments and 1099 tools"
               ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://found.com/pricing",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Contractor payments and 1099 tools"
+              ]
             }
           ],
           "evidenceStatus": "draft_from_primary_source"
@@ -2205,6 +2526,14 @@
             {
               "label": "Feature source",
               "url": "https://found.com/pricing",
+              "supports": [
+                "Invoicing"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://found.com/pricing",
+              "checkedAt": "2026-10-30",
               "supports": [
                 "Invoicing"
               ]
@@ -2274,7 +2603,30 @@
         "Tax savings and estimates",
         "Contractor payments and 1099 tools",
         "Invoicing"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "pricing": {
+        "model": "free and paid tiers",
+        "billingPeriod": "month",
+        "freeTierAvailable": true,
+        "source": {
+          "label": "Provider pricing",
+          "url": "https://found.com/pricing",
+          "checkedAt": "2026-10-30",
+          "supports": [
+            "pricing model"
+          ]
+        }
+      },
+      "relatedResources": []
     },
     {
       "id": "lili",
@@ -2354,7 +2706,17 @@
       "metadataDescription": "A listed option in Banking & Neobanking. Verify current features and terms with Lili before choosing.",
       "seo": {
         "description": "A listed option in Banking & Neobanking. Verify current features and terms with Lili before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "novo",
@@ -2445,7 +2807,17 @@
       "metadataDescription": "A listed option in Banking & Neobanking. Verify current features and terms with Novo before choosing.",
       "seo": {
         "description": "A listed option in Banking & Neobanking. Verify current features and terms with Novo before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "ramp",
@@ -2687,7 +3059,13 @@
         },
         "linkRef": "pricing-details"
       },
-      "productInfoUpdatedAt": "2026-10-31"
+      "productInfoUpdatedAt": "2026-10-31",
+      "functionalTags": [],
+      "serviceTypes": [],
+      "industries": [],
+      "media": [],
+      "promptTemplates": [],
+      "relatedResources": []
     },
     {
       "id": "creditrepaircloud",
@@ -2746,7 +3124,17 @@
       "metadataDescription": "A listed option in Business Credit. Verify current features and terms with Credit Repair Cloud before choosing.",
       "seo": {
         "description": "A listed option in Business Credit. Verify current features and terms with Credit Repair Cloud before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "creditsuite",
@@ -2975,7 +3363,13 @@
         },
         "linkRef": "pricing-details"
       },
-      "productInfoUpdatedAt": "2026-10-31"
+      "productInfoUpdatedAt": "2026-10-31",
+      "functionalTags": [],
+      "serviceTypes": [],
+      "industries": [],
+      "media": [],
+      "promptTemplates": [],
+      "relatedResources": []
     },
     {
       "id": "dunbradstreet",
@@ -3061,7 +3455,17 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "fairfigure",
@@ -3119,14 +3523,24 @@
       "metadataDescription": "A listed option in Business Credit. Verify current features and terms with FairFigure before choosing.",
       "seo": {
         "description": "A listed option in Business Credit. Verify current features and terms with FairFigure before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "nav",
       "name": "Nav",
       "slug": "nav",
       "h1": "Nav",
-      "summary": "A listed option in Business Credit. Verify current features and terms with Nav before choosing.",
+      "summary": "Nav provides business credit profile monitoring and reporting information, alongside personal credit monitoring. Compare the business and personal features separately and confirm current plan details with Nav.",
       "primaryCategoryId": "business-credit",
       "categoryIds": [
         "business-credit"
@@ -3161,7 +3575,11 @@
         }
       ],
       "capabilities": [],
-      "capabilityLabels": [],
+      "capabilityLabels": [
+        "Business credit monitoring",
+        "Business credit reports",
+        "Personal credit monitoring"
+      ],
       "audiences": [],
       "stages": [],
       "suitableFor": [],
@@ -3169,9 +3587,28 @@
       "limitations": [],
       "integrations": [],
       "faqs": [],
-      "sources": [],
+      "sources": [
+        {
+          "label": "Nav: Business Credit Monitoring",
+          "url": "https://www.nav.com/business-credit-monitoring/",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "business credit monitoring",
+            "business credit report data"
+          ]
+        },
+        {
+          "label": "Nav: Credit Health",
+          "url": "https://www.nav.com/credit-health/",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "personal and business credit profile monitoring"
+          ]
+        }
+      ],
       "summaryEvidence": {
-        "classification": "not_sourced"
+        "classification": "official_provider_pages",
+        "sourceUrl": "https://www.nav.com/business-credit-monitoring/"
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
       "metadataTitle": "Nav | Distilled Marketplace",
@@ -3184,11 +3621,33 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": [],
+      "searchKeywords": [
+        "business credit monitoring",
+        "business credit reports",
+        "personal credit monitoring"
+      ],
       "metadataDescription": "A listed option in Business Credit. Verify current features and terms with Nav before choosing.",
       "seo": {
         "description": "A listed option in Business Credit. Verify current features and terms with Nav before choosing."
-      }
+      },
+      "functionalTags": [
+        "business-credit-monitoring",
+        "business-credit-reporting",
+        "personal-credit-monitoring"
+      ],
+      "useCases": [
+        "Review business credit reports and changes",
+        "Keep business and personal credit information distinct"
+      ],
+      "productInfoUpdatedAt": "2026-10-31",
+      "serviceTypes": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "close",
@@ -3264,7 +3723,17 @@
       "searchKeywords": [
         "Sales CRM",
         "Built-in communication and automation"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "pipedrive",
@@ -3356,6 +3825,21 @@
                 "Customizable deal pipelines",
                 "Rename or reorder stages and maintain multiple pipelines for different sales flows."
               ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://www.pipedrive.com/en/products",
+              "supports": [
+                "Customizable deal pipelines"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://www.pipedrive.com/en/products",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Customizable deal pipelines"
+              ]
             }
           ],
           "evidenceStatus": "verified_primary_source_2026_10_31",
@@ -3371,6 +3855,21 @@
               "supports": [
                 "Lead and contact management",
                 "Keep lead and contact records alongside the deals and activities tied to them."
+              ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://www.pipedrive.com/en/products",
+              "supports": [
+                "Lead and contact management"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://www.pipedrive.com/en/products",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Lead and contact management"
               ]
             }
           ],
@@ -3388,6 +3887,21 @@
                 "Sales automations",
                 "Use configured automation to support repeatable sales tasks and follow-up."
               ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://www.pipedrive.com/en/products",
+              "supports": [
+                "Sales automations"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://www.pipedrive.com/en/products",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Sales automations"
+              ]
             }
           ],
           "evidenceStatus": "verified_primary_source_2026_10_31",
@@ -3404,6 +3918,21 @@
                 "Reports and dashboards",
                 "Review pipeline and activity information through reports and dashboards."
               ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://www.pipedrive.com/en/products",
+              "supports": [
+                "Reports and dashboards"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://www.pipedrive.com/en/products",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Reports and dashboards"
+              ]
             }
           ],
           "evidenceStatus": "verified_primary_source_2026_10_31",
@@ -3419,6 +3948,21 @@
               "supports": [
                 "App integrations",
                 "Connect supported apps to fit an existing sales workflow."
+              ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://www.pipedrive.com/en/products",
+              "supports": [
+                "App integrations"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://www.pipedrive.com/en/products",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "App integrations"
               ]
             }
           ],
@@ -3560,7 +4104,13 @@
         },
         "linkRef": "link-f6f14aedea5d65"
       },
-      "productInfoUpdatedAt": "2026-10-31"
+      "productInfoUpdatedAt": "2026-10-31",
+      "functionalTags": [],
+      "serviceTypes": [],
+      "industries": [],
+      "media": [],
+      "promptTemplates": [],
+      "relatedResources": []
     },
     {
       "id": "gorgias",
@@ -3657,6 +4207,21 @@
                 "Unified customer service inbox",
                 "Manage customer conversations from supported channels in a shared helpdesk."
               ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://www.gorgias.com/products/helpdesk",
+              "supports": [
+                "Unified customer service inbox"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://www.gorgias.com/products/helpdesk",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Unified customer service inbox"
+              ]
             }
           ],
           "evidenceStatus": "verified_primary_source_2026_10_31",
@@ -3672,6 +4237,21 @@
               "supports": [
                 "E-commerce order context and actions",
                 "View customer and order context and use supported Shopify actions from the helpdesk."
+              ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://www.gorgias.com/products/helpdesk",
+              "supports": [
+                "E-commerce order context and actions"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://www.gorgias.com/products/helpdesk",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "E-commerce order context and actions"
               ]
             }
           ],
@@ -3689,6 +4269,21 @@
                 "Ticket management and routing",
                 "Assign and prioritize tickets using configured routing rules."
               ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://www.gorgias.com/products/helpdesk",
+              "supports": [
+                "Ticket management and routing"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://www.gorgias.com/products/helpdesk",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Ticket management and routing"
+              ]
             }
           ],
           "evidenceStatus": "verified_primary_source_2026_10_31",
@@ -3705,6 +4300,21 @@
                 "Customer support automation",
                 "Use rules and macros for recurring support tasks; review actions before enabling automated replies."
               ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://www.gorgias.com/products/helpdesk",
+              "supports": [
+                "Customer support automation"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://www.gorgias.com/products/helpdesk",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Customer support automation"
+              ]
             }
           ],
           "evidenceStatus": "verified_primary_source_2026_10_31",
@@ -3720,6 +4330,21 @@
               "supports": [
                 "Helpdesk reporting",
                 "Review support activity through available dashboards and agent statistics."
+              ]
+            },
+            {
+              "label": "Feature source",
+              "url": "https://www.gorgias.com/products/helpdesk",
+              "supports": [
+                "Helpdesk reporting"
+              ]
+            },
+            {
+              "label": "Official product information",
+              "url": "https://www.gorgias.com/products/helpdesk",
+              "checkedAt": "2026-10-30",
+              "supports": [
+                "Helpdesk reporting"
               ]
             }
           ],
@@ -3856,7 +4481,13 @@
         },
         "linkRef": "pricing-details"
       },
-      "productInfoUpdatedAt": "2026-10-31"
+      "productInfoUpdatedAt": "2026-10-31",
+      "functionalTags": [],
+      "serviceTypes": [],
+      "industries": [],
+      "media": [],
+      "promptTemplates": [],
+      "relatedResources": []
     },
     {
       "id": "printify",
@@ -3923,7 +4554,17 @@
       ],
       "searchKeywords": [
         "Print-on-demand order production"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "shipbob",
@@ -3990,7 +4631,17 @@
       ],
       "searchKeywords": [
         "E-commerce fulfillment"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "spocket",
@@ -4068,7 +4719,17 @@
       ],
       "searchKeywords": [
         "Invoice creation"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "thimble",
@@ -4127,7 +4788,17 @@
       "metadataDescription": "A listed option in Insurance & Benefits. Verify current features and terms with Thimble before choosing.",
       "seo": {
         "description": "A listed option in Insurance & Benefits. Verify current features and terms with Thimble before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "businessanywhere",
@@ -4239,7 +4910,17 @@
         "Virtual mailbox",
         "Online notary",
         "Business formation services"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "northwestregisteredagent",
@@ -4300,7 +4981,17 @@
       "metadataDescription": "A listed option in Legal & Compliance. Verify current features and terms with Northwest Registered Agent LLC before choosing.",
       "seo": {
         "description": "A listed option in Legal & Compliance. Verify current features and terms with Northwest Registered Agent LLC before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "uslegalforms",
@@ -4360,7 +5051,17 @@
       "metadataDescription": "A listed option in Legal & Compliance. Verify current features and terms with USLegalForms before choosing.",
       "seo": {
         "description": "A listed option in Legal & Compliance. Verify current features and terms with USLegalForms before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "brightlocal",
@@ -4428,7 +5129,17 @@
       ],
       "searchKeywords": [
         "Analytics reporting"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "landingi",
@@ -4496,7 +5207,17 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "semrush",
@@ -4576,7 +5297,17 @@
       "metadataDescription": "A listed option in Marketing & SEO. Verify current features and terms with Semrush before choosing.",
       "seo": {
         "description": "A listed option in Marketing & SEO. Verify current features and terms with Semrush before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "tailwind",
@@ -4657,7 +5388,17 @@
       "metadataDescription": "A listed option in Marketing & SEO. Verify current features and terms with Tailwind before choosing.",
       "seo": {
         "description": "A listed option in Marketing & SEO. Verify current features and terms with Tailwind before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "ubersuggest",
@@ -4726,7 +5467,17 @@
       "metadataDescription": "A listed option in Marketing & SEO. Verify current features and terms with Ubersuggest before choosing.",
       "seo": {
         "description": "A listed option in Marketing & SEO. Verify current features and terms with Ubersuggest before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "melio",
@@ -4803,7 +5554,17 @@
       ],
       "searchKeywords": [
         "Small-business bill payment"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "clickup",
@@ -4875,7 +5636,17 @@
       "metadataDescription": "A listed option in Productivity. Verify current features and terms with ClickUp before choosing.",
       "seo": {
         "description": "A listed option in Productivity. Verify current features and terms with ClickUp before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "rentredi",
@@ -4946,7 +5717,17 @@
       "metadataDescription": "A listed option in Real Estate Services. Verify current features and terms with RentRedi before choosing.",
       "seo": {
         "description": "A listed option in Real Estate Services. Verify current features and terms with RentRedi before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "stessa",
@@ -5005,7 +5786,17 @@
       "metadataDescription": "A listed option in Real Estate Services. Verify current features and terms with Stessa before choosing.",
       "seo": {
         "description": "A listed option in Real Estate Services. Verify current features and terms with Stessa before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "fliki",
@@ -5092,7 +5883,17 @@
       "searchKeywords": [
         "Text-to-video",
         "AI-generated voices"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "invideo",
@@ -5172,7 +5973,17 @@
       "metadataDescription": "A listed option in Social Media & Content. Verify current features and terms with InVideo before choosing.",
       "seo": {
         "description": "A listed option in Social Media & Content. Verify current features and terms with InVideo before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "renderforest",
@@ -5231,7 +6042,17 @@
       "metadataDescription": "A listed option in Social Media & Content. Verify current features and terms with Renderforest before choosing.",
       "seo": {
         "description": "A listed option in Social Media & Content. Verify current features and terms with Renderforest before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "veed",
@@ -5311,7 +6132,17 @@
       "metadataDescription": "A listed option in Social Media & Content. Verify current features and terms with VEED before choosing.",
       "seo": {
         "description": "A listed option in Social Media & Content. Verify current features and terms with VEED before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "10web",
@@ -5370,7 +6201,17 @@
       "metadataDescription": "A listed option in AI & Automation. Verify current features and terms with 10Web before choosing.",
       "seo": {
         "description": "A listed option in AI & Automation. Verify current features and terms with 10Web before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "aicascadesolutions",
@@ -5430,7 +6271,17 @@
       "metadataDescription": "A listed option in AI & Automation. Verify current features and terms with AI Cascade Solutions Corp. before choosing.",
       "seo": {
         "description": "A listed option in AI & Automation. Verify current features and terms with AI Cascade Solutions Corp. before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "aisdr",
@@ -5490,7 +6341,17 @@
       "metadataDescription": "A listed option in AI & Automation. Verify current features and terms with AiSDR, Inc. before choosing.",
       "seo": {
         "description": "A listed option in AI & Automation. Verify current features and terms with AiSDR, Inc. before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "appypie",
@@ -5549,7 +6410,17 @@
       "metadataDescription": "A listed option in AI & Automation. Verify current features and terms with AppyPie.com before choosing.",
       "seo": {
         "description": "A listed option in AI & Automation. Verify current features and terms with AppyPie.com before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "base44",
@@ -5608,7 +6479,17 @@
       "metadataDescription": "A listed option in AI & Automation. Verify current features and terms with Base44 before choosing.",
       "seo": {
         "description": "A listed option in AI & Automation. Verify current features and terms with Base44 before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "botsify",
@@ -5680,7 +6561,17 @@
       ],
       "seo": {
         "description": "Botsify is listed in AI & Automation. Verify current chatbot features, supported channels and service terms directly before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "chatbase",
@@ -5759,7 +6650,17 @@
       ],
       "searchKeywords": [
         "Customer support chatbots"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "cheatlayer",
@@ -5826,7 +6727,17 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "emergent",
@@ -5905,7 +6816,17 @@
       ],
       "searchKeywords": [
         "App creation"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "glide",
@@ -5981,7 +6902,17 @@
       "searchKeywords": [
         "No-code application development",
         "Internal and external business apps"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "pickaxe",
@@ -6041,7 +6972,17 @@
       "searchKeywords": [],
       "seo": {
         "description": "Pickaxe is listed in AI & Automation. Verify current app-building capabilities, deployment options and service terms directly before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "sitegptsaffiliateprogram",
@@ -6111,7 +7052,17 @@
       "searchKeywords": [],
       "seo": {
         "description": "SiteGPT provides a customer-facing AI chatbot product. Review its current data sources, setup requirements and terms before using it for customer support."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "stammerai",
@@ -6181,7 +7132,17 @@
       "searchKeywords": [],
       "seo": {
         "description": "A listed option in AI & Automation. Verify current product details and terms with Stammer.ai before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "tars",
@@ -6268,7 +7229,17 @@
       "searchKeywords": [
         "Chatbot functionality",
         "Customer support chatbots"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "fintaio",
@@ -6338,7 +7309,17 @@
       "metadataDescription": "A listed option in Budgeting & FinanceOps. Verify current features and terms with Finta.io before choosing.",
       "seo": {
         "description": "A listed option in Budgeting & FinanceOps. Verify current features and terms with Finta.io before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "projectionlab",
@@ -6405,7 +7386,17 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "tillermoney",
@@ -6464,7 +7455,17 @@
       "metadataDescription": "A listed option in Budgeting & FinanceOps. Verify current features and terms with Tiller Money (US) before choosing.",
       "seo": {
         "description": "A listed option in Budgeting & FinanceOps. Verify current features and terms with Tiller Money (US) before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "viably",
@@ -6524,7 +7525,17 @@
       "metadataDescription": "A listed option in Budgeting & FinanceOps. Verify current features and terms with Viably before choosing.",
       "seo": {
         "description": "A listed option in Budgeting & FinanceOps. Verify current features and terms with Viably before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "creditfirmnet",
@@ -6583,7 +7594,17 @@
       "metadataDescription": "A listed option in Business Credit. Verify current features and terms with CreditFirm.net before choosing.",
       "seo": {
         "description": "A listed option in Business Credit. Verify current features and terms with CreditFirm.net before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "fundandgrow",
@@ -6652,17 +7673,27 @@
       "metadataDescription": "A listed option in Business Credit. Verify current features and terms with Fund&Grow before choosing.",
       "seo": {
         "description": "A listed option in Business Credit. Verify current features and terms with Fund&Grow before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "growcredit",
       "name": "GrowCredit",
       "slug": "growcredit",
       "h1": "GrowCredit",
-      "summary": "A listed option in Business Credit. Verify current features and terms with GrowCredit before choosing.",
-      "primaryCategoryId": "business-credit",
+      "summary": "Grow Credit describes a consumer credit-building service that lets members pay eligible subscriptions with a virtual card and reports monthly repayments to consumer credit bureaus. Confirm current eligibility, plan terms, and supported subscriptions with Grow Credit.",
+      "primaryCategoryId": "personal-credit",
       "categoryIds": [
-        "business-credit"
+        "personal-credit"
       ],
       "primaryUrl": "https://growcredit.sjv.io/c/2229127/1256244/15453",
       "affiliateUrl": "https://growcredit.sjv.io/c/2229127/1256244/15453",
@@ -6694,7 +7725,10 @@
         }
       ],
       "capabilities": [],
-      "capabilityLabels": [],
+      "capabilityLabels": [
+        "Personal credit building",
+        "Subscription payment reporting"
+      ],
       "audiences": [],
       "stages": [],
       "suitableFor": [],
@@ -6702,12 +7736,24 @@
       "limitations": [],
       "integrations": [],
       "faqs": [],
-      "sources": [],
+      "sources": [
+        {
+          "label": "Grow Credit Help Center: What Is Grow Credit?",
+          "url": "https://help.growcredit.com/en/articles/5321009-what-is-grow-credit-how-does-grow-credit-work",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "consumer credit building",
+            "subscription payments",
+            "monthly repayment reporting"
+          ]
+        }
+      ],
       "summaryEvidence": {
-        "classification": "not_sourced"
+        "classification": "official_provider_help_center",
+        "sourceUrl": "https://help.growcredit.com/en/articles/5321009-what-is-grow-credit-how-does-grow-credit-work"
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
-      "metadataTitle": "GrowCredit | Distilled Marketplace",
+      "metadataTitle": "Grow Credit Personal Credit | Distilled Marketplace",
       "relatedProviderIds": [],
       "serviceGroup": "Money",
       "roles": [
@@ -6717,21 +7763,41 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": [],
-      "metadataDescription": "A listed option in Business Credit. Verify current features and terms with GrowCredit before choosing.",
+      "searchKeywords": [
+        "personal credit builder",
+        "subscription payments",
+        "consumer credit reporting"
+      ],
+      "metadataDescription": "Review Grow Credit consumer credit-building services, subscription payment workflow, and current terms.",
       "seo": {
-        "description": "A listed option in Business Credit. Verify current features and terms with GrowCredit before choosing."
-      }
+        "description": "Review Grow Credit consumer credit-building services, subscription payment workflow, and current terms."
+      },
+      "functionalTags": [
+        "personal-credit-building"
+      ],
+      "useCases": [
+        "Review how eligible subscription payments are handled",
+        "Understand consumer credit reporting and repayment terms"
+      ],
+      "productInfoUpdatedAt": "2026-10-31",
+      "serviceTypes": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "kikoff",
       "name": "Kikoff",
       "slug": "kikoff",
       "h1": "Kikoff",
-      "summary": "A listed option in Business Credit. Verify current features and terms with Kikoff before choosing.",
-      "primaryCategoryId": "business-credit",
+      "summary": "Kikoff describes a personal credit-building account and monthly plans that report account activity to Equifax, Experian, and TransUnion. Review plan terms and the effect of missed payments before enrolling.",
+      "primaryCategoryId": "personal-credit",
       "categoryIds": [
-        "business-credit"
+        "personal-credit"
       ],
       "primaryUrl": "https://kikoff.pxf.io/c/2229127/1198412/14994",
       "affiliateUrl": "https://kikoff.pxf.io/c/2229127/1198412/14994",
@@ -6763,7 +7829,10 @@
         }
       ],
       "capabilities": [],
-      "capabilityLabels": [],
+      "capabilityLabels": [
+        "Personal credit building",
+        "Consumer bureau reporting"
+      ],
       "audiences": [],
       "stages": [],
       "suitableFor": [],
@@ -6771,12 +7840,24 @@
       "limitations": [],
       "integrations": [],
       "faqs": [],
-      "sources": [],
+      "sources": [
+        {
+          "label": "Kikoff: How Kikoff Works",
+          "url": "https://kikoff.com/how-kikoff-works",
+          "checkedAt": "2026-10-31",
+          "supports": [
+            "personal credit account",
+            "monthly reporting to Equifax, Experian, and TransUnion",
+            "payment terms"
+          ]
+        }
+      ],
       "summaryEvidence": {
-        "classification": "not_sourced"
+        "classification": "official_provider_page",
+        "sourceUrl": "https://kikoff.com/how-kikoff-works"
       },
       "disclaimer": "Saved referral link. Current attribution and commercial terms have not been independently confirmed.",
-      "metadataTitle": "Kikoff | Distilled Marketplace",
+      "metadataTitle": "Kikoff Personal Credit | Distilled Marketplace",
       "relatedProviderIds": [],
       "serviceGroup": "Money",
       "roles": [
@@ -6786,11 +7867,31 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": [],
-      "metadataDescription": "A listed option in Business Credit. Verify current features and terms with Kikoff before choosing.",
+      "searchKeywords": [
+        "personal credit builder",
+        "consumer credit reporting",
+        "payment history"
+      ],
+      "metadataDescription": "Review Kikoff personal credit-building services, consumer bureau reporting, and current account terms.",
       "seo": {
-        "description": "A listed option in Business Credit. Verify current features and terms with Kikoff before choosing."
-      }
+        "description": "Review Kikoff personal credit-building services, consumer bureau reporting, and current account terms."
+      },
+      "functionalTags": [
+        "personal-credit-building"
+      ],
+      "useCases": [
+        "Review a personal credit-building plan",
+        "Understand how account activity is reported to consumer credit bureaus"
+      ],
+      "productInfoUpdatedAt": "2026-10-31",
+      "serviceTypes": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "apolloio",
@@ -6865,7 +7966,17 @@
       "searchKeywords": [
         "Contact data for sales outreach",
         "Sales engagement workflows"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "capsule",
@@ -6932,7 +8043,17 @@
       ],
       "searchKeywords": [
         "Small-business sales CRM"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "closely",
@@ -6999,7 +8120,17 @@
       ],
       "searchKeywords": [
         "Email and LinkedIn outreach"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "gong",
@@ -7074,7 +8205,17 @@
       "searchKeywords": [
         "Sales conversation intelligence",
         "Forecasting insights"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "insightly",
@@ -7141,7 +8282,17 @@
       ],
       "searchKeywords": [
         "CRM management"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "kaspr",
@@ -7217,7 +8368,17 @@
       "searchKeywords": [
         "Business contact data",
         "Browser-based prospecting"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "keap",
@@ -7292,7 +8453,17 @@
       "searchKeywords": [
         "CRM and sales automation",
         "Marketing automation"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "landbot",
@@ -7359,7 +8530,17 @@
       ],
       "searchKeywords": [
         "Website and WhatsApp chatbots"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "lusha",
@@ -7427,7 +8608,17 @@
       ],
       "searchKeywords": [
         "B2B contact discovery"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "monday",
@@ -7502,7 +8693,17 @@
       "searchKeywords": [
         "Work and task management",
         "Team roadmap planning"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "replyio",
@@ -7585,7 +8786,17 @@
         "Multichannel sales engagement",
         "Email validation and warm-up",
         "Lead-generation workflows"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "rocketreach",
@@ -7644,7 +8855,17 @@
       "metadataDescription": "A listed option in CRM & Sales. Verify current features and terms with RocketReach LLC before choosing.",
       "seo": {
         "description": "A listed option in CRM & Sales. Verify current features and terms with RocketReach LLC before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "salesflare",
@@ -7719,7 +8940,17 @@
       "searchKeywords": [
         "B2B sales CRM",
         "Email and LinkedIn integration"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "salesrabbit",
@@ -7778,7 +9009,17 @@
       "metadataDescription": "A listed option in CRM & Sales. Verify current features and terms with SalesRabbit before choosing.",
       "seo": {
         "description": "A listed option in CRM & Sales. Verify current features and terms with SalesRabbit before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "seamlessai",
@@ -7845,7 +9086,17 @@
       ],
       "searchKeywords": [
         "AI-supported sales prospecting"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "streakcrmforgmail",
@@ -7912,7 +9163,17 @@
       ],
       "searchKeywords": [
         "Gmail-embedded CRM"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "thryv",
@@ -7987,7 +9248,17 @@
       "searchKeywords": [
         "Business task automation",
         "Customer management"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "tidio",
@@ -8056,7 +9327,17 @@
       "metadataDescription": "A listed option in CRM & Sales. Verify current features and terms with Tidio LLC before choosing.",
       "seo": {
         "description": "A listed option in CRM & Sales. Verify current features and terms with Tidio LLC before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "zoominfo",
@@ -8123,7 +9404,17 @@
       ],
       "searchKeywords": [
         "Sales intelligence"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "carbon6",
@@ -8198,7 +9489,17 @@
       "searchKeywords": [
         "Amazon listing optimization",
         "Amazon inventory management"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "finaleinventory",
@@ -8273,7 +9574,17 @@
       "searchKeywords": [
         "Multichannel inventory management",
         "Warehouse management"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "getida",
@@ -8340,7 +9651,17 @@
       ],
       "searchKeywords": [
         "Amazon FBA reimbursement auditing"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "increff",
@@ -8416,7 +9737,17 @@
       "searchKeywords": [
         "Retail inventory planning",
         "Stock replenishment"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "inflowinventory",
@@ -8483,7 +9814,17 @@
       ],
       "searchKeywords": [
         "Inventory management for wholesale and ecommerce"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "justuno",
@@ -8558,7 +9899,17 @@
       "searchKeywords": [
         "On-site lead capture",
         "Personalized product recommendations"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "katanacloudinventory",
@@ -8633,7 +9984,17 @@
       "searchKeywords": [
         "Inventory management",
         "Accounting and e-commerce connections"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "maxretail",
@@ -8700,7 +10061,17 @@
       ],
       "searchKeywords": [
         "Excess inventory resale"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "postscript",
@@ -8767,7 +10138,17 @@
       ],
       "searchKeywords": [
         "SMS marketing for Shopify"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "sellfy",
@@ -8834,7 +10215,17 @@
       ],
       "searchKeywords": [
         "Online store creation"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "sendcloud",
@@ -8901,7 +10292,17 @@
       ],
       "searchKeywords": [
         "E-commerce shipping management"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "sharetribe",
@@ -8968,7 +10369,17 @@
       ],
       "searchKeywords": [
         "Two-sided marketplace creation"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "stamped",
@@ -9043,7 +10454,17 @@
       "searchKeywords": [
         "Product reviews and ratings",
         "Customer loyalty programs"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "subbly",
@@ -9110,7 +10531,17 @@
       ],
       "searchKeywords": [
         "Subscription commerce management"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "trendsi",
@@ -9177,7 +10608,17 @@
       ],
       "searchKeywords": [
         "Fashion dropshipping for Shopify"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "vwo",
@@ -9252,7 +10693,17 @@
       "searchKeywords": [
         "A/B testing",
         "Conversion optimization"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "gusto",
@@ -9308,7 +10759,17 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "recruitee",
@@ -9383,7 +10844,17 @@
       "searchKeywords": [
         "Collaborative recruiting",
         "Interview coordination"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "crowdhealth",
@@ -9453,7 +10924,17 @@
       "metadataDescription": "A listed option in Insurance & Benefits. Verify current features and terms with CrowdHealth before choosing.",
       "seo": {
         "description": "A listed option in Insurance & Benefits. Verify current features and terms with CrowdHealth before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "insurify",
@@ -9512,7 +10993,17 @@
       "metadataDescription": "A listed option in Insurance & Benefits. Verify current features and terms with Insurify before choosing.",
       "seo": {
         "description": "A listed option in Insurance & Benefits. Verify current features and terms with Insurify before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "betterlegal",
@@ -9573,7 +11064,17 @@
       "metadataDescription": "A listed option in Legal & Compliance. Verify current features and terms with BetterLegal Inc before choosing.",
       "seo": {
         "description": "A listed option in Legal & Compliance. Verify current features and terms with BetterLegal Inc before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "efilecom",
@@ -9633,7 +11134,17 @@
       "metadataDescription": "A listed option in Legal & Compliance. Verify current features and terms with E-File.com (US) before choosing.",
       "seo": {
         "description": "A listed option in Legal & Compliance. Verify current features and terms with E-File.com (US) before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "authority",
@@ -9700,7 +11211,17 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "mycompanyworks",
@@ -9761,7 +11282,17 @@
       "metadataDescription": "A listed option in Legal & Compliance. Verify current features and terms with MyCompanyWorks, Inc. before choosing.",
       "seo": {
         "description": "A listed option in Legal & Compliance. Verify current features and terms with MyCompanyWorks, Inc. before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "mycorporation",
@@ -9822,7 +11353,17 @@
       "metadataDescription": "A listed option in Legal & Compliance. Verify current features and terms with MyCorporation before choosing.",
       "seo": {
         "description": "A listed option in Legal & Compliance. Verify current features and terms with MyCorporation before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "namecheap",
@@ -9879,7 +11420,17 @@
         "growing",
         "established"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "ownr",
@@ -9955,7 +11506,17 @@
       "searchKeywords": [
         "Business registration and incorporation",
         "Compliance management"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "zenbusinesspbc",
@@ -10028,7 +11589,17 @@
       "metadataDescription": "A listed option in Legal & Compliance. Verify current features and terms with ZenBusiness, PBC before choosing.",
       "seo": {
         "description": "A listed option in Legal & Compliance. Verify current features and terms with ZenBusiness, PBC before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "adcreativeai",
@@ -10096,7 +11667,17 @@
       ],
       "searchKeywords": [
         "AI-generated advertising creatives"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "affonso",
@@ -10199,7 +11780,17 @@
         "Fraud protection",
         "Custom commission structures",
         "Branded partner portals"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "aweber",
@@ -10267,7 +11858,17 @@
       ],
       "searchKeywords": [
         "Email marketing automation"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "callrail",
@@ -10342,7 +11943,17 @@
       "searchKeywords": [
         "Lead attribution",
         "Call tracking and lead intelligence"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "getresponse",
@@ -10410,7 +12021,17 @@
       ],
       "searchKeywords": [
         "Email marketing automation"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "instapage",
@@ -10485,7 +12106,17 @@
       "searchKeywords": [
         "Landing page optimization",
         "Advertising landing pages"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "leadpages",
@@ -10560,7 +12191,17 @@
       "searchKeywords": [
         "Landing-page builder",
         "Website creation"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "mailchimp",
@@ -10619,7 +12260,17 @@
       "metadataDescription": "A listed option in Marketing & SEO. Verify current features and terms with Mailchimp before choosing.",
       "seo": {
         "description": "A listed option in Marketing & SEO. Verify current features and terms with Mailchimp before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "manychat",
@@ -10675,7 +12326,17 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "moosend",
@@ -10734,7 +12395,17 @@
       "metadataDescription": "A listed option in Marketing & SEO. Verify current features and terms with Moosend before choosing.",
       "seo": {
         "description": "A listed option in Marketing & SEO. Verify current features and terms with Moosend before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "promotekit",
@@ -10804,7 +12475,17 @@
       "searchKeywords": [],
       "seo": {
         "description": "A listed option in Marketing & SEO. Verify current features and terms with PromoteKit before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "socialbee",
@@ -10871,7 +12552,17 @@
       ],
       "searchKeywords": [
         "Social media management"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "sproutsocial",
@@ -10930,7 +12621,17 @@
       "metadataDescription": "A listed option in Marketing & SEO. Verify current features and terms with Sprout Social before choosing.",
       "seo": {
         "description": "A listed option in Marketing & SEO. Verify current features and terms with Sprout Social before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "surfer",
@@ -11005,7 +12706,17 @@
       "searchKeywords": [
         "SEO keyword research",
         "Content optimization"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "unbounce",
@@ -11080,7 +12791,17 @@
       "searchKeywords": [
         "Landing-page creation",
         "AI-assisted optimization"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "vendasta",
@@ -11139,7 +12860,17 @@
       "metadataDescription": "A listed option in Marketing & SEO. Verify current features and terms with Vendasta before choosing.",
       "seo": {
         "description": "A listed option in Marketing & SEO. Verify current features and terms with Vendasta before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "zerobounce",
@@ -11198,7 +12929,17 @@
       "metadataDescription": "A listed option in Marketing & SEO. Verify current features and terms with ZeroBounce before choosing.",
       "seo": {
         "description": "A listed option in Marketing & SEO. Verify current features and terms with ZeroBounce before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "paysend",
@@ -11264,7 +13005,17 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "box",
@@ -11335,7 +13086,17 @@
       "metadataDescription": "A listed option in Productivity. Verify current features and terms with Box Inc. before choosing.",
       "seo": {
         "description": "A listed option in Productivity. Verify current features and terms with Box Inc. before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "claap",
@@ -11415,7 +13176,17 @@
       ],
       "searchKeywords": [
         "CRM capabilities"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "krisp",
@@ -11475,7 +13246,17 @@
       "metadataDescription": "A listed option in Productivity. Verify current features and terms with Krisp before choosing.",
       "seo": {
         "description": "A listed option in Productivity. Verify current features and terms with Krisp before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "mindmanager",
@@ -11535,7 +13316,17 @@
       "metadataDescription": "A listed option in Productivity. Verify current features and terms with MindManager before choosing.",
       "seo": {
         "description": "A listed option in Productivity. Verify current features and terms with MindManager before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "motion",
@@ -11606,7 +13397,17 @@
       "metadataDescription": "A listed option in Productivity. Verify current features and terms with Motion before choosing.",
       "seo": {
         "description": "A listed option in Productivity. Verify current features and terms with Motion before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "nordlayer",
@@ -11666,7 +13467,17 @@
       "metadataDescription": "A listed option in Productivity. Verify current features and terms with NordLayer before choosing.",
       "seo": {
         "description": "A listed option in Productivity. Verify current features and terms with NordLayer before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "otterai",
@@ -11737,7 +13548,17 @@
       "metadataDescription": "A listed option in Productivity. Verify current features and terms with Otter.ai before choosing.",
       "seo": {
         "description": "A listed option in Productivity. Verify current features and terms with Otter.ai before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "pandadoc",
@@ -11813,7 +13634,17 @@
       "searchKeywords": [
         "Proposal creation and tracking",
         "Electronic signatures"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "taskade",
@@ -11917,7 +13748,17 @@
         "Task tracking",
         "Team communication",
         "Team collaboration"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "dealcheckio",
@@ -11976,7 +13817,17 @@
       "searchKeywords": [],
       "seo": {
         "description": "DealCheck is a real estate investment analysis tool listing. Verify supported calculations, assumptions and terms directly before relying on an analysis."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "autoshortsai",
@@ -12046,7 +13897,17 @@
       "searchKeywords": [],
       "seo": {
         "description": "A listed option in Social Media & Content. Verify current product details and terms with AutoShorts.ai before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "billoapp",
@@ -12116,7 +13977,17 @@
       "metadataDescription": "A listed option in Social Media & Content. Verify current features and terms with Billo.app before choosing.",
       "seo": {
         "description": "A listed option in Social Media & Content. Verify current features and terms with Billo.app before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "capcutaffiliateprogram",
@@ -12175,7 +14046,17 @@
       "metadataDescription": "CapCut is a video editing product. Check current editing tools, export limits and commercial-use terms directly with the provider.",
       "seo": {
         "description": "CapCut is a video editing product. Check current editing tools, export limits and commercial-use terms directly with the provider."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "deepbrainai",
@@ -12257,7 +14138,17 @@
       ],
       "seo": {
         "description": "DeepBrain AI is listed in video tools. Verify the current AI Studio product, supported workflows and usage terms with the provider."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "elevenlabs",
@@ -12333,7 +14224,17 @@
       "searchKeywords": [
         "AI speech generation",
         "Multilingual voice audio"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "fastshortsai",
@@ -12403,7 +14304,17 @@
       "searchKeywords": [],
       "seo": {
         "description": "A listed option in Social Media & Content. Verify current product details and terms with FastShorts.ai before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "firework",
@@ -12478,7 +14389,17 @@
       "searchKeywords": [
         "Shoppable video",
         "Digital retail showrooms"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "later",
@@ -12537,7 +14458,17 @@
       "metadataDescription": "A listed option in Social Media & Content. Verify current features and terms with Later before choosing.",
       "seo": {
         "description": "A listed option in Social Media & Content. Verify current features and terms with Later before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "livereactinglivereacting",
@@ -12607,7 +14538,17 @@
       "metadataDescription": "A listed option in Social Media & Content. Verify current features and terms with Live Reacting - livereacting before choosing.",
       "seo": {
         "description": "A listed option in Social Media & Content. Verify current features and terms with Live Reacting - livereacting before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "murfai",
@@ -12674,7 +14615,17 @@
       ],
       "searchKeywords": [
         "AI voiceover generation"
-      ]
+      ],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "pixlr",
@@ -12730,7 +14681,17 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "syllabyio",
@@ -12800,7 +14761,17 @@
       "searchKeywords": [],
       "seo": {
         "description": "A listed option in Social Media & Content. Verify current product details and terms with Syllaby.io before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "testmythumbnails",
@@ -12867,7 +14838,17 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "videoscribe",
@@ -12933,7 +14914,17 @@
         "starting",
         "growing"
       ],
-      "searchKeywords": []
+      "searchKeywords": [],
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "wevideo",
@@ -13003,7 +14994,17 @@
       "metadataDescription": "A listed option in Social Media & Content. Verify current features and terms with WeVideo before choosing.",
       "seo": {
         "description": "A listed option in Social Media & Content. Verify current features and terms with WeVideo before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     },
     {
       "id": "wistia",
@@ -13062,7 +15063,17 @@
       "metadataDescription": "A listed option in Social Media & Content. Verify current features and terms with Wistia before choosing.",
       "seo": {
         "description": "A listed option in Social Media & Content. Verify current features and terms with Wistia before choosing."
-      }
+      },
+      "functionalTags": [],
+      "serviceTypes": [],
+      "useCases": [],
+      "industries": [],
+      "media": [],
+      "workflowTemplates": [],
+      "promptTemplates": [],
+      "inputs": [],
+      "outputs": [],
+      "relatedResources": []
     }
   ],
   "workflowBlueprints": [

@@ -27,6 +27,7 @@
 /categories/productivity
 /categories/real-estate-services
 /categories/social-media-content
+/categories/personal-credit
 /collections/first-operating-stack
 /collections/revenue-operations
 /collections/cash-visibility
