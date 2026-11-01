@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { catalogSchema, providerSchema, type Provider } from "../schemas/catalog";
+import { reconcileProviderCatalog } from "../lib/provider-import-reconciliation";
 
 // The intake is an external, user-controlled JSON contract. Keep dynamic parsing
 // isolated here and validate each sanitized publication record with Zod below.
@@ -79,7 +80,7 @@ for (const candidate of intake.candidates as RecordValue[]) {
   }
   if (linkType === "official_website" && (affiliateUrl !== null || primaryCandidateLink.isAffiliate === true)) { exceptions.push({ id, reason: "homepage primary is incorrectly classified as an affiliate link" }); continue; }
 
-  const safeLinks = candidateLinks.filter(link => isPublicHttps(link.url) && link.visibility !== "review_only");
+  const safeLinks = candidateLinks.filter(link => isPublicHttps(link.url) && link.visibility !== "review_only" && (link.isAffiliate !== true || link.isPrimary === true));
   const links = safeLinks.map((link, index) => {
     const isPrimary = link.isPrimary === true;
     const isAffiliate = link.isAffiliate === true;
@@ -105,35 +106,40 @@ for (const candidate of intake.candidates as RecordValue[]) {
   const sourceMap = new Map<string, ReturnType<typeof sourceRecord>>();
   for (const link of links) for (const source of link.sourceReferences) sourceMap.set(source!.url, source);
   if (summaryEvidenceSource) sourceMap.set(summaryEvidenceSource.url, summaryEvidenceSource);
-  const features = (Array.isArray(content.features) ? content.features : []).filter((feature: RecordValue) => typeof (feature.title ?? feature.name) === "string" && String(feature.title ?? feature.name).trim()).map((feature: RecordValue) => {
-    const featureSource = sourceRecord(feature.sourceReference, "Feature source", [String(feature.title ?? feature.name)]);
+  const features = (Array.isArray(content.features) ? content.features : []).filter((feature: RecordValue) =>
+    typeof (feature.title ?? feature.name) === "string" && String(feature.title ?? feature.name).trim() &&
+    isPublicHttps(feature.sourceReference) && feature.sourceReference === evidence.source && typeof evidence.checkedAt === "string"
+  ).map((feature: RecordValue) => {
+    const featureSource = sourceRecord(feature.sourceReference, "Official product information", [String(feature.title ?? feature.name)], evidence.checkedAt);
     return {
       name: String(feature.title ?? feature.name).trim(), ...(typeof feature.description === "string" && feature.description.trim() ? { description: feature.description.trim() } : {}),
       ...(typeof feature.icon === "string" ? { icon: feature.icon } : {}), ...(feature.media ? { media: feature.media } : {}),
       sources: featureSource ? [featureSource] : [], evidenceStatus: String(feature.status ?? "candidate_record")
     };
   });
-  const capabilityLabels = [...new Set<string>([...features.map((feature: RecordValue) => String(feature.name)), ...(Array.isArray(content.capabilityLabels) ? content.capabilityLabels.filter((value: unknown) => typeof value === "string") : [])])];
+  const capabilityLabels = [...new Set<string>(features.map((feature: RecordValue) => String(feature.name)))];
   const officialPricingLink = links.find(link => link.purpose === "pricing_page");
   const pricingEvidence = sourceRecord(content.pricing?.sourceReference, "Provider pricing", ["pricing model"], content.pricing?.lastVerifiedAt);
-  const publicFaqs = (Array.isArray(content.faq) ? content.faq : []).filter((faq: RecordValue) => typeof faq.question === "string" && faq.question.trim() && typeof faq.answer === "string" && faq.answer.trim()).map((faq: RecordValue) => {
-    const faqSource = sourceRecord(faq.sourceReference, "FAQ source", [String(faq.question)]);
+  const publicFaqs = (Array.isArray(content.faq) ? content.faq : []).filter((faq: RecordValue) => typeof faq.question === "string" && faq.question.trim() && typeof faq.answer === "string" && faq.answer.trim() && isPublicHttps(faq.sourceReference) && faq.sourceReference === evidence.source && evidence.checkedAt).map((faq: RecordValue) => {
+    const faqSource = sourceRecord(faq.sourceReference, "Official product information", [String(faq.question)], evidence.checkedAt);
     return { question: String(faq.question).trim(), answer: String(faq.answer).trim(), ...(faqSource ? { source: faqSource } : {}) };
   });
   const shortExplanation = typeof content.shortExplanation === "string" ? content.shortExplanation.trim() : "";
   const containsCommissionAmount = /(?:commission|payout)(?:\s+(?:rate|of|at|up\s+to)){0,3}\s*\d+(?:\.\d+)?%|\d+(?:\.\d+)?%\s*(?:commission|payout)/i.test(shortExplanation);
-  const summary = shortExplanation && !containsCommissionAmount ? shortExplanation : `${String(candidate.name)}: ${fallbackCopy[String(candidate.categoryId)]}`;
+  const summary = shortExplanation && summaryEvidenceSource && !containsCommissionAmount ? shortExplanation : `${String(candidate.name)}: ${fallbackCopy[String(candidate.categoryId)]}`;
   const approvedCategories = Array.isArray(candidate.review?.approvedCategoryIds) ? candidate.review.approvedCategoryIds.filter((value: unknown) => typeof value === "string" && categories.has(value)) : [];
   const categoryIds = [...new Set([String(candidate.categoryId), ...approvedCategories])];
-  const optionalFields = ["hero", "media", "featuredMedia", "serviceTypes", "useCases", "industries", "workflowTemplates", "promptTemplates", "inputs", "outputs", "audienceFit", "relatedProviderIds", "relatedResources", "ctas", "seo"];
+  const optionalFields = ["hero", "featuredMedia", "serviceTypes", "useCases", "industries", "workflowTemplates", "promptTemplates", "inputs", "outputs", "audienceFit", "relatedProviderIds", "relatedResources", "seo"];
   const optionalContent = Object.fromEntries(optionalFields.filter(field => content[field] !== undefined || candidate[field] !== undefined).map(field => [field, content[field] ?? candidate[field]]));
+  if (Array.isArray(content.media)) optionalContent.media = content.media.filter((item: RecordValue) => isPublicHttps(item?.url) && typeof item?.alt === "string" && item.alt.trim().length >= 3).map((item: RecordValue) => ({ url: item.url, alt: item.alt.trim(), ...(item.type === "video" ? { type: "video" } : { type: "image" }), ...(typeof item.caption === "string" ? { caption: item.caption } : {}) }));
+  delete optionalContent.pricing;
   const record = {
-    id, name: String(candidate.name), slug: String(candidate.slug), ...(typeof content.h1 === "string" && content.h1.trim() ? { h1: content.h1.trim() } : {}), summary,
+    id, name: String(candidate.name), slug: String(candidate.slug), ...(summaryEvidenceSource && typeof content.h1 === "string" && content.h1.trim() ? { h1: content.h1.trim() } : {}), summary,
     primaryCategoryId: String(candidate.categoryId), categoryIds, serviceGroup: category.group,
     primaryUrl, affiliateUrl, linkType, approvalStatus: "owner_approved" as const, status: "published" as const,
     relationshipStatus: String(candidate.ownership?.commercialRelationshipStatus ?? "not_recorded"),
     linkHealthStatus: candidate.enrichment?.linkDestinationTested === true ? "working" as const : "not_tested" as const,
-    links, ...(isPublicHttps(candidate.media?.logoUrl) ? { logoUrl: candidate.media.logoUrl } : {}),
+    links,
     capabilities: Array.isArray(content.capabilities) ? content.capabilities : capabilityLabels.map((value: string) => slugify(value)), capabilityLabels,
     audiences: Array.isArray(content.audiences) ? content.audiences : [], stages: Array.isArray(content.stages) ? content.stages : [],
     roles: Array.isArray(content.roles) ? content.roles : Array.isArray(content.audiences) ? content.audiences : category.audiences,
@@ -141,8 +147,8 @@ for (const candidate of intake.candidates as RecordValue[]) {
     searchKeywords: Array.isArray(content.searchKeywords) ? content.searchKeywords : capabilityLabels, suitableFor: [], features, ...optionalContent,
     limitations: Array.isArray(content.limitations) ? content.limitations.filter((value: unknown) => typeof value === "string" && value.trim()) : [],
     integrations: Array.isArray(content.integrations) ? content.integrations.filter((value: unknown) => typeof value === "string" && value.trim()) : [],
-    ...(content.howItWorks && (content.howItWorks.summary || content.howItWorks.steps?.length) ? {
-      howItWorks: { ...(content.howItWorks.summary ? { summary: String(content.howItWorks.summary) } : {}), steps: Array.isArray(content.howItWorks.steps) ? content.howItWorks.steps.filter((step: unknown) => typeof step === "string" && step.trim()) : [], sources: sourceRecord(content.howItWorks.sourceReference, "How it works source") ? [sourceRecord(content.howItWorks.sourceReference, "How it works source")] : [] }
+    ...(content.howItWorks && (content.howItWorks.summary || content.howItWorks.steps?.length) && isPublicHttps(content.howItWorks.sourceReference ?? evidence.source) && (content.howItWorks.sourceReference ?? evidence.source) === evidence.source && evidence.checkedAt ? {
+      howItWorks: { ...(content.howItWorks.summary ? { summary: String(content.howItWorks.summary) } : {}), steps: Array.isArray(content.howItWorks.steps) ? content.howItWorks.steps.filter((step: unknown) => typeof step === "string" && step.trim()) : [], sources: [sourceRecord(evidence.source, "Official product information", ["How it works"], evidence.checkedAt)!] }
     } : {}),
     faqs: publicFaqs,
     ...(officialPricingLink && content.pricing?.model && content.pricing.model !== "unknown" ? { pricingModel: String(content.pricing.model) } : {}),
@@ -154,8 +160,15 @@ for (const candidate of intake.candidates as RecordValue[]) {
     ...(candidate.review?.productClaimsCheckedAt ? { productInfoUpdatedAt: candidate.review.productClaimsCheckedAt } : {}),
     ...(candidate.review?.pricingCheckedAt ? { pricingLastCheckedAt: candidate.review.pricingCheckedAt } : {}),
     ...(linkType === "saved_tracking_referral" ? { disclaimer: "Affiliate relationship details are managed privately." } : {}),
-    ...(content.metaTitleDraft ? { metadataTitle: String(content.metaTitleDraft) } : {}), ...(content.metaDescriptionDraft ? { metadataDescription: String(content.metaDescriptionDraft) } : {}),
-    ...(content.pricing && pricingEvidence && officialPricingLink ? { pricing: { ...content.pricing, source: pricingEvidence } } : {})
+    ...(content.metaTitleDraft ? { metadataTitle: String(content.metaTitleDraft) } : {}), ...(content.metaDescriptionDraft && summaryEvidenceSource ? { metadataDescription: String(content.metaDescriptionDraft) } : summaryEvidenceSource && shortExplanation ? { metadataDescription: summary } : {}),
+    ...(content.pricing && pricingEvidence && officialPricingLink ? { pricing: {
+      ...(typeof content.pricing.model === "string" && content.pricing.model !== "unknown" ? { model: content.pricing.model } : {}),
+      ...(typeof content.pricing.amount === "string" ? { startingPrice: content.pricing.amount } : {}),
+      ...(typeof content.pricing.billingPeriod === "string" ? { billingPeriod: content.pricing.billingPeriod } : {}),
+      ...(typeof content.pricing.trial === "boolean" ? { trialAvailable: content.pricing.trial } : {}),
+      ...(typeof content.pricing.freePlan === "boolean" ? { freeTierAvailable: content.pricing.freePlan } : {}),
+      source: pricingEvidence
+    } } : {})
   };
   const parsed = providerSchema.safeParse(record);
   if (!parsed.success) {
@@ -167,14 +180,48 @@ for (const candidate of intake.candidates as RecordValue[]) {
 }
 
 const catalogData = JSON.parse(fs.readFileSync(catalogPath, "utf8")) as RecordValue;
-const sourceIds = new Set((intake.candidates as RecordValue[]).map(candidate => String(candidate.id)));
-const authoredProviders = (catalogData.providers as RecordValue[]).filter(provider => !sourceIds.has(provider.id));
-const merged = [...authoredProviders, ...published];
+const primaryReplacementIds = new Set((intake.candidates as RecordValue[])
+  .filter(candidate => candidate.review?.primaryDestinationReplacementAuthorized === true)
+  .map(candidate => String(candidate.id)));
+const sourceFieldOverrides = new Map<string, Set<string>>((intake.candidates as RecordValue[])
+  .filter(candidate => Array.isArray(candidate.review?.sourceFieldsAuthorizedToReplace))
+  .map(candidate => [String(candidate.id), new Set<string>(candidate.review.sourceFieldsAuthorizedToReplace.filter((field: unknown) => typeof field === "string" && field !== "id" && field !== "slug" && field !== "primaryUrl" && field !== "affiliateUrl" && field !== "linkType" && field !== "links"))]));
+const canonicalById = new Map((catalogData.providers as Provider[]).map(provider => [provider.id, provider]));
+const sourceCandidateById = new Map((intake.candidates as RecordValue[]).map(candidate => [String(candidate.id), candidate]));
+for (const candidate of intake.candidates as RecordValue[]) {
+  const current = canonicalById.get(String(candidate.id));
+  const content = candidate.content ?? {};
+  const evidence = content.summaryEvidence ?? {};
+  const shortExplanation = typeof content.shortExplanation === "string" ? content.shortExplanation.trim() : "";
+  const hasDatedOfficialEvidence = isPublicHttps(evidence.source) && typeof evidence.checkedAt === "string" && Boolean(Date.parse(evidence.checkedAt)) && shortExplanation.length > 0 && !/(?:commission|payout)(?:\s+(?:rate|of|at|up\s+to)){0,3}\s*\d+(?:\.\d+)?%|\d+(?:\.\d+)?%\s*(?:commission|payout)/i.test(shortExplanation);
+  const genericSummary = current && (/^A listed option in .+\. Verify current features and terms with .+ before choosing\.$/i.test(current.summary) || /^[^:]+: (?:Compare|Evaluate|Review) (?:accounting|automation|business accounts|spending|business credit|customer records|financing|hiring|coverage|legal|marketing|payment|content)\b/i.test(current.summary));
+  if (hasDatedOfficialEvidence && genericSummary) {
+    const fields = sourceFieldOverrides.get(String(candidate.id)) ?? new Set<string>();
+    fields.add("summary");
+    if (current.metadataDescription === current.summary) fields.add("metadataDescription");
+    sourceFieldOverrides.set(String(candidate.id), fields);
+  }
+}
+const sourcedPublications = published.map(provider => {
+  const current = canonicalById.get(provider.id);
+  const evidence = sourceCandidateById.get(provider.id)?.content?.summaryEvidence ?? {};
+  const hasDatedSource = isPublicHttps(evidence.source) && typeof evidence.checkedAt === "string" && Boolean(Date.parse(evidence.checkedAt));
+  return current && !hasDatedSource ? { ...provider, summary: current.summary } : provider;
+});
+const reconciliation = reconcileProviderCatalog(catalogData.providers as Provider[], sourcedPublications, primaryReplacementIds, sourceFieldOverrides);
+const merged = reconciliation.providers;
+const conflictGroups = new Map<string, Set<string>>();
+for (const conflict of reconciliation.conflicts) {
+  const ids = conflictGroups.get(conflict.field) ?? new Set<string>();
+  ids.add(conflict.providerId);
+  conflictGroups.set(conflict.field, ids);
+}
 const fullCatalog = catalogSchema.safeParse({ ...catalogData, providers: merged });
 if (!fullCatalog.success) throw new Error(`Catalog validation failed: ${fullCatalog.error.issues.map(issue => `${issue.path.join(".")}: ${issue.message}`).join("; ")}`);
 catalogData.providers = merged;
 if (!dryRun) fs.writeFileSync(catalogPath, `${JSON.stringify(catalogData, null, 2)}\n`, "utf8");
 console.log(JSON.stringify({
   dryRun, candidates: intake.candidates.length, published: published.length, referralPrimaryLinksPreserved: referralIds.size,
-  officialWebsitePrimaryLinks: websiteIds.size, catalogProvidersTotal: merged.length, providerExceptions: exceptions
+  officialWebsitePrimaryLinks: websiteIds.size, catalogProvidersTotal: merged.length,
+  sourceConflicts: [...conflictGroups].map(([field, ids]) => ({ field, count: ids.size, providerIds: [...ids].sort() })), providerExceptions: exceptions
 }, null, 2));

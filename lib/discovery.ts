@@ -31,13 +31,13 @@ export function filterProviders(providers: Provider[], categories: Category[], f
   return providers.filter(provider => {
     const category = byId.get(provider.primaryCategoryId);
     if (!category) return false;
-    const text = [provider.name, provider.summary, ...provider.capabilities, ...provider.capabilityLabels, ...provider.searchKeywords, ...provider.useCases, ...provider.features.map(feature => `${feature.name} ${feature.description ?? ""}`)].join(" ").toLowerCase();
+    const text = [provider.name, provider.summary, ...provider.capabilities, ...provider.functionalTags, ...provider.capabilityLabels, ...provider.searchKeywords, ...provider.useCases, ...provider.features.map(feature => `${feature.name} ${feature.description ?? ""}`)].join(" ").toLowerCase();
     return terms.every(term => text.includes(term)) &&
       (filters.group === "all" || category.group === filters.group) &&
       (filters.category === "all" || provider.categoryIds.includes(filters.category)) &&
       (filters.audience === "all" || providerRoles(provider, category).includes(filters.audience)) &&
       (filters.stage === "all" || providerStages(provider, category).includes(filters.stage)) &&
-      (filters.capability === "all" || provider.capabilities.includes(filters.capability)) &&
+      (filters.capability === "all" || provider.capabilities.includes(filters.capability) || provider.functionalTags.includes(filters.capability as typeof provider.functionalTags[number])) &&
       (filters.serviceType === "all" || provider.serviceTypes.includes(filters.serviceType)) &&
       (filters.pricing === "all" || (provider.pricing?.model ?? provider.pricingModel) === filters.pricing);
   }).sort((a, b) => {

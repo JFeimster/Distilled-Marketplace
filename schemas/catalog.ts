@@ -23,6 +23,7 @@ const providerLink = z.object({
   sourceReferences: z.array(publicSource).default([]), ctaLabel: z.string().min(2).optional(),
   deepLinkSupported: z.boolean().default(false), trackingProvider: z.string().optional()
 });
+export const providerFunctionalTags = ["business-credit-monitoring", "business-credit-reporting", "business-credit-building", "business-funding-readiness", "personal-credit-building", "personal-credit-monitoring"] as const;
 const media = z.object({ url: httpsUrl, alt: z.string().min(3), type: z.enum(["image", "video"]).default("image"), caption: z.string().optional() });
 const feature = z.object({ name: z.string().min(2), description: z.string().optional(), icon: z.string().optional(), media: media.optional(), sources: z.array(publicSource).default([]), evidenceStatus: z.string().optional() });
 const workflow = z.object({ id: slug, title: z.string().min(3), description: z.string().optional(), requirements: z.array(z.string()).default([]), steps: z.array(z.string()).min(1), expectedOutput: z.string().optional(), resourceUrl: resourceDestination.optional() });
@@ -53,7 +54,7 @@ export const providerSchema = z.object({
   approvalStatus: z.literal("owner_approved"), status: z.enum(providerLifecycleStates),
   relationshipStatus: z.string().optional(), linkHealthStatus: z.enum(["not_tested", "working", "broken", "withdrawn"]).default("not_tested"),
   links: z.array(providerLink).min(1), logoUrl: httpsUrl.nullable().optional(), iconUrl: httpsUrl.nullable().optional(),
-  capabilities: z.array(slug).default([]), capabilityLabels: z.array(z.string().min(2)).default([]), searchKeywords: z.array(z.string()).default([]),
+  capabilities: z.array(slug).default([]), functionalTags: z.array(z.enum(providerFunctionalTags)).default([]), capabilityLabels: z.array(z.string().min(2)).default([]), searchKeywords: z.array(z.string()).default([]),
   audiences: z.array(z.string()).default([]), stages: z.array(z.string()).default([]), roles: z.array(z.string()).default([]), businessStages: z.array(z.string()).default([]), suitableFor: z.array(z.string()).default([]),
   serviceTypes: z.array(z.string()).default([]), useCases: z.array(z.string()).default([]), industries: z.array(z.string()).default([]),
   hero: z.object({ headline: z.string().optional(), description: z.string().optional(), media: media.optional() }).optional(),

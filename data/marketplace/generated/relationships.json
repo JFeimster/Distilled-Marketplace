@@ -32,7 +32,8 @@
       "id": "business-credit",
       "related": [
         "financing",
-        "legal-compliance"
+        "legal-compliance",
+        "personal-credit"
       ]
     },
     {
@@ -110,6 +111,13 @@
       "related": [
         "marketing-seo",
         "crm-sales"
+      ]
+    },
+    {
+      "id": "personal-credit",
+      "related": [
+        "business-credit",
+        "financing"
       ]
     }
   ],

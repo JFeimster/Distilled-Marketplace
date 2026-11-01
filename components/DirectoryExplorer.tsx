@@ -24,7 +24,7 @@ export function DirectoryExplorer({ initial }: { initial: Record<string, string 
   const providers = useMemo(() => filterProviders(catalog.providers, catalog.categories, filters), [filters]);
   const byCategory = useMemo(() => new Map(catalog.categories.map(category => [category.id, category])), []);
   const popular = useMemo(() => [...catalog.categories].sort((a, b) => catalog.providers.filter(provider => provider.categoryIds.includes(b.id)).length - catalog.providers.filter(provider => provider.categoryIds.includes(a.id)).length).slice(0, 5), []);
-  const capabilities = useMemo(() => [...new Set(catalog.providers.flatMap(provider => provider.capabilities))].sort(), []);
+  const capabilities = useMemo(() => [...new Set(catalog.providers.flatMap(provider => [...provider.capabilities, ...provider.functionalTags]))].sort(), []);
   const serviceTypes = useMemo(() => [...new Set(catalog.providers.flatMap(provider => provider.serviceTypes))].sort(), []);
   const pricingModels = useMemo(() => [...new Set(catalog.providers.map(provider => provider.pricing?.model ?? provider.pricingModel).filter((value): value is string => Boolean(value)))].sort(), []);
   const change = (patch: Partial<ProviderFilters>) => { const next = { ...filters, ...patch }; setFilters(next); setVisibleCount(12); writeUrl(next, view, selected); };

@@ -9,6 +9,14 @@ export const workflowListing = (item:WorkflowBlueprint):WorkflowListing => ({
   trigger:item.trigger,humanReview:item.humanReview,industryTags:item.industryTags,categoryIds:item.categoryIds,providerIds:item.providerIds,requiredServices:item.requiredServices
 });
 export const workflowsForProvider = (providerId:string) => publishedWorkflows.filter(item => item.providerIds.includes(providerId));
+export function workflowDiscoveriesForProvider(providerId: string, categoryIds: string[], limit = 4) {
+  const categories = new Set(categoryIds);
+  const listed = workflowsForProvider(providerId).map(workflow => ({ workflow, matchType: "provider-listed" as const }));
+  const listedIds = new Set(listed.map(item => item.workflow.id));
+  const categoryMatches = publishedWorkflows.filter(workflow => !listedIds.has(workflow.id) && workflow.categoryIds.some(id => categories.has(id)))
+    .map(workflow => ({ workflow, matchType: "category-related" as const }));
+  return [...listed, ...categoryMatches].slice(0, limit);
+}
 export const industryTags = [...new Set(publishedWorkflows.flatMap(item => item.industryTags))].sort();
 const industryNames: Record<string,string> = {
   "ecommerce":"E-commerce teams",
